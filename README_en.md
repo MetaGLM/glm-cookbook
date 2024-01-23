@@ -36,9 +36,9 @@ I have classified multiple folders, each of which has its own content. You can v
 
 + 🤖`agent` Let’s see how powerful the agent at the press conference is! (coming soon)
 
-+ 🎉`demo` Some interesting sum demos, which may inspire some inspiration. (coming soon)
++ 🎉`demo` Some interesting demos, which may inspire some inspiration. (coming soon)
 
-+ 🏠`asset` Some tutorials may help you understand better.
++ 🏠`asset` Some related picture information.
 
 You can quickly understand the structure of this warehouse through the following pictures. I will update the latest experiments and teaching content of Zhipu AI SDK as soon as possible.
 
