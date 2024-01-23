@@ -3,7 +3,7 @@
   glm-cookbook
 </h1>
 
-[Read this in Englissh](README_en.md)
+[Read this in English](README_en.md)
 
 欢迎来到 **随缘的** GLM API 模型入门仓库📘，这是我业余时间的小项目。
 
