@@ -30,7 +30,7 @@ pip install -r requirements.txt
 
 + 🌱`basic` 最基础的内容，帮助你熟悉基本的 API 调用。
 
-+ 👁️`vision` 关于多模态的调用和基本应用。
++ 👁️`vision` 关于视觉模型和绘图模型的调用和基本应用。
 
 + 🔧`finetune` 或许可以来这里找找微调的内容？(即将到来)
 
