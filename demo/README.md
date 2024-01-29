@@ -7,7 +7,7 @@ Issue。
 
 1. [使用 GLM-4 模型进行数据分析](glm_csv_data_analysis.ipynb)
 2. [使用 GLM-4 模型对一本书籍进行翻译]()
-3. [使用 GLM-4 模拟不同的角色]()
+3. [使用 GLM-4 模拟不同的角色完成客户咨询任务](glm_multi_role_division.ipynb)
 
 ## 安装对应的依赖
 
