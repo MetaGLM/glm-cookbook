@@ -32,11 +32,11 @@ I have classified multiple folders, each of which has its own content. You can v
 
 + 👁️`vision` About multi-modal calls and basic applications.
 
-+ 🔧`finetune` Maybe you can come here to find fine-tuning content? (coming soon)
++ 🔧`finetune` Maybe you can come here to find fine-tuning content?
 
-+ 🤖`agent` Let’s see how powerful the agent at the press conference is! (coming soon)
-
-+ 🎉`demo` Some interesting demos, which may inspire some inspiration. (coming soon)
++ 🎉`demo` Some interesting demos, which may inspire some inspiration.
+  + 🤖`agent` Let’s see how powerful the agent at the press conference is!
+  + 📚`data` The data needed to run the demo.
 
 + 🏠`asset` Some related picture information.
 
