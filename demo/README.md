@@ -6,8 +6,8 @@ Issue。
 你可以按照以下环节来学习：
 
 1. [使用 GLM-4 模型进行数据分析](glm_csv_data_analysis.ipynb)
-2. [使用 GLM-4 模型对一本书籍进行翻译]()
-3. [使用 GLM-4 模拟不同的角色完成客户咨询任务](glm_multi_role_division.ipynb)
+2. [使用 GLM-4 模拟不同的角色完成客户咨询任务](agent/glm_multi_role_division.ipynb)
+3. [使用 GLM-4 作为模型底座运行微软的 TaskWeaver Agent 框架](agent/glm_taskweaver.ipynb)
 
 ## 安装对应的依赖
 

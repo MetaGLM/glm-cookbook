@@ -9,6 +9,12 @@ Welcome to the GLM API model entry warehouse 📘, this is not a official repos 
 
 Here, you will find a wealth of **code examples👨‍**, **practical guides🗺**️ and **resource links🔗**, which may help you easily master the use of GLM API!
 
+
+## Recent Update 🔥
+
++ 🔥 2024-02-04: The warehouse has updated the list of interesting GLMs, welcome to experience it! The basic tutorial has basically covered the content of the GLM-4 API document. Welcome to experience it!
+
+
 ## Quick Start 🚀
 
 1. To start using the GLM API, you first need a GLM API account and the corresponding API key.
@@ -39,6 +45,7 @@ I have classified multiple folders, each of which has its own content. You can v
   + 📚`data` The data needed to run the demo.
 
 + 🏠`asset` Some related picture information.
+  + 📊`glms` Some interesting GLMs (chatglm.cn, only chinese version). Welcome to experience!
 
 You can quickly understand the structure of this warehouse through the following pictures. I will update the latest experiments and teaching content of Zhipu AI SDK as soon as possible.
 
