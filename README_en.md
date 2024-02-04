@@ -12,7 +12,7 @@ Here, you will find a wealth of **code examples👨‍**, **practical guides🗺
 
 ## Recent Update 🔥
 
-+ 🔥 2024-02-04: The warehouse has updated the list of interesting GLMs, welcome to experience it! The basic tutorial has basically covered the content of the GLM-4 API document. Welcome to experience it!
++ 🔥 2024-02-04: The warehouse has updated the list of [Fun GLMs](asset/glms.md), welcome to experience it! The basic tutorial has basically covered the content of the GLM-4 API document. Welcome to experience it!
 
 
 ## Quick Start 🚀
