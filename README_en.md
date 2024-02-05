@@ -5,10 +5,10 @@
 
 [中文版本](README.md)
 
-Welcome to the GLM API model entry warehouse 📘, this is not a official repos and it is a small project in my spare time.
+Welcome to the GLM API Model Beginner's Warehouse in Exploration 📘。 This is an open-source GLM API introductory code textbook.
 
-Here, you will find a wealth of **code examples👨‍**, **practical guides🗺**️ and **resource links🔗**, which may help you easily master the use of GLM API!
 
+Here, you will find rich **code examples 👨**,**Practical Guide 🗺** And **resource links 🔗**， Perhaps it can help you easily master the use of GLM API!
 
 ## Recent Update 🔥
 
