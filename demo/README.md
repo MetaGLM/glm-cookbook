@@ -8,6 +8,7 @@ Issue。
 1. [使用 GLM-4 模型进行数据分析](glm_csv_data_analysis.ipynb)
 2. [使用 GLM-4 模拟不同的角色完成客户咨询任务](agent/glm_multi_role_division.ipynb)
 3. [使用 GLM-4 作为模型底座运行微软的 TaskWeaver Agent 框架](agent/glm_taskweaver.ipynb)
+4. [使用 GLM-4 完成心理分析活动](interpretationo_dreams%2FREADME.md)
 
 ## 安装对应的依赖
 
