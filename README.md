@@ -12,6 +12,7 @@
 
 ## 更新情况 🔥
 
++ 🔥 2024-02-07: 仓库更新了 [InterpretationoDreams](demo/interpretationo_dreams)，体验项目，使用 GLM-4 来完成梦中解析和角色扮演！
 + 🔥 2024-02-04: 仓库更新了 [有趣的 GLMs列表](asset/glms.md)，欢迎体验！基础教程已基本覆盖 GLM-4 API 文档的内容，欢迎体验！
 
 ## 快速开始 🚀

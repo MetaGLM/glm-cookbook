@@ -12,7 +12,8 @@ Here, you will find rich **code examples 👨**,**Practical Guide 🗺** And **r
 
 ## Recent Update 🔥
 
-+ 🔥 2024-02-04: The warehouse has updated the list of [Fun GLMs](asset/glms.md), welcome to experience it! The basic tutorial has basically covered the content of the GLM-4 API document. Welcome to experience it!
++ 🔥 2024-02-07: The warehouse has updated [InterpretationoDreams](demo/interpretationo_dreams), an experience project, using GLM-4 to complete dream analysis and play a role!
++ 🔥 2024-02-04: The warehouse has updated the list of [Fun GLM (Chinese Only)](asset/glms.md), welcome to experience it! The basic tutorial has basically covered the content of the GLM-4 API document. Welcome to experience it!
 
 
 ## Quick Start 🚀

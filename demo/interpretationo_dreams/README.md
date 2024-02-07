@@ -1,5 +1,5 @@
 
-#### 介绍：
+#### 介绍
 - 关于本项目
  
 > 项目地址 `https://github.com/glide-the/InterpretationoDreams.git`

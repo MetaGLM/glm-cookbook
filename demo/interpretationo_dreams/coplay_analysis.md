@@ -61,7 +61,6 @@ RNN模型成为了NLP问题的首选模型。[3]并行化优势允许其在更�
 - [05-剧情总结.txt](docs%2Fbehavior_analysis%2F05-%E5%89%A7%E6%83%85%E6%80%BB%E7%BB%93.txt)
 - [05-性格分析.txt](docs%2Fbehavior_analysis%2F05-%E6%80%A7%E6%A0%BC%E5%88%86%E6%9E%90.txt)
 - [06-情景扮演.txt](docs%2Fbehavior_analysis%2F06-%E6%83%85%E6%99%AF%E6%89%AE%E6%BC%94.txt)
-- 
 
 
 
