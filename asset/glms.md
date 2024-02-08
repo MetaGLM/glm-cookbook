@@ -17,6 +17,8 @@
 | 我被无良产品经理包围 | 某产品经理希望在 APP 启动时自动跳转到购物平台，这个需求遭到了程序员的强烈反驳，于是更多的产品经理加入了进来。    | 用户_XpYovq  | [链接](https://chatglm.cn/share/FoLRk)                           |
 | 猜灯谜（程序员版）  | 一款猜灯谜游戏辅助工具，自动出题、讲解规则、统计得分，让群友体验传统游戏的乐趣。                     | 用户_xwxoqX  | [链接](hhttps://chatglm.cn/share/FoLQC)                          |
 | 规则怪谈解密游戏   | 集成图像生成与代码解析的规则怪谈剧情选择游戏，玩家通过对话选择推进剧情，同时需遵守神秘规则，挑战性强，互动性高。     | ChatMindAI | [链接](https://chatglm.cn/main/gdetail/65af7a642b7c06b85664ab1c) |
+| 完蛋！被村里亲戚包围 | 看我如何对亲戚们舌灿莲花，顺利通过村口！                                         | 用户_xwxoqX  | [链接](https://chatglm.cn/main/gdetail/65ba24c4e58c9af3e3fed375) |
+| 寻找你的专属龙女   | 你的专属龙女，陪伴你恭贺新春。                                              | 智谱龙龙       | [链接](https://chatglm.cn/main/gdetail/65c2ae630fd018f49398620e) |
 
 ## 贡献指南 🤝
 
