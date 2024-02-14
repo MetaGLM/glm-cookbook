@@ -40,7 +40,7 @@ pip install -r requirements.txt
 
 + 🔧`finetune` 或许可以来这里找找微调的内容？
 
-+ 🎉`demo` 一些有趣的小项目，或许可以激发点灵感。\
++ 🎉`demo` 一些有趣的小项目，或许可以激发点灵感。
   + 🤖`agent` 看看发布会的智能体有多厉害！
   + 📚`data` 运行demo所需要的数据。
 
