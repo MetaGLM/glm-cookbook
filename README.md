@@ -51,6 +51,14 @@ pip install -r requirements.txt
 
 ![实现原理图](asset/plan.png)
 
+
+## 开源SDK
+
+GLM-4系列SDK已经开源，如果你想直接在我们的SDK上进行修改，可以按照以下地址进行需改：
++ [Python SDK](https://github.com/zhipuai/zhipuai-sdk-python-v4)
++ [Java SDK](https://github.com/zhipuai/zhipuai-sdk-java-v4)
++ 如果你有其他语言的SDK想贡献到官方仓库，欢迎提出PR。
+
 ## 贡献指南 🤝
 
 欢迎大家贡献自己的想法和代码！如果你有任何建议或想添加自己的代码，请随时提交 Pull Request 或开 Issue 讨论。

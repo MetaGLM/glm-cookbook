@@ -52,6 +52,15 @@ You can quickly understand the structure of this warehouse through the following
 
 ![Implementation schematic diagram](asset/plan.png)
 
+
+## Open Source SDK
+
+The GLM-4 series SDK has been open source. If you want to make modifications directly on our SDK, you can make the modifications at the following address:
++ [Python SDK](https://github.com/zhipuai/zhipuai-sdk-python-v4)
++ [Java SDK](https://github.com/zhipuai/zhipuai-sdk-java-v4)
++ If you have SDKs in other languages ​​that you would like to contribute to the official repository, please submit a PR.
+
+
 ## Contribution Guide 🤝
 
 Everyone is welcome to contribute your own ideas and code! If you have any suggestions or want to add your own code, please feel free to submit a Pull Request or open an Issue for discussion.
