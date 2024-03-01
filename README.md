@@ -5,14 +5,15 @@
 
 [Read this in English](README_en.md)
 
-
 欢迎来到 GLM API 模型入门仓库📘。这是一本开源的 GLM API 入门代码教材。
 
 在这里，你会发现丰富的 **代码示例👨‍**、**实用指南🗺**️ 以及 **资源链接🔗**，或许能帮助你轻松掌握 GLM API 的使用！
 
 ## 更新情况 🔥
 
-+ 🔥 2024-02-07: 仓库更新了 [InterpretationoDreams](demo/interpretationo_dreams)，体验项目，使用 GLM-4 来完成梦中解析和角色扮演！
++ 🔥🔥🔥 2024-03-01: 仓库更新了 [glms](asset/glms.md), 一些有趣的 GLMs (智谱清言) 欢迎体验！GLM-4 API
+  最大输出长度可以调整到`8192`了，支持联网工具调用，相见[这里](basic/glm_function_call.ipynb)
++ 🔥🔥 2024-02-07: 仓库更新了 [InterpretationoDreams](demo/interpretationo_dreams)，体验项目，使用 GLM-4 来完成梦中解析和角色扮演！
 + 🔥 2024-02-04: 仓库更新了 [有趣的 GLMs列表](asset/glms.md)，欢迎体验！基础教程已基本覆盖 GLM-4 API 文档的内容，欢迎体验！
 
 ## 快速开始 🚀
@@ -41,22 +42,23 @@ pip install -r requirements.txt
 + 🔧`finetune` 或许可以来这里找找微调的内容？
 
 + 🎉`demo` 一些有趣的小项目，或许可以激发点灵感。
-  + 🤖`agent` 看看发布会的智能体有多厉害！
-  + 📚`data` 运行demo所需要的数据。
+    + 🤖`agent` 看看发布会的智能体有多厉害！
+    + 📚`data` 运行demo所需要的数据。
 
 + 🏠`asset` 一些相关的图片资料
-  + 📊`glms` 一些有趣的 GLMs (智谱清言) 欢迎体验！
+    + 📊`glms` 一些有趣的 GLMs (智谱清言) 欢迎体验！
 
 你可以通过以下图片快速了解本仓库构成, 我将尽快同步更新 Zhipu AI SDK的最新实验和教学内容。
 
 ![实现原理图](asset/plan.png)
 
-
 ## 开源SDK
 
 GLM-4系列SDK已经开源，如果你想直接在我们的SDK上进行修改，可以按照以下地址进行需改：
+
 + [Python SDK](https://github.com/zhipuai/zhipuai-sdk-python-v4)
 + [Java SDK](https://github.com/zhipuai/zhipuai-sdk-java-v4)
++ [C# SDK](https://github.com/zhipuai/zhipuai-sdk-csharp-v4)
 + 如果你有其他语言的SDK想贡献到官方仓库，欢迎提出PR。
 
 ## 贡献指南 🤝
