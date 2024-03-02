@@ -12,9 +12,12 @@ Here, you will find rich **code examples 👨**,**Practical Guide 🗺** And **r
 
 ## Recent Update 🔥
 
-+ 🔥 2024-02-07: The warehouse has updated [InterpretationoDreams](demo/interpretationo_dreams), an experience project, using GLM-4 to complete dream analysis and play a role!
-+ 🔥 2024-02-04: The warehouse has updated the list of [Fun GLM (Chinese Only)](asset/glms.md), welcome to experience it! The basic tutorial has basically covered the content of the GLM-4 API document. Welcome to experience it!
-
++ 🔥 2024-03-02: The warehouse has been updated [C# SDK](https://github.com/zhipuai/zhipuai-sdk-csharp-v4), if you are a C# user, you can try the C# version here SDK
++ 🔥 2024-03-01: The warehouse has been updated [glms](asset/glms.md), some interesting GLMs (Zhipu Qingyan) are welcome to experience! GLM-4 API
+   The maximum output length can be adjusted to `8192`, and it supports network tool calling, see you [here] (basic/glm_function_call.ipynb)
++ 🔥 2024-02-07: The warehouse has been updated with [InterpretationoDreams](demo/interpretationo_dreams), an experience project using GLM-4 to complete dream interpretation and role-playing!
++ 🔥 2024-02-04: The warehouse has been updated [List of interesting GLMs] (asset/glms.md), welcome to experience it! The basic tutorial has basically covered the content of the GLM-4 API document, welcome to experience it!
+​
 
 ## Quick Start 🚀
 
