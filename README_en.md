@@ -12,6 +12,7 @@ Here, you will find rich **code examples 👨**,**Practical Guide 🗺** And **r
 
 ## Recent Update 🔥
 
++ 🔥 2024-03-03: The warehouse has been updated [Node.js SDK](https://github.com/winily/zhipuai-sdk-nodejs-v4), if you are a Node.js user, you can try the Node.js version here SDK
 + 🔥 2024-03-02: The warehouse has been updated [C# SDK](https://github.com/zhipuai/zhipuai-sdk-csharp-v4), if you are a C# user, you can try the C# version here SDK
 + 🔥 2024-03-01: The warehouse has been updated [glms](asset/glms.md), some interesting GLMs (Zhipu Qingyan) are welcome to experience! GLM-4 API
    The maximum output length can be adjusted to `8192`, and it supports network tool calling, see you [here] (basic/glm_function_call.ipynb)
@@ -61,6 +62,8 @@ You can quickly understand the structure of this warehouse through the following
 The GLM-4 series SDK has been open source. If you want to make modifications directly on our SDK, you can make the modifications at the following address:
 + [Python SDK](https://github.com/zhipuai/zhipuai-sdk-python-v4)
 + [Java SDK](https://github.com/zhipuai/zhipuai-sdk-java-v4)
++ [C# SDK](https://github.com/zhipuai/zhipuai-sdk-csharp-v4)
++ [Node.js SDK](https://github.com/winily/zhipuai-sdk-nodejs-v4)
 + If you have SDKs in other languages ​​that you would like to contribute to the official repository, please submit a PR.
 
 

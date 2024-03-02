@@ -10,6 +10,7 @@
 在这里，你会发现丰富的 **代码示例👨‍**、**实用指南🗺**️ 以及 **资源链接🔗**，或许能帮助你轻松掌握 GLM API 的使用！
 
 ## 更新情况 🔥
++ 🔥 2024-03-03: 仓库更新了 [Node.js SDK](https://github.com/winily/zhipuai-sdk-nodejs-v4), 如果你是 Node.js 用户，可以在这里尝试使用 Node.js 版本 SDK
 + 🔥 2024-03-02: 仓库更新了 [C# SDK](https://github.com/zhipuai/zhipuai-sdk-csharp-v4), 如果你是 C# 用户，可以在这里尝试使用 C# 版本 SDK
 + 🔥 2024-03-01: 仓库更新了 [glms](asset/glms.md), 一些有趣的 GLMs (智谱清言) 欢迎体验！GLM-4 API
   最大输出长度可以调整到`8192`了，支持联网工具调用，相见[这里](basic/glm_function_call.ipynb)
@@ -59,6 +60,7 @@ GLM-4系列SDK已经开源，如果你想直接在我们的SDK上进行修改，
 + [Python SDK](https://github.com/zhipuai/zhipuai-sdk-python-v4)
 + [Java SDK](https://github.com/zhipuai/zhipuai-sdk-java-v4)
 + [C# SDK](https://github.com/zhipuai/zhipuai-sdk-csharp-v4)
++ [Node.js SDK](https://github.com/winily/zhipuai-sdk-nodejs-v4)
 + 如果你有其他语言的SDK想贡献到官方仓库，欢迎提出PR。
 
 ## 贡献指南 🤝
