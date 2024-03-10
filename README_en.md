@@ -14,7 +14,7 @@ Here, you will find rich **code examples 👨**,**Practical Guide 🗺** And **r
 
 + 🔥 2024-03-06: The organization where this Repos is 
    located [MetaGLM](https://github.com/MetaGLM) has updated the SDKs of 4 languages ​​(Python, Java, C#, Node.js). Comments and suggestions for the project are welcome Code improvements!
-+ 🔥 2024-03-01: The warehouse has been updated [glms](asset/glms.md), some interesting GLMs (Zhipu Qingyan) are welcome to experience! GLM-4 API
++ 🔥 2024-03-01: The warehouse has been updated [glms](glms/glms.md), some interesting GLMs (Zhipu Qingyan) are welcome to experience! GLM-4 API
    The maximum output length can be adjusted to `8192`, and it supports network tool calling, see you [here] (basic/glm_function_call.ipynb)
 + 🔥 2024-02-07: The warehouse has been updated with [InterpretationoDreams](demo/interpretationo_dreams), an experience project using GLM-4 to complete dream interpretation and role-playing!
 + 🔥 2024-02-04: The warehouse has been updated [List of interesting GLMs] (asset/glms.md), welcome to experience it! The basic tutorial has basically covered the content of the GLM-4 API document, welcome to experience it!
@@ -49,9 +49,10 @@ I have classified multiple folders, each of which has its own content. You can v
   + 🤖`agent` Let’s see how powerful the agent at the press conference is!
   + 📚`data` The data needed to run the demo.
 
-+ 🏠`asset` Some related picture information.
-  + 📊`glms` Some interesting GLMs (chatglm.cn, only chinese version). Welcome to experience!
++ 📊`glms` GLMs (Zhipu Qingyan) area, even if you don’t know how to code, you can quickly get started!
 
++ 🏠`asset` Some related picture information.
+  
 You can quickly understand the structure of this warehouse through the following pictures. I will update the latest experiments and teaching content of Zhipu AI SDK as soon as possible.
 
 ![Implementation schematic diagram](asset/plan.png)
@@ -64,7 +65,7 @@ The GLM-4 series SDK has been open source. If you want to make modifications dir
 + [Java SDK](https://github.com/MetaGLM/zhipuai-sdk-java-v4)
 + [C# SDK](https://github.com/MetaGLM/zhipuai-sdk-csharp-v4)
 + [Node.js SDK](https://github.com/MetaGLM/zhipuai-sdk-nodejs-v4)
-+ If you have SDKs in other languages ​​that you would like to contribute to the official repository, please submit a PR.
++ If you have SDKs in other languages that you would like to contribute to the official repository, please submit a PR.
 
 
 ## Contribution Guide 🤝

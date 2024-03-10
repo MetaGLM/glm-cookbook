@@ -11,7 +11,7 @@
 
 ## 更新情况 🔥
 + 🔥 2024-03-06: 仓库所在组织 [MetaGLM](https://github.com/MetaGLM) 更新了4门语言 (Python, Java,C#,Node.js) 的SDK，欢迎提出意见和对项目进行PR！
-+ 🔥 2024-03-01: 仓库更新了 [glms](asset/glms.md), 一些有趣的 GLMs (智谱清言) 欢迎体验！GLM-4 API
++ 🔥 2024-03-01: 仓库更新了 [glms](glms/glms.md), 一些有趣的 GLMs (智谱清言) 欢迎体验！GLM-4 API
   最大输出长度可以调整到`8192`了，支持联网工具调用，相见[这里](basic/glm_function_call.ipynb)
 + 🔥 2024-02-07: 仓库更新了 [InterpretationoDreams](demo/interpretationo_dreams)，体验项目，使用 GLM-4 来完成梦中解析和角色扮演！
 + 🔥 2024-02-04: 仓库更新了 [有趣的 GLMs列表](asset/glms.md)，欢迎体验！基础教程已基本覆盖 GLM-4 API 文档的内容，欢迎体验！
@@ -45,8 +45,10 @@ pip install -r requirements.txt
     + 🤖`agent` 看看发布会的智能体有多厉害！
     + 📚`data` 运行demo所需要的数据。
 
++ 📊`glms` GLMs (智谱清言) 专区，即使你不会代码，也能快速上手！
+
 + 🏠`asset` 一些相关的图片资料
-    + 📊`glms` 一些有趣的 GLMs (智谱清言) 欢迎体验！
+
 
 你可以通过以下图片快速了解本仓库构成, 我将尽快同步更新 Zhipu AI SDK的最新实验和教学内容。
 
