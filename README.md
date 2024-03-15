@@ -10,11 +10,8 @@
 在这里，你会发现丰富的 **代码示例👨‍**、**实用指南🗺**️ 以及 **资源链接🔗**，或许能帮助你轻松掌握 GLM API 的使用！
 
 ## 更新情况 🔥
++ 🔥 2024-03-16: 仓库开始更新 [智谱清言](/Users/zr/Code/glm-cookbook/glms) 基础开发者教学文档，详细文档正在编辑中，欢迎体验！ 
 + 🔥 2024-03-06: 仓库所在组织 [MetaGLM](https://github.com/MetaGLM) 更新了4门语言 (Python, Java,C#,Node.js) 的SDK，欢迎提出意见和对项目进行PR！
-+ 🔥 2024-03-01: 仓库更新了 [glms](glms/glms.md), 一些有趣的 GLMs (智谱清言) 欢迎体验！GLM-4 API
-  最大输出长度可以调整到`8192`了，支持联网工具调用，相见[这里](basic/glm_function_call.ipynb)
-+ 🔥 2024-02-07: 仓库更新了 [InterpretationoDreams](demo/interpretationo_dreams)，体验项目，使用 GLM-4 来完成梦中解析和角色扮演！
-+ 🔥 2024-02-04: 仓库更新了 [有趣的 GLMs列表](asset/glms.md)，欢迎体验！基础教程已基本覆盖 GLM-4 API 文档的内容，欢迎体验！
 
 ## 快速开始 🚀
 

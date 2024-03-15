@@ -12,7 +12,7 @@ GLMs 支持使用满足条件的 Open API 来添加额外的插件。本教程�
 
 ![添加新API](https://raw.githubusercontent.com/MetaGLM/glm-cookbook/main/glms/asset/build_outside_api/1.png)
 
-我们使用 知心天气 API 作为示例，构建一个天气查询组件。首先，我们需要注册并获取 API 的 `appkey`。
+我们使用 ```心知天气 API``` 作为示例，构建一个天气查询组件。首先，我们需要注册并获取 API 的 `appkey`。
 假设你的API Key是：
 
 ```python
