@@ -43,7 +43,7 @@ pip install -r requirements.txt
     + 🤖`agent` 看看发布会的智能体有多厉害！
     + 📚`data` 运行demo所需要的数据。
 
-+ 📊`glms` GLMs (智谱清言) 专区，即使你不会代码，也能快速上手！
++ 📊`glms` 智能体 (智谱清言) 专区，即使你不会代码，也能快速上手！
 
 + 🏠`asset` 一些相关的图片资料
 
