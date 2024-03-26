@@ -3,3 +3,4 @@ pyjwt>=2.8.0
 jupyter>=1.0.0
 sentencepiece>=0.1.99
 transformers>=4.37.0
+python-dotenv~=1.0.1
