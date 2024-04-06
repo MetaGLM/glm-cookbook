@@ -19,3 +19,10 @@ pip install -r requirements.txt
 ```
 
 
+## 安装特有项目的依赖
+
+为了能够顺利运行PPOCR_GLM.ipynb，你需要安装必须的依赖，才能更好的使用 Demo。你可以使用以下命令来安装该Notebok的依赖：
+
+```bash
+pip install -r requirements_ppocr_glm.txt
+```
