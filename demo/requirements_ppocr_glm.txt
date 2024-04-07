@@ -1,0 +1,2 @@
+paddlepaddle>=2.6
+paddleocr>=2.7
