@@ -6,6 +6,22 @@
 
 本专题记录了部分好玩的，实用的智谱清言智能体合集，并将在未来考虑公开部分提示词，欢迎关注。
 
+### 2024-03-30--2024-04-8 Trending Top 10
+
+| GLM 名称 | 创作者 | 介绍 | 所属模块 | 链接 |
+|---------|--------|------|----------|------|
+| RPG游戏模拟 | 用户_S4yBHe | 智能恋爱RPG游戏生成器，自定义故事背景，自动生成剧情，图片及选项，多结局可选，注重情感互动和角色好感度培养。 | 社交娱乐 | [链接](https://chatglm.cn/main/gdetail/65a64a2c1aea6c40d7b551a0) |
+| 修仙人生模拟器 | 用户_h0Xb3f | 根据玩家选择生成修仙故事，融合角色成长、副本探险、属性管理等于一体的模拟器。 | 社交娱乐 | [链接](https://chatglm.cn/main/gdetail/65b7ac9be1c73436d79abb75) |
+| 爹味发言打分器 | 奥雷里亚诺上校 | 旨在识别那些具有父权制特征的言论或态度，尤其是针对于女性的刻板印象。旨在为“爹味”的发言提供评估 | 社交娱乐 | [链接](https://chatglm.cn/main/gdetail/65ec0bf7ee4f924565620aa3) |
+| PPT助手 | 凤梨清芬小笼包 | 超实用Ai PPT工具，拒绝加班，输入主题，自动生成大纲、内容、讲稿。 | 职场提效 | [链接](https://chatglm.cn/main/gdetail/65d2f07bb2c10188f885bd89) |
+| 小红书爆款写作专家 | 用户_zrHNQJ | 请输入主题，一键生成小红书爆款文案。比如“轻薄防晒霜，防晒指数SPF50+” | AI写作 | [链接](https://chatglm.cn/main/gdetail/65b2307aea79d4ebe6db7a42) |
+| 漫画生成器 | 青云 | AI驱动的漫画生成工具，为你创作多样化风格的漫画 | AI绘画 | [链接](https://chatglm.cn/main/gdetail/65decc3b69cd7a1ce8be4c51) |
+| 舔狗模拟器 | 桑榆123 | 玩家可以体验到成为舔狗的种种辛酸与甜蜜? | 社交娱乐 | [链接](https://chatglm.cn/main/gdetail/660b6b5a28ad171ab62c5b42) |
+| 心口不一的反差女孩 | 用户_I1mXu5 | 和你心中的女神进行深入的对话吧！采取“你是xxx，我是yyy”的格式下达命令后直接开始，“xxx”是用户角色，“yyy”是女孩角色。 | 社交娱乐 | [链接](https://chatglm.cn/main/gdetail/65bd15849289f044dccdaabf) |
+| 后宫晋升之旅 | 青云 | 请选择你的出身开始挑战 | 社交娱乐 | [链接](https://chatglm.cn/main/gdetail/65d725a73353211a662c3257) |
+| 嘴仗达人 | 上上 | 你好，我是嘴仗达人，专长是帮你应对口角，让冲突变得风轻云淡。 | 社交娱乐 | [链接](https://chatglm.cn/main/gdetail/660b8c628afba77e472340ca) |
+| 智汇PPT | 漫长的夜 | 一键生成PPT，智能排版，丰富模板，高效便捷。 | 职场提效 | [链接](https://chatglm.cn/main/gdetail/65a8d16a7cab2d375b45bb4a) |
+
 
 ### 2024-03-23--2024-03-29 Trending Top 10
 
