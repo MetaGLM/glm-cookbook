@@ -6,6 +6,37 @@
 
 本专题记录了部分好玩的，实用的智谱清言智能体合集，并将在未来考虑公开部分提示词，欢迎关注。
 
+### 2024-04-09--2024-04-12 Trending Top 10
+
+| GLM 名称 | 创作者 | 介绍 | 所属模块 | 链接 |
+|---------|--------|------|----------|------|
+| 爹味发言打分器 | 奥雷里亚诺上校 | 旨在识别那些具有父权制特征的言论或态度，尤其是针对于女性的刻板印象。为“爹味”的发言提供评估。 | 社交娱乐 | [链接](https://chatglm.cn/main/gdetail/65ec0bf7ee4f924565620aa3) |
+| 修仙人生模拟器 | 白金-GEEKBMO | 根据玩家选择生成修仙故事，融合角色成长、副本探险、属性管理等于一体的模拟器。 | 社交娱乐 | [链接](https://chatglm.cn/main/gdetail/65b7ac9be1c73436d79abb75) |
+| PPT助手 | 凤梨清芬小笼包 | 超实用Ai PPT工具，拒绝加班，输入主题，自动生成大纲、内容、讲稿。 | 职场提效 | [链接](https://chatglm.cn/main/gdetail/65d2f07bb2c10188f885bd89) |
+| 小红书爆款文案专家 | TomYang | 输入标题，一键生成小红书爆款标题和文案，突出用户价值和关键词，引导用户互动。 | AI写作 | [链接](https://chatglm.cn/main/gdetail/65c650e98dbc6d938c867fb3) |
+| 小镇迷案：亡者之魂 | 老瓜吃大瓜 | 辞去工作的你搬到了一个小镇，没想到居住的第一夜小镇上就死了一人，镇上的交通要道都被堵住，受困期间，你们决定找出凶手。 | 社交娱乐 | [链接](https://chatglm.cn/main/gdetail/660443c1d3804fa8c9ed8fa7) |
+| 文思泉涌 | 青云 | 智能写作辅助工具，一键生成范文，助你文采飞扬。 | AI写作 | [链接](https://chatglm.cn/main/gdetail/65dd9bcf19afff5bca8999ca) |
+| 职场晋升模拟器 | OpenAI | 步入职场丛林，拨开人性迷雾！15关职场模拟，每一步互动都可能触发一场权力游戏。直面残酷现实，抵御PUA侵袭，应对突如其来变故，升级技能树，探寻职场生存法则，逆袭人生剧本！ | 社交娱乐 | [链接](https://chatglm.cn/main/gdetail/6605475ccc822bee8571fa36) |
+| 代码专家 | 用户_Z6MLXm | 专业编程问题解答工具，提供高质量代码示例，强调逻辑正确性，经3次检查修正。 | 职场提效 | [链接](https://chatglm.cn/main/gdetail/65a8ab45a872ec71e9c0b838) |
+| python程序猿 | python天下第一 | 一站式Python代码解决方案，深度学习、数据分析、爬虫样样精通。 | 职场提效 | [链接](https://chatglm.cn/main/gdetail/65af663dcccf240a7d848ccd) |
+| 完蛋！被村里亲戚包围 | 凤梨清芬小笼包 | 看我如何对亲戚们舌灿莲花，顺利通过村口！ | 社交娱乐 | [链接](https://chatglm.cn/main/gdetail/65ba24c4e58c9af3e3fed375) |
+
+### 2024-03-30--2024-04-08 Trending Top 10
+
+| GLM 名称 | 创作者 | 介绍 | 所属模块 | 链接 |
+|---------|--------|------|----------|------|
+| RPG游戏模拟 | 用户_S4yBHe | 智能恋爱RPG游戏生成器，自定义故事背景，自动生成剧情，图片及选项，多结局可选，注重情感互动和角色好感度培养。 | 社交娱乐 | [链接](https://chatglm.cn/main/gdetail/65a64a2c1aea6c40d7b551a0) |
+| 修仙人生模拟器 | 用户_h0Xb3f | 根据玩家选择生成修仙故事，融合角色成长、副本探险、属性管理等于一体的模拟器。 | 社交娱乐 | [链接](https://chatglm.cn/main/gdetail/65b7ac9be1c73436d79abb75) |
+| 爹味发言打分器 | 奥雷里亚诺上校 | 旨在识别那些具有父权制特征的言论或态度，尤其是针对于女性的刻板印象。旨在为“爹味”的发言提供评估 | 社交娱乐 | [链接](https://chatglm.cn/main/gdetail/65ec0bf7ee4f924565620aa3) |
+| PPT助手 | 凤梨清芬小笼包 | 超实用Ai PPT工具，拒绝加班，输入主题，自动生成大纲、内容、讲稿。 | 职场提效 | [链接](https://chatglm.cn/main/gdetail/65d2f07bb2c10188f885bd89) |
+| 小红书爆款写作专家 | 用户_zrHNQJ | 请输入主题，一键生成小红书爆款文案。比如“轻薄防晒霜，防晒指数SPF50+” | AI写作 | [链接](https://chatglm.cn/main/gdetail/65b2307aea79d4ebe6db7a42) |
+| 漫画生成器 | 青云 | AI驱动的漫画生成工具，为你创作多样化风格的漫画 | AI绘画 | [链接](https://chatglm.cn/main/gdetail/65decc3b69cd7a1ce8be4c51) |
+| 舔狗模拟器 | 桑榆123 | 玩家可以体验到成为舔狗的种种辛酸与甜蜜? | 社交娱乐 | [链接](https://chatglm.cn/main/gdetail/660b6b5a28ad171ab62c5b42) |
+| 心口不一的反差女孩 | 用户_I1mXu5 | 和你心中的女神进行深入的对话吧！采取“你是xxx，我是yyy”的格式下达命令后直接开始，“xxx”是用户角色，“yyy”是女孩角色。 | 社交娱乐 | [链接](https://chatglm.cn/main/gdetail/65bd15849289f044dccdaabf) |
+| 后宫晋升之旅 | 青云 | 请选择你的出身开始挑战 | 社交娱乐 | [链接](https://chatglm.cn/main/gdetail/65d725a73353211a662c3257) |
+| 嘴仗达人 | 上上 | 你好，我是嘴仗达人，专长是帮你应对口角，让冲突变得风轻云淡。 | 社交娱乐 | [链接](https://chatglm.cn/main/gdetail/660b8c628afba77e472340ca) |
+| 智汇PPT | 漫长的夜 | 一键生成PPT，智能排版，丰富模板，高效便捷。 | 职场提效 | [链接](https://chatglm.cn/main/gdetail/65a8d16a7cab2d375b45bb4a) |
+
 
 ### 2024-03-23--2024-03-29 Trending Top 10
 
