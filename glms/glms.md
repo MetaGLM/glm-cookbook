@@ -6,6 +6,21 @@
 
 本专题记录了部分好玩的，实用的智谱清言智能体合集，并将在未来考虑公开部分提示词，欢迎关注。
 
+### 2024-04-13--2024-04-19 Trending Top 10
+
+| GLM 名称 | 创作者 | 介绍 | 所属模块 | 链接 |
+|---------|--------|------|----------|------|
+| 修仙人生模拟器 | 白金-GEEKBMO | 根据玩家选择生成修仙故事，融合角色成长、副本探险、属性管理等于一体的模拟器。 | 社交娱乐 | [链接](https://chatglm.cn/main/gdetail/65b7ac9be1c73436d79abb75) |
+| PPT助手 | 凤梨清芬小笼包 | 超实用Ai PPT工具，拒绝加班，输入主题，自动生成大纲、内容、讲稿。 | 职场提效 | [链接](https://chatglm.cn/main/gdetail/65d2f07bb2c10188f885bd89) |
+| 文章改写 | 多拉格尼尔 | 专业文本改写工具，改变文章语气、风格或结构，保持内容原意。 | AI写作 | [链接](https://chatglm.cn/main/gdetail/65bb3041e17f43f1782941d8) |
+| 犯罪之谜侦探 | 彪 | 我以为我可以掌控一切，却没想到最后自己成了棋子，在这个城市，没有永远的朋友，也没有永远的敌人。 | 社交娱乐 | [链接](https://chatglm.cn/main/gdetail/6615fbd84f4b0d4aa85689e5) |
+| 小说润色 | 凤梨清芬小笼包 | 定制版ChatGLM，专注于创作小说，擅长情节构建、角色塑造和描述性叙述。 | AI写作 | [链接](https://chatglm.cn/main/gdetail/65d30c8631a57a9ff62b5b8e) |
+| 朋友圈文案大师 | 青云 | 专业打造朋友圈文案，内容真挚有趣。 | AI写作 | [链接](https://chatglm.cn/main/gdetail/65e18c53ff63367aa411ab98) |
+| 模拟人生 | 萤火 | 不想玩可以输入“自动”哦 | 社交娱乐 | [链接](https://chatglm.cn/main/gdetail/66123d2e50820335a82e9b6b) |
+| 表情包斗图启动！ | 凤梨清芬小笼包 | 全服最会发表情包的小智能体，聊天会上瘾！ | 社交娱乐 | [链接](https://chatglm.cn/main/gdetail/6614e78423ef22f2e62eeb28) |
+| 专业PPT大师 | TomYang | 一键生成精美PPT，让您的演讲更生动，高效助力职场沟通！ | 职场提效 | [链接](https://chatglm.cn/main/gdetail/65e9edcdeb7077491dd620d3) |
+| Prompt优化精灵 | 安笛杨 | 智能优化Prompt，一键定制您的AI助手。 | 职场提效 | [链接](https://chatglm.cn/main/gdetail/65b73c4179e9b94fd54f545a) |
+
 ### 2024-04-09--2024-04-12 Trending Top 10
 
 | GLM 名称 | 创作者 | 介绍 | 所属模块 | 链接 |
