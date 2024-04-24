@@ -12,7 +12,7 @@ Here, you will find rich **code examples 👨**,**Practical Guide 🗺** And **r
 easily master the use of GLM API!
 
 ## Recent Update 🔥
-
++ 🔥 2024-04-23: GLM-4 now supports access using OpenAI SDK, greatly reducing development replacement costs!
 + 🔥 2024-03-16: The warehouse has started to be updated [Zhipu Qingyan](/Users/zr/Code/glm-cookbook/glms) Basic
   developer teaching document, welcome to experience it!
 + 🔥 2024-03-06: The organization where this Repos is
