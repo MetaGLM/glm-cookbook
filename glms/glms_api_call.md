@@ -11,6 +11,7 @@
 
 ![API KEY](https://raw.githubusercontent.com/MetaGLM/glm-cookbook/main/glms/asset/glms_api/1.png)
 
+您需要记录 `Key` 和 `Secret`，以便后续调用API使用。
 
 ## 2. 获取自己的智能体ID
 
@@ -18,13 +19,13 @@
 
 ![GLMs ID](https://raw.githubusercontent.com/MetaGLM/glm-cookbook/main/glms/asset/glms_api/2.png)
 
-在这个案例中，`65f3dab425fab01c6821d461`是您的智能体ID。
+在这个案例中，`65f3dab425fab01c6821d461` 是这个智能体的智能体ID。
 
 虽然您可以在网页端访问他人的GLMs，但是，您无法通过API调用他人的智能体，仅仅只能调用自己的智能体。
 
 ## 3. 使用API Key 调用自己的GLMs
 
-在这里，我们将使用 Python 代码来调用自己的GLMs。我们将会为大家提供简单的示例代码，您可以参考[智谱清言 智能体 API 调用示例](api)中的代码来进行调用。
+在这里，我们将使用 Python 代码来调用自己的GLMs。我们将会为大家提供简单的示例代码，您可以参考 [智能体API调用代码示例](api) 中的代码来进行调用。也可以访问 [技术文档](https://zhipu-ai.feishu.cn/wiki/X8ykw4IXpieCOxkYxbrcxT9vn5f) 查看更多接口信息。
 
 
 ## 4. 查看自己的统计用量
