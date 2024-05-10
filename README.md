@@ -10,9 +10,10 @@
 在这里，你会发现丰富的 **代码示例👨‍**、**实用指南🗺**️ 以及 **资源链接🔗**，或许能帮助你轻松掌握 GLM API 的使用！
 
 ## 更新情况 🔥
++ 🔥 2024-05-10: GLMs 智能体API基础调用教程更新, 您可以在 [这里](glms/glms_api_call.md) 查看教程。
 + 🔥 2024-04-28: ZhipuAI Pyton SDK 更新，请您更新SDK以适配最新教程。
 + 🔥 2024-04-23: GLM-4 已支持使用 OpenAI SDK 接入，大幅降低了开发替换成本！
-+ 🔥 2024-03-18: 仓库开始更新 [智谱清言](/Users/zr/Code/glm-cookbook/glms) 基础开发者教学文档，基础提示词文档 和 智能体文档 已经在 [技术文档](https://zhipu-ai.feishu.cn/wiki/SPyFwjSI7iOCoCksq2sc3Eb7nXd) 推出，欢迎体验和留言，我们将继续快速迭代！
++ 🔥 2024-03-18: 仓库开始更新 [智谱清言](glms) 基础开发者教学文档，基础提示词文档 和 智能体文档 已经在 [技术文档](https://zhipu-ai.feishu.cn/wiki/SPyFwjSI7iOCoCksq2sc3Eb7nXd) 推出，欢迎体验和留言，我们将继续快速迭代！
 + 🔥 2024-03-06: 仓库所在组织 [MetaGLM](https://github.com/MetaGLM) 更新了4门语言 (Python, Java,C#,Node.js)
   的SDK，欢迎提出意见和对项目进行PR！
 
