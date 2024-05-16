@@ -10,12 +10,29 @@
 在这里，你会发现丰富的 **代码示例👨‍**、**实用指南🗺**️ 以及 **资源链接🔗**，或许能帮助你轻松掌握 GLM API 的使用！
 
 ## 更新情况 🔥
+
 + 🔥 2024-05-10: GLMs 智能体API基础调用教程更新, 您可以在 [这里](glms/glms_api_call.md) 查看教程。
 + 🔥 2024-04-28: ZhipuAI Pyton SDK 更新，请您更新SDK以适配最新教程。
 + 🔥 2024-04-23: GLM-4 已支持使用 OpenAI SDK 接入，大幅降低了开发替换成本！
-+ 🔥 2024-03-18: 仓库开始更新 [智谱清言](glms) 基础开发者教学文档，基础提示词文档 和 智能体文档 已经在 [技术文档](https://zhipu-ai.feishu.cn/wiki/SPyFwjSI7iOCoCksq2sc3Eb7nXd) 推出，欢迎体验和留言，我们将继续快速迭代！
++ 🔥 2024-03-18: 仓库开始更新 [智谱清言](glms) 基础开发者教学文档，基础提示词文档 和 智能体文档
+  已经在 [技术文档](https://zhipu-ai.feishu.cn/wiki/SPyFwjSI7iOCoCksq2sc3Eb7nXd) 推出，欢迎体验和留言，我们将继续快速迭代！
 + 🔥 2024-03-06: 仓库所在组织 [MetaGLM](https://github.com/MetaGLM) 更新了4门语言 (Python, Java,C#,Node.js)
   的SDK，欢迎提出意见和对项目进行PR！
+
+## 精选文章 💫
+
+以下表格展现了本教程中有精选的 demo 文章地址，开发者可以在这里寻找到一些经典的案例和教程。
+
+| 文章标题                      | 链接                                                       |
+|---------------------------|----------------------------------------------------------|
+| 智谱清言智能体 API 调用指南          | [查看教程](glms/glms_api_call.md)                            |
+| 智谱清言智能体调用第三方 API 使用指南     | [查看教程](glms/glms_custom_api_plugin.md)                   |
+| 多角色模拟 Agent系统             | [查看教程](demo/agent/glm_multi_role_division.ipynb)         |
+| Agent 数据集制作手册             | [查看教程](demo/generate_agent_dataset)                      |
+| 信息抽取示例                    | [查看教程](demo/glm_infomation_extraction.ipynb)             |
+| CSV 数据分析                  | [查看教程](demo/glm_csv_data_analysis.ipynb)                 |
+| OCR + GLM 实现扫描文件对话        | [查看教程](demo/ppocr_glm.ipynb)                             |
+| 梦境之旅心理体验                  | [查看教程](demo/interpretationo_dreams)                      |
 
 ## 快速开始 🚀
 
@@ -29,8 +46,6 @@
 ```bash
 pip install -r requirements.txt
 ```
-
-3. 对了，我一般使用 ✅GLM4 来完成任务，我也推荐你使用这个模型哦！
 
 ## 仓库文件 📂
 
