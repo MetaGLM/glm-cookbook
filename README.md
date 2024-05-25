@@ -11,6 +11,7 @@
 
 ## 更新情况 🔥
 
++ 🔥 2024-05-25: Batch API 教程更新，您可以在[这里](basic/glm_batch_api.ipynb) 查看教程。
 + 🔥 2024-05-10: GLMs 智能体API基础调用教程更新, 您可以在 [这里](glms/glms_api_call.md) 查看教程。
 + 🔥 2024-04-28: ZhipuAI Pyton SDK 更新，请您更新SDK以适配最新教程。
 + 🔥 2024-04-23: GLM-4 已支持使用 OpenAI SDK 接入，大幅降低了开发替换成本！
