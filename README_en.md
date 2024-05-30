@@ -12,6 +12,7 @@ Here, you will find rich **code examples 👨**,**Practical Guide 🗺** And **r
 easily master the use of GLM API!
 
 ## Recent Update 🔥
++ 🔥 2024-05-25: Batch API tutorial updated, you can view the tutorial [Here](basic/glm_batch_api.ipynb).
 + 🔥 2024-05-10: GLMs API basic call tutorial updated. Check [Here](glms/glms_api_call.md) to view the tutorial.
 + 🔥 2024-04-28: ZhipuAI Pyton SDK updated, please update the SDK to adapt to the latest tutorial.
 + 🔥 2024-04-23: GLM-4 now supports access using OpenAI SDK, greatly reducing development replacement costs!
