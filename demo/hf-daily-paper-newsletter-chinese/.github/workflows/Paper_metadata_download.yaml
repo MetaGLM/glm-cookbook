@@ -1,0 +1,60 @@
+name: Paper_metadata_download
+# 工作流的名称
+
+on:
+  schedule:
+    # 定期运行触发器，这里设置为每天UTC时间的17点，对应北京时间次日凌晨1点
+    - cron: '0 17 * * *'
+  # 也允许手动触发这个工作流
+  workflow_dispatch:
+
+jobs:
+  build:
+    # 工作流中的单个任务，这里只有一个名为“build”的任务
+    runs-on: ubuntu-latest
+    # 运行任务的服务器环境，这里使用最新的Ubuntu
+
+    strategy:
+      matrix:
+        python-version: [3.8]
+        # 定义一个策略，这里使用Python 3.8版本
+
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        # 设置token用于推送权限
+        token: ${{ secrets.GITHUB_TOKEN }}
+      # 使用GitHub Actions的checkout动作来检出仓库代码，并提供一个token用于后续的推送操作
+
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v2
+      with:
+        python-version: ${{ matrix.python-version }}
+      # 设置Python环境，使用matrix中定义的版本
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install requests
+      # 安装依赖项，首先升级pip，然后安装requests库
+
+    - name: Run tests
+      run: |
+        python -m unittest Paper_metadata_download.py
+      # 运行单元测试，调用unittest模块来执行Paper_metadata_download.py脚本
+
+    - name: Commit changes
+      run: |
+        git config --global user.name "King guys"
+        git config --global user.email "68528929+2404589803@users.noreply.github.com"
+        git add .
+        git commit -m "每日论文推送"
+      # 提交更改，设置Git的用户信息，将所有更改添加到暂存区，并提交一个带有消息的提交
+
+    - name: Push changes
+      run: |
+        git push
+      # 推送更改到远程仓库，使用之前设置的token进行身份验证
+
+
+
