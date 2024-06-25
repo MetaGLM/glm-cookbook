@@ -11,7 +11,7 @@
 
 ## 更新情况 🔥
 
-+ 🔥🔥 2024-06-25: 快速从 OpenAI API 切换成 GLM API 模型的适配[教程](basic/openai2zhipu.ipynb) 已经推出, 欢迎查看。
++ 🔥🔥 2024-06-25: 快速从 OpenAI API 切换成 GLM API 模型的适配 [教程](basic/openai2zhipu.ipynb) 已经推出, 欢迎查看。
 + 🔥 2024-05-25: Batch API 教程更新，您可以在[这里](basic/glm_batch_api.ipynb) 查看教程。
 + 🔥 2024-05-10: GLMs 智能体API基础调用教程更新, 您可以在 [这里](glms/glms_api_call.md) 查看教程。
 + 🔥 2024-04-28: ZhipuAI Pyton SDK 更新，请您更新SDK以适配最新教程。
@@ -40,7 +40,7 @@
 ## 快速开始 🚀
 
 1. 要开始使用GLM API，你首先需要一个 GLM API 账户和相应的 API 密钥。
-   如果你还没有账户，可以在 [这里](https://open.bigmodel.cn/) 免费注册。
+   如果你还没有账户，可以在 [这里](https://zhipuaishengchan.datasink.sensorsdata.cn/t/Q) 免费注册。
 
 2. 我的代码以 **Python, Jupyter Note** 为主，但同样的概念也可以应用于其他编程语言（不过这可能要你们自己实现咯）。
    这些代码示例旨在帮助我（或许也能对你）如何高效地使用 GLM API 完成常见的简单任务。 推荐使用`Python 3.9 - 3.12`
