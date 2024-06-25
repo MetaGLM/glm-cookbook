@@ -1,0 +1,50 @@
+name: HF-day-paper+GLMs-api
+
+on:
+  schedule:
+    # 每天北京时间凌晨3点（对应UTC时间前一天的19点）运行脚本
+    - cron: '0 19 * * *'
+  workflow_dispatch:
+
+jobs:
+  process_arxiv:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install openai tqdm
+
+    - name: Run processing script
+      env:
+        OPENAI_API_BASE: ${{ secrets.OPENAI_API_BASE }}
+        OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      run: |
+        python HF-day-paper+GLMs-api.py
+
+    - name: Commit changes
+      run: |
+        git config --global user.name 'King guys'
+        git config --global user.email '68528929+2404589803@users.noreply.github.com'
+        git add .
+        git commit -m "智谱清言智能体api返回结果文件推送" || echo "No changes to commit"
+
+    - name: Upload result file
+      uses: actions/upload-artifact@v3
+      with:
+        name: processed-results
+        path: ./*_HF_glms_api_clean.json
+
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}

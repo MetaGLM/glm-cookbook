@@ -35,7 +35,8 @@
 | CSV 数据分析                  | [查看教程](demo/glm_csv_data_analysis.ipynb)                 |
 | OCR + GLM 实现扫描文件对话        | [查看教程](demo/ppocr_glm.ipynb)                             |
 | 梦境之旅心理体验                  | [查看教程](demo/interpretationo_dreams)                      |
-
+| 梦境之旅心理体验                  | [查看教程](demo/interpretationo_dreams)                      |
+| hugging face每日论文解读          | [查看教程](demo/hf-daily-paper-newsletter-chinese)                      |
 ## 快速开始 🚀
 
 1. 要开始使用GLM API，你首先需要一个 GLM API 账户和相应的 API 密钥。
