@@ -1,4 +1,4 @@
 pandas>=2.2.0
 PyYAML>=6.0.1
 textract>=1.6.5
-langchain>=0.1.5
+langchain>=0.2.1
