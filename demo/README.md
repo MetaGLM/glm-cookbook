@@ -9,6 +9,9 @@ Issue。
 2. [使用 GLM-4 模拟不同的角色完成客户咨询任务](agent/glm_multi_role_division.ipynb)
 3. [使用 GLM-4 作为模型底座运行微软的 TaskWeaver Agent 框架](agent/glm_taskweaver.ipynb)
 4. [使用 GLM-4 完成心理分析活动](interpretationo_dreams%2FREADME.md)
+5. [使用 GLM-4 模型完成 搜索问答的新闻抓取任务](glm_qa_search_api.ipynb)
+6. [使用 GLM-4 模型完成 OCR 识别](ppocr_glm.ipynb)
+7. 
 
 ## 安装对应的依赖
 
