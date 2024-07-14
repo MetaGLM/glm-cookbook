@@ -11,7 +11,9 @@
 
 ## 更新情况 🔥
 
-+ 🔥🔥 2024-06-25: 快速从 OpenAI API 切换成 GLM API 模型的适配 [教程](basic/openai2zhipu.ipynb) 已经推出, 欢迎查看。
+
++ 🔥 2024-07-13: 我们更新了 [LangChain-GLM](https://github.com/MetaGLM/langchain-glm)框架的[简单使用手册](glm_langchain_glm_framework.ipynb)。
++ 🔥 2024-06-25: 我们更新了快速从 OpenAI API 切换成 GLM API 模型的适配 [教程](basic/openai2zhipu.ipynb), 欢迎查看。
 + 🔥 2024-05-25: Batch API 教程更新，您可以在[这里](basic/glm_batch_api.ipynb) 查看教程。
 + 🔥 2024-05-10: GLMs 智能体API基础调用教程更新, 您可以在 [这里](glms/glms_api_call.md) 查看教程。
 + 🔥 2024-04-28: ZhipuAI Pyton SDK 更新，请您更新SDK以适配最新教程。
