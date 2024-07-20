@@ -12,9 +12,10 @@
 6. [Embedding API 的简单使用](glm_embedding_pysdk.ipynb)
 7. [使用智谱AI自带的知识库工具来完成 retrieval 工作](glm_retrieval.ipynb)
 8. [使用 Batch API 为您节约更多的推理费用](glm_batch_api.ipynb)
+9. [使用超拟人大模型](character_glm_pysdk.ipynb)
 
 应用框架：
 
-9. [使用Langchain来调用 GLM API](glm_langchain.ipynb)
+1. [使用Langchain来调用 GLM API](glm_langchain.ipynb)
 
 我将会不断补充新的基础内容，确保更新 GLM 的API 更新，以及新的功能。

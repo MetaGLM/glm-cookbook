@@ -11,9 +11,10 @@
 
 ## 更新情况 🔥
 
-
-+ 🔥 2024-07-13: 我们更新了 [LangChain-GLM](https://github.com/MetaGLM/langchain-glm)框架的[简单使用手册](glm_langchain_glm_framework.ipynb)。
-+ 🔥 2024-06-25: 我们更新了快速从 OpenAI API 切换成 GLM API 模型的适配 [教程](basic/openai2zhipu.ipynb), 欢迎查看。
++ 🔥 2024-07-20: 本CookBook更新了 [CharacterGLM & Emohaa 调用教程](basic/character_glm_pysdk.ipynb) 和 [glm-4v小目标识别手册](vision/glm-v_small_text_recognition.ipynb)。
++ 🔥 2024-07-13: 本CookBook更新了 [LangChain-GLM](https://github.com/MetaGLM/langchain-glm)
+  框架的[简单使用手册](glm_langchain_glm_framework.ipynb)。
++ 🔥 2024-06-25: 本CookBook更新了快速从 OpenAI API 切换成 GLM API 模型的适配 [教程](basic/openai2zhipu.ipynb), 欢迎查看。
 + 🔥 2024-05-25: Batch API 教程更新，您可以在[这里](basic/glm_batch_api.ipynb) 查看教程。
 + 🔥 2024-05-10: GLMs 智能体API基础调用教程更新, 您可以在 [这里](glms/glms_api_call.md) 查看教程。
 + 🔥 2024-04-28: ZhipuAI Pyton SDK 更新，请您更新SDK以适配最新教程。
@@ -27,18 +28,19 @@
 
 以下表格展现了本教程中有精选的 demo 文章地址，开发者可以在这里寻找到一些经典的案例和教程。
 
-| 文章标题                      | 链接                                                       |
-|---------------------------|----------------------------------------------------------|
-| 智谱清言智能体 API 调用指南          | [查看教程](glms/glms_api_call.md)                            |
-| 智谱清言智能体调用第三方 API 使用指南     | [查看教程](glms/glms_custom_api_plugin.md)                   |
-| 多角色模拟 Agent系统             | [查看教程](demo/agent/glm_multi_role_division.ipynb)         |
-| Agent 数据集制作手册             | [查看教程](demo/generate_agent_dataset)                      |
-| 信息抽取示例                    | [查看教程](demo/glm_infomation_extraction.ipynb)             |
-| CSV 数据分析                  | [查看教程](demo/glm_csv_data_analysis.ipynb)                 |
-| OCR + GLM 实现扫描文件对话        | [查看教程](demo/ppocr_glm.ipynb)                             |
-| 梦境之旅心理体验                  | [查看教程](demo/interpretationo_dreams)                      |
-| 梦境之旅心理体验                  | [查看教程](demo/interpretationo_dreams)                      |
-| hugging face每日论文解读          | [查看教程](demo/hf-daily-paper-newsletter-chinese)                      |
+| 文章标题                  | 链接                                                |
+|-----------------------|---------------------------------------------------|
+| 智谱清言智能体 API 调用指南      | [查看教程](glms/glms_api_call.md)                     |
+| 智谱清言智能体调用第三方 API 使用指南 | [查看教程](glms/glms_custom_api_plugin.md)            |
+| GLM-4V 小目标识别          | [查看教程](vision/glm-v_small_text_recognition.ipynb) |
+| 多角色模拟 Agent系统         | [查看教程](demo/agent/glm_multi_role_division.ipynb)  |
+| Agent 数据集制作手册         | [查看教程](demo/generate_agent_dataset)               |
+| 信息抽取示例                | [查看教程](demo/glm_infomation_extraction.ipynb)      |
+| CSV 数据分析              | [查看教程](demo/glm_csv_data_analysis.ipynb)          |
+| OCR + GLM 实现扫描文件对话    | [查看教程](demo/ppocr_glm.ipynb)                      |
+| 梦境之旅心理体验              | [查看教程](demo/interpretationo_dreams)               |
+| hugging face 每日论文解读   | [查看教程](demo/hf-daily-paper-newsletter-chinese)    |
+
 ## 快速开始 🚀
 
 1. 要开始使用GLM API，你首先需要一个 GLM API 账户和相应的 API 密钥。
