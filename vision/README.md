@@ -10,6 +10,7 @@
 3. [使用 GLM-4V 模型对图表进行理解和数据分析](glm-v_chart_analysis_cot.ipynb)
 4. [使用 CogView-3 进行简单的绘图](cogview_pysdk.ipynb)
 5. [GLM-4V 在小目标和复杂目标的识别](glm-v_small_text_recognition.ipynb)
+6. [使用 CogVideoX 完成视频生成工作](cogvideox_pysdk.ipynb)
 
 
 ## 安装对应的依赖
