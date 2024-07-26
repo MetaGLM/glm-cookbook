@@ -12,7 +12,7 @@ Here, you will find rich **code examples 👨**,**Practical Guide 🗺** And **r
 easily master the use of GLM API!
 
 ## Recent Update 🔥
-
++ 🔥 2024-07-26: This CookBook updates the [CogVideoX video generation model call tutorial](vision/cogvideox_pysdk.ipynb), welcome to check it out.
 + 🔥 2024-07-20: This CookBook updates the [CharacterGLM & Emohaa call tutorial](basic/character_glm_pysdk.ipynb) and [glm-4v small object recognition manual](vision/glm-v_small_text_recognition.ipynb).
 + 🔥 2024-07-13: This CookBook updates the [Simple usage manual](glm_langchain_glm_framework.ipynb) of the [LangChain-GLM](https://github.com/MetaGLM/langchain-glm)
 framework.
