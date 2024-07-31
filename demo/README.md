@@ -11,7 +11,6 @@ Issue。
 4. [使用 GLM-4 完成心理分析活动](interpretationo_dreams%2FREADME.md)
 5. [使用 GLM-4 模型完成 搜索问答的新闻抓取任务](glm_qa_search_api.ipynb)
 6. [使用 GLM-4 模型完成 OCR 识别](ppocr_glm.ipynb)
-7. 
 
 ## 安装对应的依赖
 
