@@ -13,6 +13,7 @@
 7. [使用智谱AI自带的知识库工具来完成 retrieval 工作](glm_retrieval.ipynb)
 8. [使用 Batch API 为您节约更多的推理费用](glm_batch_api.ipynb)
 9. [使用超拟人大模型](character_glm_pysdk.ipynb)
+10. [使用CodeGeex 大模型辅助代码工作](codegeex.ipynb)
 
 应用框架：
 
