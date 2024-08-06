@@ -1,0 +1,1222 @@
+Microsoft Build
+May 21-23, 2024
+Session: KEY01
+Speakers: Satya Nadella, Seth, Melissa Higgason, Shawn Jansepar, Sal Khan, Floris Horsman, Josh Loebner, Matthew Stewart, Cathelijne Denekamp, Ashley Haynes-Gaspar, Kerrie Davis, Ryan Asdourian, Delvin Holman, Pavan Davuluri, David Reese, Mike Zahigian, Arleen Paulino, Kevin Scott, Richard Kostro, Nicholas Becker, Chloe Eberhardt, Kristy Jeansonne, Brian Jeansonne, Blair Casey, Emily Kornman, Jennifer, Sam Altman
+Speaker 1: I think that our industry has to have the common vision.
+Speaker 2: It was a time that connected us to incredible things.
+Speaker 1: My name for this vision is information at your fingertips.
+Three decades later, we find ourselves in a new era.
+One where access to information becomes access to expertise.
+From the farm to the lab, from the board room, to the classroom.
+This new generation of AI is for everyone everywhere.
+Now, anyone can save time with a personal assistant.
+Speaker 3: We get a Copilot, I'm saving about 50 percent of time, and that's time that I can use to do other innovative things.
+Speaker 2: Anyone can access a personal tutor to learn new skills.
+Speaker 4: We got to learn about banking: How to apply for a loan, how to save money.
+We learned so much.
+Speaker 5: I think the technology has the potential to completely reimagine the way every single student learns in the world.
+Speaker 2: This is a new way to analyze with a personal coach.
+Speaker 6: We're going to be able to have not only productivity gains, but insights served to us near real-time.
+Speaker 7: Generative AI I can learn from the data to help improve the farmer productivity.
+Speaker 2: AI is unlocking creativity for us all.
+Speaker 8: Descriptions are so detailed in my imagination, I can paint the arch.
+Speaker 9: Now teachers are free to create lesson plans according to our needs.
+Speaker 2: With expertise at your fingertips, you can build what matters.
+[MUSIC] Welcome to the age of AI transformation.
+[MUSIC] (applause) 
+Satya Nadella: Good morning.
+It's fantastic to be back here at Microsoft Build.
+Welcome to everyone here and joining us on the web.
+You know, developer conferences are always most exciting, most fun when there's these fundamental changes that you can sense in the air.
+I've marked all my adult life by coming to PDCs and Builds for the last three decades, I still remember distinctly the first time Win32 was discussed, I guess it was '91, .net, Azure--these are moments that I've marked my life with.
+It just feels like we're yet again at a moment like that.
+It's just that the scale, the scope is so much deeper, so much broader this time around.
+Every layer of this tech stack is changing.
+Everything from the power draw and the cooling layer of the data center to the NPUs of the Edge are being shaped by these new workloads, these distributed synchronous data parallel workloads are reshaping every layer of the tech stack.
+But if you think about even going all the way back to the beginning of modern computing, say, 70 years ago, there have been two real dreams we've had.
+First is, can computers understand us instead of us having to understand computers?
+Second, in a world where we have this ever increasing information that are of people, places and things.
+As you digitize more artifacts on people, places and things and you have more information, can computers help us reason, plan, and act more effectively on all that information?
+Those are the two dreams that we've had for the last 70 plus years and here we are.
+I think that we have real breakthroughs on both fronts.
+The core underlying force, one of the questions I always ask myself is like, Okay, this is great.
+This is like maybe the golden age of systems.
+What's really driving it?
+I always come back to the scaling laws.
+Just like Moore's law helped drive the information revolution.
+The scaling laws of DNNs are really, along with the model architecture, interesting ways to use data, generate data are really driving this intelligence revolution.
+You could say Moore's law was probably more stable in the sense that it was scaling at maybe 15 months, 18 months.
+We now have these things that are scaling every six months or doubling every six months.
+What we have, though, with the effect of the scaling laws is a new natural user interface.
+That's multimodel, that means supports text, speech, images, video, as input and output.
+We have memory that retains important context, recalls both our personal knowledge and data across our apps and devices.
+We have new reasoning and planning capabilities that helps us understand very complex context and complete complex tasks while reducing the cognitive load on us.
+But what stands out for me as I look back at this past year, is how you all, as developers have taken all of these capabilities and applied them, quite frankly, to change the world around us.
+(onscreen URL: aka.ms/BuildAiStories) 
+I'll always remember this moment in January 2023, when I met a rural Indian farmer who was able to reason over some government farm subsidies that he had heard about on television using GPT-3.5 and his voice.
+It was remarkable for me, it just brought home the power of all of this.
+Because a frontier model developed on the West Coast to the United States just a few months earlier, was used by a developer in India to directly improve the life of a rural Indian farmer.
+The rate of diffusion is unlike anything I've seen in my professional career and it's just increasing.
+In fact, earlier this month, I was in Southeast Asia.
+I was in Thailand where I met a developer and I was having a great round table, and he was talking to me about how he's using Phi-3 and GPt-4, and he was using Phi-3 to just optimize all of the things that he was doing with RAG.
+I mean, this is crazy.
+I mean, this is unbelievable.
+It had just launched a few weeks earlier, and I was there in Thailand in Bangkok, listening to a developer, talk about this technology as a real expert on it.
+It's just great to see the democratization force that we love to talk about, but to witness it has just been something.
+This is quite frankly, the impact of why we are in this industry, and it's what gives us, I would say, that deep meaning in our work.
+I want to start though with a very big thank you to every one of you who is really going about bringing about this impact to the world.
+Thank you all so very much.
+(applause) When I think about what progress we've made even since last time we were here at Build, we've built really three platforms.
+The first is Microsoft Copilot, which is your everyday companion.
+It puts knowledge and expertise at your fingertips, helps you act on it, and we built the Copilot stack so that you can build your AI applications and solutions and experiences.
+Just yesterday, we introduced a new category of Copilot+PCs, the fastest AI first PCs ever built.
+All three of these things are exciting platforms, but I want to start with Copilot+PCs.
+We're exposing AI as a first class name space for Windows.
+This week, we are introducing the Windows Copilot Runtime to make Windows the best platform for you to be able to build your AI applications.
+(applause) What Win32 was to graphical user interface, we believe, the Windows Copilot Runtime will free for AI.
+It starts with our Windows Copilot Library, a collection of these ready-to-use local APIs that help you integrate into your new experiences, all of the AI capabilities that we shared yesterday.
+Now, this includes no code integrations for studio effects, things like creative filter, teleprompter, voice focus, and much more.
+But of course, if you want to access these models itself, you can directly call them through APIs.
+We have 40 plus models available out of the box, including Phi-Silica, our newest member of our small language family model which we specifically designed to run locally on your NPUs on Copilot+PCs, bringing that lightning fast local inference to the device.
+The other thing is the Copilot Library also makes it easy for you to incorporate RAG inside of your applications on device data.
+It gives you the right tools to build a vector store within your app.
+It enables you to do that semantic search that you saw with recall.
+But now you can in your own application construct these prompts using local data for RAG applications.
+Now, I'm so thrilled to announce as well today that we will be natively supporting PyTorch and new WebNN framework through Windows DirectML.
+(applause) Native PyTorch support means thousands of OSS models will just work out of the box on Windows, making it easy for you to get started.
+In fact, with WebNN, web developers finally have a web-native machine learning framework that gives them direct access to both GPUs and NPUs.
+In fact, last night I was playing with it, turning it on in Edge and seeing the WebNN sample code running.
+It's just so cool to see it now, use even the NPUs.
+Both PyTorch and WebNN are available in developer preview today.
+Let's take a look.
+[MUSIC] (applause) 
+Satya Nadella: These are just one of the many announcements today.
+We are introducing more than 50 plus new products and partnerships to create new opportunity for you.
+We've always been a platform company, and our goal is to build the most complete end-to-end stack from infrastructure to data to tooling to the application extensibility so that you can apply the power of this technology to build your own applications.
+Today, I want to highlight our top news for this event across every layer of this Copilot stack.
+Let's dive right in with infrastructure.
+We have the most complete scalable AI infrastructure that meets your needs in this AI era.
+We're building Azure as the world's computer.
+We have the most comprehensive global infrastructure with more than 60 plus data center regions, more than any other Cloud provider.
+Over the past year, we've expanded our data center regions, and AI capacity from Japan to Mexico, from Spain to Wisconsin.
+We're making our best in class AI infrastructure available everywhere.
+We're doing this with a focus on delivering our Cloud Services sustainability.
+In fact, we're on track to meet our goal to have our data centers powered by 100 percent renewable energy by next year.
+(applause) 
+
+Satya Nadella: We're optimizing power and efficiency across every layer of the stack from the data center to the network.
+Latest datacenter designs are purpose-built for these AI workloads so that we can effectively and responsibly use every megawatt of power to drive down the cost of AI and the power draw.
+We're incorporating advanced data center cooling techniques to fit the thermal profile of the workloads and match it to the environment and the location where it operates.
+At the silicon layer, we are dynamically able to map workloads to the best accelerated AI hardware so that we have the best performance.
+Our custom IO hardware and server designs allow us to provide dramatically faster networking, remote storage, and local storage throughput.
+This end-to-end approach is really helping us get to the unprecedented scale.
+In fact, last November, we announced the most powerful AI simple computer in the Cloud for training using just actually a very small fraction of our Cloud infrastructure.
+Over the past six months, we've added 30 times that supercomputing power to Azure.
+It's crazy to see the scale.
+(applause) 
+Of course, we're not just scaling training fleets, we're scaling our inference fleet around the world, quadrupling the number of countries where Azure AI Services are available today, and it's great to see that.
+(applause) 
+At the heart of our AI infrastructure, are the world's most advanced AI acclerators.
+We offer the most complete selection of AI accelerators, including from NVIDIA and AMD, as well as our own Azure Maia, all dynamically optimized for the workloads.
+That means whether you're using Microsoft Copilot or building your own Copilot apps.
+We ensure that you get the best accelerator performance at the best cost.
+For example, you see this in what has happened with GPT-4.
+It's 12X cheaper and 6X faster since it launched and that's the type of progress you can continue to see the progress as we evolve the system architecture.
+It all starts though, with this very deep partnership with NVIDIA which spans the entirety of the Copilot stack across both all of the hardware innovation as well as the system software innovation.
+(onscreen URL: aka.ms/NVIDIAPartnership) 
+Together, we offer Azure confidential computing on GPUs to really help you protect sensitive data around the AI models end-to-end.
+We're bringing, in fact, the latest H200s to Azure later this year, and we'll be among the first Cloud providers to offer NVIDIA's Blackwell GPUs B100s, as well as GB200 configurations.
+We are continuing to work with them to train and optimize both large language models like GPT-4o, as well as small language models like the Phi-3 family.
+Now, beyond the hardware, we are bringing NVIDIA's key enterprise platform offerings to our Cloud, like the Omniverse Cloud and DGX Cloud to Azure with deep integration with even the broader Microsoft Cloud.
+For example, NVIDIA recently announced that the DGX Cloud integrates natively with Microsoft Fabric, that means you can train those models using DGX Cloud with the full access to Fabric data.
+Omniverse APIs will be available first on Azure for developers to build their industrial AI solutions.
+We're also working with NVIDIA, NIM industry-specific developer services and making them fantastic on Azure so a lot of exciting work with NVIDIA.
+Now, coming to AMD, I'm really excited to share that we are the first Cloud to deliver general availability of VMs based on AMD MI300X AI accelerator.(onscreen URL: aka.ms/AMDPartnership) 
+(applause) It's a big milestone for both AMD and Microsoft.
+We've been working at it for a while, and it's great to see that today as we speak, it offers the best price performance on GPT-4 inference.
+We'll continue to move forward with Azure Maia.
+In fact, our first clusters are live, and soon if you're using Copilot or one of the Azure OpenAI services, some of your prompts will be served using Maia hardware.(onscreen URL: aka.ms/AzureMaia) 
+Now, beyond AI, our end-to-end system's optimization also makes Cloud-native apps and the development of Cloud native apps better.
+Six months ago is when we announced our first general purpose ARM-based compute processor, Microsoft Cobalt.
+Today, I'm really excited to announce the public preview of Cobalt-based VMs.
+(applause) (onscreen URL: aka.ms/AzureCobalt) 
+Cobalt is being used for video processing and permissions management in Microsoft 365 helping power billions of conversations on services like Microsoft Teams already, and we're delivering that same Arms-based performance and efficiencies to many customers, in fact, including Elastic, Mongo, SIEMENS, Snowflake, and Teradata.
+In our recent benchmark data and tests, our Cobalt 100 VMs delivered up to 40 percent better performance than any other generally available Arm-based VM, so we're very, very excited about Cobalt getting into the market.
+Now, let's move up the stack to the foundation models.
+Look, with Azure AI, we offer the broadest selection of frontier and open source models, including LLMs and SLMs, so you can choose the model that makes the most sense for your unique needs and your application needs.
+In fact, more than 50,000 organizations use Azure AI today.
+(applause) It's great momentum, (applause) and it all starts though, with our most strategic and most important partnership with OpenAI.
+(onscreen URL: aka.ms/OpenAI) 
+Just last week, OpenAI announced GPT-4o, their latest multimodal model, which was trained on Azure.
+It's an absolute breakthrough.
+It has text, audio, image and video as input and output.
+It can respond and just have a human-like conversation that's fast and fluid.
+It can even be interrupted mid-sentence.
+GPT-4o is also the top performing model on benchmarks across a variety of modalities, and it's always going to get you to the best answer.
+It has state-of-the-art performance and understanding the information you actually provide in your prompt, because that's really what matters.
+What open I demoed last week?
+I mean, that was just pretty magical stuff and yesterday, we showed how Copilot will leverage GPT-4o.
+In the video, I'm just going to play, notice that you can share your screen or session as a prompt in Copilot and have Copilot help you in whatever it is that you're doing.
+Let's roll the video.
+Speaker 8: Hey Copilot, how's it going?
+Copilot: Hey, I'm doing great.
+It looks like you're about to dive into some Minecraft.
+Ready to build, explore, and maybe dodge a few mobs?
+Speaker 8: Yeah, I'm trying to figure out how to make a sword.
+My son plays this game all the time, and I have no idea what I'm doing.
+Copilot: No worries.
+I'm here to help you impress your son.
+I see you've got a crafting table in front of you, which is a great start.
+To craft a sword, you'll need some materials.
+Can you open your inventory?
+Just press "E" on your keyboard.
+Speaker 8: Yeah.
+Do I have what I need?
+Copilot: Let's see.
+You've got some sticks, perfect for the sword's handle, but it looks like you're missing the material for the blade.
+You can use wood, stone, iron, gold, or diamond.
+Let's start by gathering some wood or stone.
+Shall we head out and find some resources?
+Speaker 8: Yeah, that sounds great.
+Oh, my God.
+What's that?
+Copilot: Oh, no.
+It's a zombie.
+Run.
+You need to get away from it fast.
+Either sprint away or quickly build a tower of blocks straight up to get out of its reach.
+If you can find a shelter or dig into the side of a hill, do it now.
+Just make sure it can't reach you.
+Speaker 8: All right, I think I might be safe now.
+Copilot: Cool.
+That was a close one.
+Great job finding shelter.
+
+Satya Nadella: It's really cool to see that.
+(applause) The magic here is that Copilot is your personal assistant that's helping you with any task, helping you stay, quite frankly, in the flow in the moment, whether it's a game or a document or line of code.
+And as OpenAI innovates, our promise is that we will bring all that innovation to Azure too.
+(onscreen URL: aka.ms/AOAIUpdates) 
+In fact, the same day that OpenAI announced GPT-4o, we made the model available for testing on Azure OpenAI service.
+Today, I'm excited to say that it's generally available on Azure AI.
+(applause) What this means, though, is that now we can have these groundbreaking apps that all of you can build using this capability.
+One of the coolest things is that now any app, any website can essentially be turned into a full multimodal, full duplex conversational canvas.
+Let's take a look.
+Seth: Alright, let me ask the agent here.
+Speaker 10: Hey, Seth, how's it going?
+What can I help you with today?
+Seth: I am fantastic.
+I'm sorry.
+I am in such a hurry.
+I'm going to go on an overnight camping hike or we're camping all this.
+It's going to be dark, cold.
+Should I use these shoes it's the mountains?
+It's probably going to be cold.
+Speaker 10: Hey, no worries.
+Let me take a look.
+Those are the Trek star hiking sandals.
+While they're fantastic for summer hikes and keeping your feet cool, they might not be the best choice for cold.
+Seth: I'm sorry to interrupt you.
+Pick the best thing that I should use, and can you just add it to my cart?
+Just one product.
+Speaker 10: No worries.
+Let's go with the Trek ready hiking boots.
+They're durable, provide great ankle support, and most importantly, they'll keep your feet warm in the cold mountains.
+I'll add them to your cart now.
+Ready for check out?
+Seth: I see that, amazing.
+(applause) 
+Satya Nadella: Seth was in a hurry, but there you go.
+GPD-4o kept up with him.
+It's incredible.
+I really want to thank the OpenAI team for their partnership.
+Really, their responsible approach to innovation, helping our industry move forward.
+Sam will be here, in fact, joining Kevin in a little bit to talk a lot more about what's coming because that's the exciting stuff.
+How do you all sample what comes next?
+We're also bringing lots and lots of other models as well from Cohere and Databricks and Deci, Meta, Mistral, Snowflake, all to Azure AI.
+We want to support the broadest set of models from every country, every language.
+I'm excited to announce, in fact, we're bringing models from Cohere, G-42, NTT DATA, Nixtla, as well as many more as models as services, because that's the way you can easily get to managed AI Sim models and we love open source too.
+(onscreen URL: aka.ms/ModelCatalog) 
+In fact, two years ago, at Build we were the first to partner with Hugging Face, making it simple for you to access the leading open source library with state-of-the-art language models via Azure AI.
+Today, I'm really excited to announce that we're expanding our partnership, bringing more models from Hugging Face with text generation inference with text embedding inference directly into Azure AI Studio.
+(onscreen URL: aka.ms/ExtendedHF) 
+(applause) We're not stopping there.
+We are adding not just large language models, but we're also leading the small language model revolution.
+Our Phi-3 family of SLMs are the most capable and most cost effective.
+They outperform models of the same size or the next size up even across a variety of language, reasoning, coding, as well as math benchmarks.
+If you think about it, by performance to parameter count ratio, it's truly best in class.
+Today we're adding new models to the Phi-3 family, to add even more flexibility across that quality cost curve.
+We're introducing Phi-3 vision, a 4.2 billion parameter multimodal model with language and vision capabilities.(onscreen URL: aka.ms/Phi3) 
+It can be used to reason over real-world images or generate insights and answer questions about images, as you can see right here.
+(applause) We're also making a seven billion parameter, Phi-3 small and a 14 billion parameter, Phi-3 medium models available.
+With Phi, you can build apps that span the web, your Android, iOS, Windows, and the Edge.
+They can take advantage of local hardware when available, and fall back on the Cloud when not, simplifying really all of what we as developers have to do to support multiple platforms using one AI model.
+Now, it's just awesome to see how many developers are already using Phi-3 to do incredible things from amity solutions, the Thai company that I mentioned earlier, the ITC, which has been built a copilot for Indian farmers to ask questions about their crops, epic in healthcare, which is now using Phi to summarize complex patient histories more quickly and efficiently.
+Another very, very cool use case is in education.
+Today, I'm very thrilled to announce a new partnership with Khan Academy.(onscreen URL: aka.ms/KhanAcademy) 
+We'll be working together to use Phi-3 to make math tutoring more accessible.
+I'm also excited to share that they'll be making Khanmigo, their AI assistant free to all US teachers.
+Let's roll the video.
+Melissa Higgason: Felt like I was in a place in my teaching career, where I felt like I was kind of losing my sparkle, and I would just feel really defeated when I looked out on the classroom, and I would see students that just didn't look engaged.
+Shawn Jansepar: Teachers have an incredibly hard job, and what we think we can do is leverage technology to take some of the stuff off of their plate to really actually humanize the classroom.
+Melissa Higgason: By some miracle, we became a Khanmigo pilot school.
+Sal Khan: With new advances in generative AI, we launched Khanmigo.
+The point is to be that personalized tutor for every student, and to be a teaching assistant for every teacher.
+Melissa Higgason: I started to fill these more robust lessons, and I started to see my students engage.
+Shawn Jansepar: We're working with Microsoft on these Phi models that are specifically tuned for math tutoring.
+If we can make a small language model like Phi work really well in that use case, then we would like to shift the traffic to Phi in those particular scenarios.
+Using a small language model, the cost is a lot lower.
+Sal Khan: We're really excited that Khanmigo, especially in the partnership with Microsoft, being able to give these teacher tools for free to US teachers is going to make a dramatic impact on US education.
+Melissa Higgason: I think we're going to make them the innovators, the questioners.
+Isn't that really just why you wake up every morning.
+Because that's for our future, our next generation.
+To me, that's everything.
+(applause) 
+Satya Nadella: I'm super excited to see the impact this all will have and what Khan Academy will do, and Sal is going to in fact join Kevin soon to share more, and I'm really thankful for teachers like Melissa and everything that they do.
+Thank you very much.
+Of course, it's about more than just models.
+It's about the tools you need to build these experiences.
+With Azure AI Studio, we provide an end-to-end tooling solution to develop and safeguard the Copilot apps you build.
+We also provide tooling and guidance to evaluate your AI models and applications for performance and quality, which is one of the most important tasks as you can imagine with all these models, and I'm excited to announce that Azure AI Studio now is generally available.
+(applause) 
+(onscreen URL: AI.Azure.com) 
+It's an end-to-end development environment to build, train, and fine tune AI models and do so responsibly.
+It includes built-in support for what is perhaps the most important feature, which is in this age of AI, which is AI safety.
+Our Azure AI Studio includes the state-of-the-art safety tooling, to everything from detecting hallucinations in model outputs, risk and safety monitoring, it helps understand which inputs and outputs are triggering content filters, prompt shields, by the way, to detect and block these prompt injection attacks.
+Today we are adding new capabilities, including custom categories, so that you can create these unique filters for prompts and completions with rapid deployment options, which I think is super important as you deploy these models into the real world if an emerging threat appears.(onscreen URL: aka.ms/ContentSafetyUpdates) 
+Beyond Azure AI Studio, we recognize that there are advanced applications where you need much more customization of these models for very specific use cases.
+Today, I'm really excited to announce that Azure AI custom models will come giving you the ability to train a custom model that's unique to your domain, to your data, that's perhaps proprietary.
+That same builders and data scientists who have been working with OpenAI, brought all the Phi, advances to you, will work with all of you to be able to build out these custom models.
+The output will be domain-specific, it'll be multitask and multimodal, best in class as defined by benchmarks, including perhaps even specific language proficiency that may be required.
+Now, let's just row up the stack.
+To data.
+Ultimately, in order to train, fine-tune, ground your models, you need your data to be in its best shape.
+To do so, we are building out the full data estate, right from operational stores to analytics in Azure.
+We've also added AI capabilities to all of our operational stores, whether it's Cosmos DB or SQL or Postgres SQL.
+The core, though, is of the intelligent data platform is Microsoft Fabric.
+We now have over 11,000 customers, including leaders in every industry who are using Fabric.
+It's fantastic to see the progress.
+(applause) With Fabric, you get everything you need in a single integrated SaaS platform.
+It's deeply integrated at its most fundamental level, with compute and storage being unified, your experience is unified, governance is unified, and more importantly, the business model is unified.
+What's also great about Fabric is that it works with data anywhere.
+Not just on Azure, but it can be on AWS or on GCP, or even on your on-premise data center.
+Today, we're taking the next step.
+We're introducing real-time intelligence in Fabric.(onscreen URL: aka.ms/RealTimeIntelligence) 
+(applause) 
+Customers today have more and more of this real-time data coming from your IoT systems, your telemetry systems.
+In fact, Cloud applications themselves are generating lots of data.
+But with Fabric, anyone can unlock actionable insights across all of your data estate.
+Let's take a look.
+Speaker 11: Introducing Real-Time Intelligence in Microsoft Fabric, an end-to-end solution empowering you to get instant actionable insights on streaming data.
+At its heart lies a central place to discover, manage, and consume event data across your entire organization with a rich, governed experience.
+Get started quickly by bringing in data from Microsoft sources and across clouds with a variety of out-of-the-box connectors.
+Route the relevant data to the right destination in Fabric using a simple drag-and-drop experience.
+Explore insights on petabytes of streaming data with just a few clicks.
+Elevate your analysis by harnessing the intelligence of Copilot in Microsoft Fabric, using simple natural language.
+Make efficient business decisions in the moment with real-time actionable insights and respond to changing landscapes proactively.
+Allow users to monitor the data they care about, detect changing patterns, and set alerts or actions that drive business value.
+All your data, all your teams, all in one place.
+This is Microsoft Fabric.
+(applause) 
+Satya Nadella: We're making it even easier to design, build, and interoperate with Fabric with your own applications.
+(onscreen URL: aka.ms/FabDevKit) 
+In fact, we're building out a new app platform with Fabric Workload Development Kit so that people like esri, for example, who have integrated their spatial analytics with Fabric so that customers can generate insights from their own location data using esri's rich tools and libraries right on Fabric.
+(applause) This is just exciting to see.
+It's the first time where the analytic stack is really a first class app platform as well.
+Beyond Fabric, we're integrating the power of AI across the entirety of the data stack.
+There's no question that RAG is core to any AI-powered application, especially in the enterprise today, and Azure AI Search makes it possible to run RAG at any scale delivering very highly accurate responses using the state-of-the-art retrieval systems.
+In fact, ChatGPT supports for where GPTs, their assistant's API, are all powered by Azure AI Search today and with built-in OneLake integration, Azure AI Search will automatically index your unstructured data too and it's also integrated into Azure AI Studio to support bringing your own embedding model, for example and so it's pretty incredible to see Azure Search grow over the last year into that very core developer service.
+Now, let's go up to developer tools.
+Nearly 50 years after our founding as a developer tools company, here we are once again redefining software development.
+GitHub Copilot was the first, I would say, hit product of this generative AI age and it's the most widely adopted AI developer tools, 1.8 million subs across 50,000 organizations are using it.
+(applause) With GitHub Copilot, we are empowering every developer on the planet to be able to access programming languages and programming knowledge in their own native language.
+Think about that.
+Any person can start programming whether it's in Hindi or Brazilian, Portuguese and they bring back the joy of coding to their native language and with Copilot Workspace staying in your floor has never been easier.
+We are an order of magnitude closer to a world where any person can go from idea to code in an instant.(onscreen URL: aka.ms/GitHubCopilotWorkspace) 
+You start with an issue, it creates a spec based on its deep understanding of your code base.
+It then creates a plan which you can execute to generate the code across the full repo that is multiple files.
+At every point in this process, from the issue, to spec, to plan, to code, you are in control, you can edit it and that's really what is fundamentally a new way of building software.
+We're looking forward to making it much more broadly available in the coming months.
+Today, we're taking one more big leap forward.
+We are bridging the broader developer tools and services ecosystem with Copilot for the first time.
+We're really thrilled to be announcing GitHub Copilot Extensions.
+(applause) (onscreen URL: aka.ms/GitHubCopilotExtensions) 
+Now you can customize GitHub Copilot with capabilities from third party services, whether it's docker, SENTRY, and many more.
+Of course, we have a new extension for Azure too, GitHub Copilot for Azure.(onscreen URL: aka.ms/GitHubCopilotAzure) 
+You can instantly deploy to Azure to get information about your Azure resources just using natural language, and what Copilot did for coding, we're now doing for infra and ops.
+To show you all this in action, here is Neha from our GitHub team.
+Neha, take it away.
+(applause) NEHA BATRA: Thanks, Satya.
+GitHub Copilot gives you suggestions in your favorite editor like here where I'm writing unit tests.
+Copilot is great at meeting you where you're at regardless of the language you're most comfortable with.
+Let's ask for something simple like how to write a prime number test in Java.
+But let's converse in Spanish using my voice...
+¿Cómo verificar si el número dado es un número primo en Java?
+Look at that.
+Gracias Copilot.
+Copilot is great at turning natural language into code and back again.
+But what about beyond the code?
+With the new GitHub Copilot Extensions, you can now bring the context from your connected systems to you.
+Now, I can ask Azure, where my app is deployed?
+I could ask what my available Azure resources are, or I could diagnose issues with my environment.
+And this isn't just for Azure, as Satya announced, any developer can now create extensions for GitHub Copilot and that includes any tool in your stack, including your in-house tools, keeping you in the flow across your entire day.
+Actually, 75 percent of a developer's day is spent outside of coding, gathering requirements, writing specifications, and creating plans.
+Let's show how GitHub Copilot can help with that...
+live on stage for the first time.
+Typically, my day starts by looking at GitHub issues.
+Looks like we want to support a rich text input for our product description.
+Let's open Workspace and get some help with that.
+Copilot interprets the intent of the issue to see what's required, and it then looks across the entire code base, and it proposes what changes should be made.
+This specification is fully editable and the whole process is iterative.
+But actually, this looks pretty good.
+Copilot can now help us build a plan on how to implement this change.
+That's a great start, but we must not forget about our documentation, so let's edit the plan and have Copilot update our README...
+and then we can even get Copilot's help in starting to implement the code for us.
+Now, this was just a simple example, but in a large enterprise code base, there are tens of thousands of files and dozens of stakeholders involved and that means meetings, so many meetings.
+Workspace helps you focus on what you need to change and by the way, as a developer, I'm always in control.
+I can see exactly what changes Copilot is proposing, and I can even get a live preview.
+Let's test out the input.
+This looks great.
+I can go back and I can edit my code in VS Code, or I can submit these changes as a pull request to share with my team.
+GitHub Copilot, Copilot Extensions, and Copilot Workspace help you stay focused on solving problems and keeping you in the flow.
+Back to you, Satya.
+(applause) 
+Satya Nadella: Thank you so much, Neha.
+I'll tell you, GitHub Copilot and everything that ecosystem is doing is just bringing back a lot of fun and a lot of joy back to coding.
+And really, the thing about staying in that flow is I think what we all have dreamt for and dreamt about, and it's coming back.
+That brings us to the very top of the stack, Microsoft Copilot.
+We built Copilot so that you have the ability to tap into world's knowledge as well as the knowledge inside of your organization and act on it.
+Now, Copilot has had a remarkable impact.
+It's democratizing expertise across organizations.
+It's having a real cascading effect.
+(onscreen URL: aka.ms/WTI) 
+In fact, it reminds me of the very beginning of the PC era where work, the work artifact and the workflow were all changing and it's just really having broad enterprise business process impact.
+I always say this is lowering both the floor and raising the ceiling at the same time for anything any one of us can do.
+Since no two business processes are the same, with Copilot Studio you now can extend Copilot to be able to customize it for your business processes and workflows.
+Today, we're introducing Copilot Connectors in Copilot Studio so you can ground Copilot with data from across the Graph, from Power Platform, Fabric, DataWorks, as well as you now have all the third party connectors for SaaS applications, from Adobe, Atlassian, ServiceNow, Snowflake and many more.(onscreen URL: aka.ms/TryCopilotConnectors) 
+This makes the process of grounding Copilot in first and third party line of business data just a wizard-like experience, enabling you to quickly incorporate your own organizational knowledge and data.
+We're also extending Copilot beyond a personal assistant to become a team assistant.
+I'm thrilled today to announce Team Copilot.
+(applause) 
+(onscreen URL: aka.ms/TeamCopilot) 
+You'll be able to invoke a Team Copilot wherever you collaborate in Teams.
+It can be in Teams, it can be in Loop, it can be in Planner and many other places.
+Think about it, it can be your meeting facilitator when you're in Teams, creating agendas, tracking time, taking notes for you, or a collaborator writing chats, surfacing the most important information, tracking action items, addressing unresolved issues.
+It can even be your project manager, ensuring that every project that you're working on as a team is running smoothly.
+These capabilities will all come to you all and be available in preview later this year, and we're not stopping there.
+With Copilot Studio, anyone can build copilots that have agent capabilities and work on your behalf, and independently, and proactively orchestrate tasks for you.
+Now, simply provide your Copilot a job description or choose from one of our pre-made templates and equip it with the necessary knowledge and actions, and Copilot will work in the background and act asynchronously for you.
+That's, I think, one of the key things that's going to really change in the next year, where you're going to have copilots plus agents with this async behavior.
+You can delegate authority to copilots to automate long running business processes.
+Copilot can even ask for help when it encounters situations that it does not know much about, and it can't handle.
+To show you all of this, let's roll the video.
+Speaker 12: Redefine business processes with Copilot Studio.
+Create copilots that act as agents working independently for you.
+Simply describe what you want your copilot to do.
+Easily configure your copilot with the details it needs like instructions, triggers, knowledge, and actions.
+Quickly test your copilot before you deploy and seamlessly publish across multiple channels.
+[MUSIC] Watch it use memory for context, reason over user input, and manage long-running tasks.
+[MUSIC] Copilot can learn from feedback to improve, [MUSIC] and you're always in control.
+[MUSIC] Put Copilot to work for you with Copilot Studio.
+[MUSIC] (applause) 
+Satya Nadella: All around this stack is perhaps one of the most important things that we at Microsoft are doing, which is wrapping it with robust security.
+Security underlies our approach with Copilot, Copilot+ PCs, Copilot Stack, we're committed to our secure future initiative.
+You'll see us make rapid progress across each of the six pillars of SFI and the core design principles, which is secure by design, secure by default, and secure operations.
+You'll hear throughout this conference.
+In fact, a lot more in Scott's Keynote tomorrow, how it underlies everything that we build and everything that we do.
+So, coming to the close, there are many announcements that you'll hear about at Build.
+But I want to go back to, I think, the core of why we chose to be in this industry and why we come to work everyday as developers.
+Which is the mission, ultimately, of empowering every person and every organization.
+At the end of the day, it's not about innovation that is only useful for a few.
+It's about really being able to empower everyone, and it comes down to you all as developers and builders of this new world.
+For us, it's never about celebrating tech for tech's sake.
+It's about celebrating what we can do with technology to create magical experiences that make a real difference in our countries, in our companies, in our communities.
+Already this new generation of AI is having an incredible impact.
+Thanks to all of you, the passion you bring and the hard work you put in.
+I want to leave you with this one unbelievable example of how you're all building a more accessible world, which means a lot to me using our platform and tools.
+Thank you all so very much.
+Enjoy the rest of Build.
+(applause) 
+Seema Flower: Audio description is something that enables me to be able to watch a program or a film and get as much out of it as everybody else who is sighted.
+Speaker 13: A white car drives down a road.
+Hands on a steering wheel.
+Floris Horsman: I see art as a collective good.
+I think everyone should be able to have access to art.
+Audio description really helps me get the full experience.
+Speaker 14: A portrait of a group of 17th century civic guardsmen in Amsterdam.
+Josh Loebner: The challenge, though, is that there are limited amounts of audio descriptions being incorporated across media and entertainment.
+Floris Horsman: Tech and AI have the potential to bring the blind and low vision community into the fold.
+[MUSIC] 
+Matthew Stewart: At WPP, we really care passionately about opening up access to content to people in a way that they want to consume it.
+The tool that I've made is an application that allows you to upload videos and on the other end with GPT-4 with Vision, and as your AI services, you get your video back with spoken narrations over the top.
+Speaker 15: Kitchen scene with cat and Hellmann's mayonnaise.
+Matthew Stewart: This makes audio descriptions cheaper and faster.
+Our goal is to be able to offer this product as a service for all of our advertisement campaigns.
+Cathelijne Denekamp: There are so many artworks in Rijksmuseum.
+There are almost a million.
+To describe it ourselves, it would have taken hundreds of years.
+With AI, we can do this in a matter of hours.
+Speaker 16: The subject is a male with a reddish beard and mustache, visible brush strokes that add texture and move.
+Josh Loebner: The first time I heard audio descriptions, it just brought me delight.
+It was this opportunity of, my gosh.
+I'm seen through the power of AI.
+We're able to do things only dreamt about until recently.
+Floris Horsman: When we strengthen our access to culture, we strengthen the culture itself, connecting our shared humanity.
+[MUSIC] Speaker 17: Please welcome Executive Vice President, Experiences plus Devices, Rajesh Jha.
+(applause) 
+Rajesh Jha: Good morning.
+I'm Rajesh.
+You heard Satya talk about the Copilot Stack, the AI architecture of the future.
+Now, I want to talk about bringing that AI stack to Microsoft products.
+First, I'm going to focus on how we are expanding Copilot.
+Then Jeff Teper will talk more about extensibility, and then finally, Pavan Davuluri will share more on Copilot+ PCs and the Windows ecosystem.
+Now, diving into how Copilot is evolving.
+It was only a year ago at Build, that we showed you the promise of AI, and then we made Copilot for Microsoft 365 generally available in November.
+I want to spend a moment and talk about the journey that we've been on.
+Within Microsoft 365, we brought Copilot to the applications that hundreds of millions of people use every day, giving our users a powerful new way to interact with AI right in the flow of their work.
+Now, we've seen great adoption across a range of customers and industries.
+Nearly 60 percent of the Fortune 500 now use Copilot, and we've seen accelerated adoption across industries and geographies with companies like EnGen, and BP, Cognizant, Moody's, Novo Nordisk, NVIDIA, Tech Mahindra and many others purchasing over 10,000 seats each.
+We've added over 150 Copilot capabilities since the start of just this year.
+In addition, we continue to integrate Copilot across more of our productivity apps and services from OneNote, to Stream, to Forms, to OneDrive, and more.
+Now, we also launched a standalone Copilot application whereas Copilot had been embedded in Office, Outlook and Teams.
+The Copilot app now has all of Microsoft 365 embedded in it.
+What makes the Copilot app unique and uniquely powerful is the grounding it has.
+First, our Copilot understands the web.
+More than the grounding, the Copilot is crucially grounded in the user's work context.
+Who do they work with?
+What do they work on?
+Their meetings, their conversations, the documents, and that is the Microsoft Graph.
+The Microsoft Graph represents the user, their team, their permissions, their organization.
+It represents their context.
+Now, it's important to know that the Copilot app is no different from any of our other commercial services in terms of compliance and data handling.
+Microsoft has no eyes on access, and your data is not used to train the models.
+Let's dive in and see how all this comes together in the Copilot app.
+In the web tab, you can get answers to simple or complex questions grounded in live web data, all with commercial data protection.
+Now, let's toggle over to the work tab.
+Here, Copilot is grounded in Microsoft Graph, meaning it has access to your personalized work environment, the people you interact with, important files, Teams meetings, all your communications.
+By the way, this is not a demo account.
+This is my actual Microsoft account.
+Using real data to show you how personal this experience really is.
+Of course, you're going to see some redactions, I do want to keep my job.
+Now, learning to ask the right question is key so you can get the most of the Copilot to help you.
+There's a prompt library to give you suggestions just when you need them.
+Let me start by getting caught up with the latest "My boss".
+You may have heard of him.
+Copilot understands organizational structure, so he knows Satya is my boss.
+It scans the latest e-mails and chats and files.
+And in moments, I have a detailed breakdown with updates that need my attention.
+Let's try one more.
+Here, I'm asking Copilot to propose a session title based on this very keynote script.
+Which is a document on SharePoint and to create a list of topics on generative AI to discuss in this session.
+Copilot has analyzed a document from my work environment and proposed a suitable headline.
+But since Copilot is also grounded in web data, it is able to recommend topics sourced from the web for me to consider.
+Now, switching gears.
+Since its inception, Copilot has been a uniquely personal assistant as you've just seen.
+But we all work in teams small and large, organizations, intimate and global.
+And we want to do more, to go beyond to empower people when they come together.
+Like Satya said, today, we're announcing Team Copilot, the expansion of Copilot beyond a personal assistant.
+(onscreen URL: aka.ms/TeamCopilot) 
+This will enable Copilot to serve and act on behalf of a team, a department, an entire organization, not just an individual user.
+Copilot will act as a valuable team member, improving collaboration, project management.
+Let's take a look.
+Speaker 18: Team Copilot expands Copilot for Microsoft 365 from a personal assistant to a team assistant that becomes a valuable member of the team.
+It gets added to a meeting and group chat like any other participant, making it visible for everyone to interact with.
+Here, Copilot has been added to a meeting as the meeting facilitator, helping the team focus on having a productive conversation.
+Copilot shares the agenda in the meeting chat and anyone can add topics without interrupting the active discussion.
+It actively tracks time, providing reminders when it's time to move on to the next topic.
+Copilot will also take notes during the discussion that anyone can edit or add to and flags follow up tasks for everyone to see.
+Let's switch over to Teams Chat.
+Here, Copilot has been added as a collaborator to help streamline communications.
+As the conversation happens, Copilot maintains an up-to-date view of important information for everyone to see.
+This includes surfacing an unresolved issue for the team.
+Copilot will also help the team work together to resolve open issues.
+Here, a team member asks Copilot for recommendations and grounds the prompt with a relevant document.
+Copilot instantly responds with suggestions for the team to consider.
+Once the team has agreed on the solution, Copilot automatically updates the notes pane, removing the open issue and detailing the decision made.
+With Team Copilot assisting in new ways, the entire team will be more productive and collaborative.
+(applause) The Team Copilot will be a valuable new member of any team, and these initial capabilities will be available to our customers in preview later this year.
+Now, in my conversations with customers, one of the top questions I get is, how do I translate productivity gains into transformative business results?
+Simply put, the answer is moving to a reimagining of business processes using your own copilots and agents and extending Microsoft Copilot.
+Now, Jeff is going to walk you through how our extensibility platform is going to enable you to do just that.
+But first, let's take a look at the Copilot architecture that really makes all of this possible.
+A Copilot, as we spoke, can recall and reason over up-to-date web knowledge.
+It is grounded in search.
+All Copilot experiences have this web skill.
+Now, in addition to being grounded in the web, it is also grounded in your data through the Microsoft Graph.
+When the Copilot is in an application like Office or Teams or Edge, it also understands the application context.
+For example, in PowerPoint, it is able to draft a slide deck for you from a document.
+The Microsoft Copilot is architected to compose or inherit capabilities based on the user context.
+Now, as a developer, you can build Copilot extensions at the data layer, at the experience layer to further extend and customize the Copilot.
+All of this is enterprise-grade with tools for IT to manage and personalize for employees.
+A leading ISVs are already working with us, building solutions that can extend the Microsoft Copilot, and I would like to share two examples from ServiceNow and Adobe for ServiceNow.
+As you know, ServiceNow helps organizations orchestrate and automate tasks and processes across their enterprise.
+Here, we see ServiceNow's Copilot extension.
+NowAssist responding to user prompts inside Copilot for Microsoft 365 with the exact same knowledge, functionality, and user experience as it has today in Teams.
+ServiceNow has included several custom zero query default prompts to help users get started with the most common tasks without having to know how to craft the right text to start the conversation.
+Over to Adobe.
+Who are working on bringing Adobe Experience Cloud workflows and insights to Microsoft 365 and Copilot.
+With Adobe Express Copilot extension, users stay in the flow of their work in a word document and can start a workflow in Adobe Express that allows them to create social content, select an added images, and stage it for publishing.
+As we close out this first chapter, I hope you're excited.
+Microsoft Copilot is already helping people save time, be more productive and creative, Team Copilot expands Copilot in meaningful ways, and then there are great developer opportunities for you to extend Microsoft Copilot.
+Jeff Teper will join us now to share how easily you can build Copilot extensions.
+But first, I want to close my section with a video showcasing how Lumen is using Copilot for personal productivity, to enhance their sales processes, and connecting Copilot to their systems using Copilot Connectors.
+Let's roll the video.
+Ashley Haynes-Gaspar: Lumen is a company that's going through a tremendous transformation and evolution to move from telecommunications to technology.
+Kerrie Davis: Our goal is to help our 3,000 sellers and customer success professionals shift away from transactional selling and move to being customer-obsessed.
+Ryan Asdourian: Copilot for Microsoft 365 helps us move faster.
+Kerrie Davis: It's really hard for a seller to learn everything about all of their customers.
+One way they can do this is using Copilot for Sales.
+What takes sellers hours they can now do in minutes.
+Delvin Holman: Copilot and Salesforce for us, that integration has been vital.
+People are coming to the table more prepared.
+They have more information.
+They're armed, they're ready to have customer conversations.
+Ashley Haynes-Gaspar: Before Copilot with these third party data connectors, the seller would have to go out to all of disparate systems, Salesforce, Gainsite, ServiceNow.
+Copilot Connectors help to solve for the fragmentation that customers can feel, which drives customer satisfaction.
+We've seen an increase in outbound calls by 40 percent.
+Customer outreach typically takes four hours.
+Now, with Microsoft Copilot with all of these third party data connectors, that is a 15-minute journey.
+If we can give our sellers back four hours a week.
+It's worth $50 million in annual revenue, and that is math that matters.
+When you unlock people, teams, and culture, you unlock growth?
+Ryan Asdourian: We're at an intersection.
+It's time for disruption in this industry, and we are here for it.
+[MUSIC] (applause) 
+Jeff Teper: Well, as Rajesh shared, you will be able to easily and securely use your applications and knowledge to build copilots that help your employees and organization be far more productive and grow your business.
+You can now extend the Microsoft Copilot with your own copilot, with handoffs and all the Copilot experiences, as well as in Microsoft Teams where you can reach hundreds of millions of users today for both the personal and group assistance scenarios that Rajesh outlined.
+We are making building these copilots even easier from a few clicks in SharePoint to more advanced customization in Copilot Studio to full control of your models, your data, your applications, your actions, your experience.
+In Visual Studio Code.
+Let's first look at what this means for end users.
+Copilot extensions run everywhere that Copilot is, the standalone experience across Microsoft Teams, and as we're showing here in the Microsoft 365 app.
+On the right, you can easily browse your installed Copilot extensions, find new ones, or build your own, which I'll show coming up.
+How Microsoft Copilot works is it reasons over the user's prompt and maps it to the right extensions.
+Or you can explicitly app mention that extension like we're showing here.
+You're going to be able to drill into a deeper focused conversation with the extension, like we're doing in this marketing example that has suggested prompts for quick actions and to just show the users the capability of your copilot.
+This allows the Microsoft Copilot to have real-time access to knowledge and applications in your environment.
+Here we're using a suggested prompt to ask about a key feature of a delivery drone.
+The Copilot extension you build is going to come back with a visual adaptive card, bringing in all the information to avoid unnecessary multi-turn conversation so the user can just focus on getting their work done.
+Again, these Copilot extensions also run in Teams, in one-on-one, in group chats, and channels, and in meetings so you can reach all these users today.
+This is Build, so let's get to building with our first custom Copilot extension.
+You're going to be able to do this with, from again, a few clicks in SharePoint to advanced customization Copilot Studio to Visual Studio Code.
+We'll start in SharePoint, which is often the authoritative source of knowledge and content processes with advanced collaboration, workflow, and security, all of which Copilot honors to make sure users only get access to information that they have permission to.
+I'm in the SharePoint site.
+I'm going to go ahead and select a few documents.
+Hit, click to Copilot, and right there, that looks good.
+I'll go ahead and change the name of this.
+The delivery drone.
+That looks fine.
+Just like that, I've created my first custom copilot that you can use to extend the Microsoft Copilot.
+Let's go ahead and try this one out.
+How much does the delivery drone service cost?
+We can see it comes back with a flat fee of $5 per order.
+All that looks pretty good.
+Secure grounded.
+We're going to go ahead and share that with our team.
+Up comes the standard sharing dialogue to honor their security in your organization.
+We're going to copy this link.
+Go into Teams, paste it in a chat.
+We'll say, try this out.
+We will go ahead and paste that.
+Just like that, in seconds, we've created a secure grounded custom copilot and shared it with our team in Microsoft Teams.
+We're very excited about letting anybody create these secure custom Copilots, and this support will be available in SharePoint this summer, sign up today for the preview.
+We're very excited about that.
+(onscreen URL: aka.ms/TryCopilotsSharePoint) 
+(applause) Next on the spectrum, we're going to do some more advanced customization in Copilot Studio.
+Starting right from SharePoint, I can launch into Copilot Studio for my more advanced edits.
+You can see all the information for the copilot I just created is carried forward.
+That's all there from SharePoint.
+Let me test this out by asking when the launch event is, and it'll return back that it's on June 20th.
+But what I really want is that copilot to do work for me, not just answer questions.
+For this, I need to go into Copilot Studio and start by adding additional data sources in the knowledge tab.
+Here we can add websites and files and connect to over 1,000 Copilot connectors.
+In this case, our account information is in two tables in Dataverse, and so I'll go ahead and select them, and we've got the information we need.
+Next, we move to the actions tab where I need to see if somebody's already registered for the event, and if not, send them a personalized invitation.
+Our event registration is managed in an external system, so we've created a custom connector to go get it, and you can see us configure that.
+We can tailor the action and input and outputs, however we need.
+Then the second step is to automate the sending of that personalized invitation, we've built a custom power automate flow.
+We'll add that as a Copilot action as well.
+There you go.
+Pretty quickly, we've got a complex Copilot extension with content from SharePoint, data from Dataverse, two disparate actions, and we can go ahead and test this in Copilot Studio to see if Contoso is actually attending the launch event.
+It says they're not.
+The Copilot conversation helps you see why, what's happening, and map that all through.
+We can ask a follow up question, again, that's routed to Dataverse about who the account manager is, and we can see that's Perry Lang.
+Then we can ask Copilot to go ahead and send the invitation.
+Now, again, what's happened here is the conversation was entirely generated for me, identifying and chaining together the key knowledge from Dataverse and the appropriate actions we added earlier with generative AI capability.
+Last, we're ready to publish this Copilot extension back to SharePoint, Microsoft Copilot and Teams.
+From Teams, you can search for it in the Unified Marketplace.
+I can add it to one on one or group chats or meetings, etc.
+Again, I can see this in the Microsoft Copilot experience, that same Relecloud Copilot and continue the experience there.
+We're very excited.
+This is a pattern that people are already doing today.
+Let me show you what one of our customers, Wolters Kluwer, who's a leader in information and software and solutions is doing to enhance their tax and accounting professionals workflow with Copilot.
+They're building a Copilot extension to enable their accountants to complete each step of their workflows, interacting with their back-end system, just using natural language with no context switching.
+Copilot takes actions on their behalf, saving time and cutting the process down from minutes to seconds.
+When it's time to communicate back to their client, the extensions help to close the loop, drafts an e-mail, attach the estimates, and ensures a seamless end-to-end productive experience.
+We're excited about all of you building these kinds of custom copilots and Copilot extensions.
+Copilot Studio is now generally available to build enterprise-grade copilots.
+(onscreen URL: aka.ms/TryCopilotExtensions) 
+The new capability to publish Copilot extensions from your copilot is in private preview.
+As you heard Satya say earlier, Copilot Connectors are now in public preview, and they make it even easier to connect your copilots to your business data, your apps, and workflows.
+Last, we want to show you how to build a Copilot extension as a professional developer with full control of your models, your data, your actions, your experience in Visual Studio Code.
+Let me go ahead and do that.
+What we've got here is Visual Studio Code with the Team's AI Toolkit installed, and we've loaded up a template for building a custom copilot and using it as dan extension.
+The first thing you see in the code is where I configure the model.
+You can use an off-the-shelf model, here we're using one from OpenAI.
+You can use a refined model, or you can build your own completely tailored to what you need.
+If we go scroll down the code a little bit farther, this is where RAG integration is.
+You can see in a few lines of code, we've integrated our data.
+In this case, Azure's Vector Search capabilities.
+You can use any other data source.
+The Azure AI Search capability is a great one to use.
+We keep scrolling down.
+We see the actions defined and registered.
+But here is where we go search for our product inventory, and you can see we've inserted a break point so that we can follow this along because I want to show how easy it is to do end-to-end development here.
+We'll bring up Teams where we've installed that Copilot extension for the inventory, find information for the Chai Tea product.
+Hit "Return", and we're paused.
+Why?
+Because we've hit that break point.
+We can go back into Visual Studio.
+You can see, sure enough, it's fired.
+If I hover over the parameters, you can see the product name "Chai" has been passed to it.
+This is incredibly powerful from within Visual Studio to do end-to-end debugging across the Microsoft apps, Copilot and your Copilot extension.
+If we keep going down before we return that to the user, I just wanted to show what the UX looks like.
+Here's an adaptive card that comes back.
+It's defined in JSON, but you can also see the user experience for that.
+That all looks good.
+Let's go ahead and resume execution from the debugger.
+You can see that we've now returned back into Teams, the result, and we've got an attractive adaptive card that gets the user the information they need does handoff with the Copilot.
+Right inline, the user can complete their work.
+Pretty exciting.
+Again, full flexibility within the Team's AI library and Visual Studio Code.
+We're excited, just like with Copilot Studio, this is something you can do today, targeting hundreds of millions of Teams users, and very soon, the ability to turn your custom copilot into an extension will be available.
+(onscreen URL: aka.ms/TryTeamsToolkit) 
+This is not new.
+This is something that hundreds of ISVs are already doing today across all experiences in Microsoft 365, Teams, and now Copilot.
+Just two examples are leading software organizations, Esri and Thomson Reuters.
+Esri is the market leader in geographic information systems.
+They're building a Copilot extension that adds spatial analytical capabilities directly into Teams meetings so that users can ask Copilot from Microsoft 365 a question about map data, and Copilot will seamlessly hand off to a rich interactive experience with visualization in Esri's custom Copilot with all the associated context.
+Next up is Thomson Reuters, who's a leading global content and technology company that is transforming the legal profession with AI.
+Thomson Reuters is extending the Copilot experience in Outlook and Word and Teams for things like risk assessment so that based on the content of the Outlook e-mail, they can update the policy documents in Word and communicate those policy changes to reduced risk right within the Teams meeting.
+We're super excited to see what you do targeting this huge user base, and we're going to help promote and distribute your application through our Unified Marketplace, again, reaching hundreds of millions of users today in Microsoft 365 and in Teams.
+One of the reasons this marketplace is trusted is IT has confidence in the full governance capabilities for their own applications and custom extensions they build, as well as the ones they will get from all of you building them in a vibrant third party ecosystem.
+To recap, we have a simple, powerful platform for AI and Microsoft 365 that you can use to be far more productive across the full spectrum from something everyone can do in SharePoint to advance customization in Copilot Studio to the full power of Visual Studio and Visual Studio Code.
+But, wait.
+There's one more thing.
+We are very excited to make Teams a fantastic place for developers to work together with AI to write better code faster.
+We've got a whole set of announcements around that this week at Build as well.
+First things first, source code inside Teams with Syntax formatting.
+And, get this-- We wondered what would get the applause, and that was my bet.
+But wait, you should have held the applause with Microsoft Loop co-editing of that source code right within Teams.
+But yes.
+But there's more.
+Developers have asked us for a while for greater information density in Teams, so you can create and switch to compact mode to see much more content on the screen.
+You can be much more productive with things like keyboard shortcuts and new slash commands for Teams.
+Of course, developers are always in the flow of resolving issues in chat, and one of the features we're really excited to announce is Meet Now so that right within Chat, you can bring up a ringless call between members of the Team and resolve the issue in seconds.
+Last, developer teams love to have fun to break from the stress so you can use custom emojis reactions now in Microsoft Teams.
+(applause) Of course, this is building on top of a growing set of partnerships with DevOp Tools, Jira, Datadog, PagerDuty, and of course, deeper integration with GitHub and much more integrated with Microsoft Teams.
+We are very excited to make Teams a great place for developers to work together to build this next-generation AI.
+The next chapter is how Windows is the best platform for building that next generation AI.
+To show that, I'm excited to invite Pavan to the stage, Pavan.
+(applause) 
+Pavan Davuluri: Thank you, Jeff.
+Good morning.
+It is great to be here at Build.
+This is one of my favorite times of the year connecting with fellow product makers about the world's canvas for innovation, Windows.
+I'm excited about the Copilot extensibility that Rajesh and Jeff just shared.
+It really shines on Windows, the platform customers choose from Microsoft 365 and Copilot.
+Over the last year, we've learned so much about how Copilot can best serve you.
+We're working hard to make it even more valuable with a vision for Copilot meeting you right in your workflow.
+Imagine creating a presentation from a document in File Explorer.
+Or helping customers troubleshoot their PCs using quick actions and natural language right in settings.
+We're focused on making Copilot even more contextual and useful across Windows.
+We took a big step towards that goal yesterday with the announcement of Copilot+PCs, the fastest and most intelligent PCs ever built.
+AI is woven into every layer of these devices from the silicon to the operating system with the most powerful PC NPUs capable of delivering over 40 trillion operations per second.
+This new class of PCs is up to 20 times as powerful and 100 times as efficient for running AI workloads compared to traditional PCs from just a few years ago.
+Built together with our silicon partners, AMD, Intel, and Qualcomm, and our OEM partners, these PCs will be available June 18th, starting with Qualcomm's Snapdragon X series of chips.
+Copilot+PCs are redefining what you can do on a PC and setting the direction for the next decade of Windows.
+To put this new wave of AI innovation in your hands, we're excited that Qualcomm has announced Snapdragon Dev Kit for Windows.
+It is designed to be your everyday dev box for AI with the power and flexibility you need.
+As we define this new path for Windows in the era of AI, one thing that will never change is our commitment to openness.
+We recognize that the real value of Windows comes from the energy and the innovation of the ecosystem.
+It comes from all of you.
+As we enter this new era, let's talk about how we're going to serve over a billion Windows customers together.
+As Satya said earlier, building a powerful AI platform takes more than a chip or a model.
+It takes reimagining the entire system from top to bottom.
+The new Windows Copilot Runtime is the system that extends the Copilot stack to Windows.
+The Windows Copilot Runtime is a new integral part of Windows 11 and has everything you need to build great AI experiences whether you're just getting started or already have models of your own.
+It includes the Windows Copilot Library, a set of APIs that are powered by on device models that ship with Windows, and it includes AI frameworks and toolchains to help you with your own on-device models.
+It's built on the foundation of powerful client silicon, including the NPUs in the Copilot+ devices.
+Let's take a look at how the Windows Copilot Runtime enables an entirely new class of experiences.
+OS experiences like recall that help users find anything they've seen on their PC, Inbox app experiences in Photos and Paint, which let you bring your ideas to life using real-time image generation, and app experiences like CapCut, Cephable and DaVinci Resolve.
+Some of our first partners using the new NPU and helping us build the Windows Copilot Runtime.
+Looking ahead, the Xbox Team has a vision for using the Windows Copilot Runtime to empower players and game developers.
+Let's take a look.
+[MUSIC] 
+Pavan Davuluri: That's pretty inspiring.
+(applause) 
+Pavan Davuluri: This entire class of new experiences now benefit from faster task completion, enhanced privacy and lower costs by using the Windows Copilot Runtime.
+Next, let's take a look at the Windows Copilot Library, the APIs and models that support them.
+Let's take the Recall experience as an example.
+It relies on on-device models deeply integrated into Windows to capture context on the screen.
+That data is transformed into Vector Embeddings, an index in the vector store called the Windows Semantic Index.
+The Recall user activity API allows you to extend your app into Recall.
+Users can jump right back to where they were in your app and increase your app engagement in the same way Edge and Microsoft 365 apps like Outlook, PowerPoint, and Teams already have.
+In fact, soon, Recall will draw on context from the Microsoft 365 Graph.
+To build your own Semantic Index store, you can use the Vector Embeddings API.
+That makes it possible to use Retrieval Augmented Generation or RAG within your applications, with your data.
+(onscreen URL: aka.ms/WindowsCopilotRuntime) 
+Imagine you have a WinForms or WPF app that works against a large corpus of sensitive data.
+With Vector Embeddings API, you'll be able to create on-device vector stores for those records.
+That's powerful when combined with the RAG API to enable natural language search in your applications for your users.
+Of course, that's just one example.
+The APIs in Windows Copilot Library cover the spectrum from low code APIs to sophisticated pipelines to fully multimodal models, like the recently released Phi-3, the single best SLM in the world.
+(onscreen URL: aka.ms/Phi3) 
+Phi-3 mini does a better job than models twice its size on key benchmarks.
+Today, we're thrilled to announce Phi-Silica, built from the Phi-series of models specifically designed for the NPUs and Copilot+PCs.
+It offers lightning-fast on-device inferencing and state-of-the-art first token responsiveness.
+Windows is the first platform to have a state-of-the-art SLM custom built for the NPU shipping in-box.
+Now, let's take a look at what you can do to bring your own on-device models to Windows using frameworks and toolchains.
+It starts with DirectML, the lowest level machine learning framework in Windows, similar to DirectX for graphics.
+Whether it's your own open source models or an open source model from Hugging Face, DirectML helps you scale the breadth of your efforts across the Windows ecosystem by giving you to-the-metal access to GPUs and NPUs.
+We also know that a lot of you do your development on PyTorch on Windows, and we're thrilled to announce that Windows will natively support PyTorch through DirectML.
+(cheers) 
+Pavan Davuluri: That's right.
+Pretty exciting.
+(applause) 
+Pavan Davuluri: Native PyTorch support, of course, means that Hugging Face models will just work on Windows, and not just that.
+We're collaborating with NVIDIA to bring these workflows to over 100 million RTX AI GPUs in the Windows ecosystem.
+Now, that's incredible.
+You can download the PyTorch and DirectML developer preview today.
+We're also going to extend DirectML to our web developers by introducing WebNN on Windows.
+WebNN is a web native machine learning framework.
+Microsoft has been working with Intel and other partners to unlock the access to local ML accelerators so you can build performance AI experiences in your web apps.
+Behind me, you see Clipchamp's auto compose feature, achieving faster video composition experiences and Cloud savings by leveraging the NPU through ORT web and WebNN.
+I'm excited to announce that WebNN is available in developer preview today.
+(applause) 
+Pavan Davuluri: That's a glimpse of the Windows Copilot Runtime, how it lays a foundation for innovation, giving you the largest catalog of models on the largest ecosystem of devices, making Windows the most open platform for AI.
+I heard you there.
+That's fantastic.
+(applause) 
+Pavan Davuluri: As Windows transforms for the era of AI, we're continuing to reach the expanse of the platform, including all the AI experiences you create with the Windows Copilot Runtime.
+We're delivering Windows from the Cloud with Windows 365 so your apps can reach any device anywhere, and we're introducing Windows experiences to new form factors beyond the PC. 
+(onscreen URL: aka.ms/Windows365) 
+For example, we're deepening our partnership with Meta to make Windows a first-class experience on Quest devices.
+Windows can take advantage of Quest's unique capabilities to extend Windows apps into 3D space.
+We call these Volumetric Apps.
+Let's take a look.
+Speaker 19: Workflows are transforming with mixed reality.
+Microsoft is partnering with Meta to bring Windows 365 and local PC connectivity to Quest, an enable developers to easily extend their Windows apps into the 3D space.
+PTC has been working with this platform, bringing Creo into mixed reality in under a day.
+This extension allows users to enhance spatial understanding without leaving the app that powers their work.
+Sign up for the developer preview today.
+Pavan Davuluri: As developers you'll have access--that's good to hear.
+(applause) As developers, you'll have access to Volumetric API.
+This is just one of many ways to broaden your reach through the Windows ecosystem.
+For decades, Windows has been a stage for the world's innovation.
+With Copilot+PCs, the Windows Copilot Runtime, and Windows 365, we're going to unlock a new era of innovation together.
+Thank you.
+Back to you, Rajesh.
+(applause) 
+Rajesh Jha: Thank you, Pavan, and thank you, Jeff.
+Now, we've covered a lot of ground over the last 40 minutes, from the expansion of Copilot beyond a personal assistant, to acting as a valuable team member, to how you as developers can extend Microsoft Copilot with your own copilots and agents in just a few clicks in SharePoint to more advanced customization in Copilot Studio.
+You can use VS Code, full control of your models, your data and actions.
+Of course, a phenomenal opportunity for developers with over a billion Windows customers.
+I'm going to close with highlighting another customer, Amgen, a pioneering biotechnology company that harnesses the power of biology and technology to fight the world's toughest diseases.
+We are going to see how they harness Microsoft Copilot in their mission.
+Kevin Scott, our CTO, along with some special guests, had rounded up the day 1 of keynotes.
+But before the video, let me just finish by simply saying, thank you.
+Thank you for spending your time with us here at Build.
+It means a great deal to all of us, and thank you for the trust you place working together, building the future with us every single day.
+Let's roll the video, and thank you.
+[MUSIC] 
+David Reese: We are at a once in a generation moment where we have the opportunity to harness the power of tech and biotech to revolutionize drug discovery and development, manufacturing, and commercialization.
+Mike Zahigian: We started with 300 licenses, and now 20,000 of our employees have access to Copilot.
+Arleen Paulino: In manufacturing, you're moving at a very fast pace.
+You have a lot of data coming at you.
+Copilot is one tool that allows us to synthesize that information and ensures that we can focus on what's most important, the production of that drug.
+Mike Zahigian: We've taken advantage of extensibility options using Graph connectors.
+David Reese: Identifying opportunities to use Copilot for daily efficiency gains, and then multiplying those by 100 or 1,000 times in the life of the molecule from idea to achieving marketing authorization.
+It starts to give you a sense of what's possible.
+[MUSIC] 
+Kevin Scott: We have capabilities in our hands with these new tools in the early days of this new platform to absolutely do amazing things where literally the challenge for you all is to go do some legendary shit that someone will be in all of you for one day.
+Richard Kostro: Many people are looking for food resources.
+It can be a humbling experience.
+Nicholas Becker: Childhood hunger and food insecurity is a problem that we can solve and we are using AI to connect those in need.
+Richard Kostro: We know through research that people prefer sometimes to talk to an AI agent, talk to a chatbot because they're not talking to a human.
+Chloe Eberhardt: Technology can really help people get what they need with multiple resources in one place and it's making it mobile-friendly, which is really important and most people access this information via smartphone.
+What we're doing at No Kid Hungry is ensuring that we end childhood hunger.
+Kristy Jeansonne: Around 2019, Brian started having some issues with his ankle.
+I was able to get him an appointment with a doctor, and he was like, I hate to tell you, but this is ALS.
+Brian Jeansonne: How would I live in a world where my kids wouldn't be able to hear me say, I love you.
+Blair Casey: The biggest opportunities when it comes to emerging technologies is the gap that I can fill.
+AI has the ability to increase communication, increase independence.
+It's the next wave for accessibility.
+Emily Kornman: What Microsoft is doing, their voice banking technology really gives someone back that intonation and a little bit more of their personality.
+Today, we're going to play a newer version of your voice.
+You just choose any phrase, and then I'll play it on here as well.
+Brian Jeansonne: Hey beautiful people.
+I am so happy to be with all of you.
+Emily Kornman: I'm type it out.
+Brian Jeansonne: Hey, beautiful people.
+I am so happy to be with all of you.
+I think this sounds just like me, and I am overwhelmed with joy that my family gets to experience this part of me.
+In many ways, I feel like I am back.
+[MUSIC] 
+Speaker 17: Please welcome Chief Technology Officer and Executive Vice President of AI, Kevin Scott.
+(applause) 
+Kevin Scott: Thank you all so much for being here with us today.
+I've been fascinated my entire life by tools and the power that they give us as individuals and teams to really create extraordinary things.
+In my own personal making, my wife sometimes wishes that the ratio of tools to extraordinary things was a little bit different than they are.
+But as a person who has dedicated their entire career to building systems and infrastructure, tools and frameworks for other developers to use to go make the things that they need to make for whatever reason that they need to make them.
+It's just extraordinarily gratifying to see the really, truly consequential things that you all are choosing to do with these new AI tools that we have a role in bringing into existence.
+I just want to thank all of you so much for all of the great shit that you have made over the past year.
+I want to give a call out to our friends at Share Our Strength.
+But it's not just the really wonderful work that we just showed in the video that folks are doing.
+Like as Satya mentioned earlier, we have over 50,000 customers using Azure AI Tools in the Azure AI Platform.
+This range of customers spans everything imaginable, from all different industry categories, all different scales of business, from small start ups to fortune 100 companies, and all different stages of exploration of how to use AI to do transformative things, from doing explorations, like trying to find product market fit to scaling things where you've found the product market fit to folks who are just trying to figure out how to optimize and enhance the things that they've been doing for a very long while.
+I just wanted to highlight another couple of things that I thought have been really noteworthy collaborations that my team has had with some of you all in the audience.
+We've been doing some really cool work with Etsy using generative AI and the Azure AI Platform to build features like their new Gift Mode.
+We have the CTO of Etsy here in the audience with us.
+Today.
+Hello.
+You all should go check out Gift Mode.
+It is a really innovative way to help you figure out how to buy things for people who are difficult to buy for, which I'm guessing almost all of us in the room it's super stressful trying to figure out what the right gift is for the right person that you care about in your life.
+This is just one of many interesting things that Etsy is doing with generative AI to really enhance the experience of the Etsy product and to bring delight to their customers.
+Another thing that I'm super excited about is the work that Cognition has been doing.
+Scott and the Cognition team are also here with us today.
+We have just recently announced a partnership between Microsoft and Cognition.
+Their product, Devin is like an absolutely amazing tool.
+If you can imagine for yourself, some of the most tedious things that you do as an engineer or software developer, Devin is a tool designed to help you with those tasks.
+I can't even tell you all.
+The number of times as an engineering leader, I've either or as an engineer that I've had to write code or lead teams writing code for doing things like replatforming and application.
+Replatforming is one of the laws of physics of how we build software systems.
+It's a thing that must be done, but it's rare that an engineer really enjoys doing that.
+The incredible work that Devin is doing on top of these incredibly powerful tools is just really extraordinary, and we're super excited to be partnering with them and to bring all of the power of what they're doing to Azure and having their systems and infrastructure run on Azure.
+I really want to talk with you all today about just a couple of simple things.
+What's driving all of this progress?
+why is all of this happening right now?
+Part of it is we're riding an extraordinary platform wave.
+Something is fundamentally changing in the universe of technology, much in the same way that it changed when we were going through the PC revolution where Moore's Law was driving an incredible increase in the power and lowering of the cost of personal computing, which led to it becoming ubiquitous and something that we now all get to take for granted.
+Similar thing happened with the Internet revolution where networking technology connected all of this compute together and allowed us to do things that previously were unimaginable.
+We're going through one of those major technological changes right now being partly driven by a set of things that we'll talk about in a few minutes, just the incredible scaling of the capability of AI systems as you apply more compute and more data to training them.
+But before we get to that expansion of the frontier of the increase in those capabilities, a super important part of the emergence of a new powerful platform is completing the stack.
+It's actually hard work even when you have a piece of technology that is improving at an exponential rate to figure out how to do all of the things that have to be done in order to deploy it in real applications so that you can go out and deliver value to real customers who care about what it is that you're doing.
+We've done a huge amount of work over the past year on the Copilot stack.
+It is both optimizing a bunch of systems, so things are getting cheaper and more capable, and it's also building that whole Cloud of capabilities and systems, services and tools around the core AI platforms, the big models that you all need and the choices that you all want so that you can build the things that matter to you under the constraints that you're operating under.
+One of the reasons that we have been able to do this is no other company has deployed more generative AI applications over the past year than Microsoft has.
+You have probably heard us over the past year talking about all of these different Copilots like this new software pattern that we originated with GitHub Copilot where you pair powerful generative AI with this user interface paradigm where you're using the AI to help assist users with tasks.
+You can apply this to everything.
+I know many of you in the audience are building your own copilots.
+Microsoft itself is building Copilots for Service, for Sales, Copilot in Bing, Copilot in Edge, Copilot in Windows.
+The reason that we've been able to do all of this work is because we have the Copilot stack that we built for ourselves to help us have real agility in getting these products built quickly to have them built efficiently, where they're priced and cost optimized and to build them in a way where they're safe and secure.
+One of the things that you have heard from Rajesh that you'll be hearing a lot more of at Build is part of what the Copilot stack is allowing us to do is to unify the experience across all of these Copilots into one logical Microsoft Copilot, where you don't have to really pay attention to which Microsoft product or service you're in, like the Copilot just understands all of your context and delivers all of the capability of the model in the context of your data and your task to you when you need it.
+The other thing that is really driving progress is not just this sort of completion of the Copilot stack, this sort of progress that we're making in filling out the toolkit for you all so that it is easier for you to build software, but we are riding like a fundamental wave in the development of this AI platform, where if you just look at compute over time, like how much GPU cycles or accelerator cycles that we're using to train the very biggest models in the world since about 2012, that rate of increase in compute when applied to training has been increasing exponentially.
+We are nowhere near the point of diminishing marginal returns on how powerful we can make AI models as we increase the scale of compute.
+We're sort of doing two things at once at Microsoft.
+We are optimizing the current frontier and building that toolkit to help you all leverage it while at the same time investing at a pretty incredible rate in pushing the frontier forward.
+One of the super interesting things that has just happened is we're pushing the the frontier forward and really, really driving forward on efficiency is what our partners OpenAI launched last week in the form of GPT-4o.(onscreen URL: aka.ms/AOAIUpdates) 
+As Satya mentioned earlier, GPT-4o is like a really stunning achievement, multi-modal model that understands a bunch of different input types from video to text to speech that can respond in a bunch of rich ways, from text to speech, and eventually video.
+It can respond to you or to the interactions for users in their applications in real-time.
+In the case of the ChatGPT demos that folks have seen, you can even interrupt the model so that you can have really fluid interactions with these systems.
+Then an enormous amount of work has gone into GPT-4o, both the model itself, as well as the supporting infrastructure around it to ensure that it's safe by design.
+I wanted to also just remind folks like this efficiency point is real.
+While we're off building bigger supercomputers to get the next big models out and to deliver more and more capability to you, we're also grinding away on making the current generation of models much, much more efficient.
+Between the launch of GPT-4 which is not quite a year-and-a-half ago now, it's 12 times cheaper to make a call to GPT-4o than the original GPT-4 model.
+It's also six times faster in terms of time to first token response.
+It's just really extraordinary, like how much progress we're making because of the full set of optimizations that we're doing from the silicon that we're building, networks, data center optimization, as well as an incredible amount of software work that we're doing on top of all of this hardware and infrastructure to really tune the performance of these systems.
+The great thing is, again, there's no point of diminishing marginal return here.
+One of the messages that I want to land with you all today is that you can count on things getting more robust and cheaper at a pretty aggressive clip over time.
+It's like a really important thing to internalize.
+Like we challenge ourselves on at Microsoft all the time.
+It's like aim for things that are really, truly ambitious because all of this optimization work is going to accrue to make things really ubiquitous in terms of how you can go deploy them.
+I just want to show a little quick demo video here.
+Let's roll the video, show you.
+Jennifer: Hey, Microsoft Build Conference is tomorrow, and I have not been sleeping, and I am making stupid mistakes.
+Can you help me take a look at this code?
+Speaker 20: I'd be happy to help.
+Could you tell me a bit more about the issue you're facing with the code?
+For example, are you getting an error message or is the code not doing what you expect it to do?
+Jennifer: Let me just show this to you.
+Speaker 20: It looks like you're working on a Python function to summarize main points from a Keynote.
+Jennifer: What I'm trying to do is go through a list of keynoters and summarize all of their work.
+My problem is that I wanted to just add Kevin's name to the end of the Keynote list, and it added every character of his name instead of just his whole name.
+What did I do wrong here?
+Speaker 20: Change Keynote_list.extend to keynote_list.append (last_keynote).
+This will add Kevin as a single element to your list, just like Satya and Rajesh.
+Jennifer: That sounds good.
+Let me try that.
+Speaker 20: Sounds good.
+Give it a go and let me know how it works.
+Jennifer: I replaced extend with append.
+Does that look right?
+Speaker 20: Yes.
+That looks better.
+Jennifer: I made that change.
+Let me run it and try.
+Speaker 20: Sounds good.
+Let's see how it goes.
+Jennifer: It worked.
+Satya, Rajesh and Kevin all came out.
+Speaker 20: Awesome.
+I'm glad it worked out.
+Sometimes the smallest things can trip us up, especially when we're sleep deprived.
+Jennifer: Thank you.
+(applause) 
+Kevin Scott: It really is extraordinary.
+I should say, by the way, that Jennifer would never make that actual mistake in writing a Python application, but Kevin might.
+This is all giving me hope that a rusty old CTO might one day be able to program again if the need arose.
+But I do want to make sure that we're paying attention to just how much has changed over the past year.
+What you just saw would have been absolutely inconceivable to think about, actually working.
+This was not a torture demo, like we were looking for something to show off GPT-4o to you all last night and Jennifer showed me this and then she just recorded this demo.
+This is just crazy that it works this well.
+Another set of things that have been really making a huge amount of progress is, what's possible with smaller models.
+We have been working for a while on this series of models called Phi that are small language models.
+Satya chatted a little bit about this in his keynote earlier.
+The way that we think about Phi is just imagine an efficient frontier.
+Usually when you're building these models, you're trading a couple of things off.
+You can trade size off, which is related to performance and cost and a whole bunch of other things versus quality.
+The smaller the model is, the cheaper it is to do inference and the less compute that you need to actually run the model.
+Small models are more amenable to running on devices.
+But it usually means that you have to take a hit on quality.
+What we're discovering in particular, over the past year is that there's this notion of an efficient frontier.
+We don't even show the GPT- 4o point on the slide.
+It would be way off to the right just in terms of the size.
+If you want extreme levels of quality and performance, a frontier model is your friend.
+But in some cases, you may want to choose one of these other models somewhere else on this efficient frontier, where the tradeoff that you're making between cost to serve or latency or locality is acceptable given the quality that you can get.
+The very interesting thing that's been happening over the past year is the quality that you're able to achieve in these small models is getting pretty high.
+I just wanted to show this as an illustration.
+Remember back ancient history to the launch of ChatGPT in November of 2022.
+ChatGPT launched on top of GPT-3.5.
+Everybody was just absolutely gobsmacked at what was possible with GPT-3.5, just a stunning revolutionary thing that happened.
+We fast forward a few months to March 2023, and ChatGPT gets an upgrade to GPT-4, which is even more extraordinary what it's able to do.
+You're able to ask extremely complicated questions of these things and get very rich, interesting, compelling completions.
+Fast forward to today, you can see that a version of Phi-3 optimized to run on a mobile phone can respond to a prompt, just like ChatGPT could just a year or so ago with responses that are equivalent.
+This is not arguing that Phi-3 that's running on this device is just as powerful as GPT-4.
+It is not.
+But the way that you all should be thinking about it is in many cases, these models can be appropriate to use for building your applications when you have a particular set of constraints that you're trying to optimize towards.
+All of this is abstract in a way.
+I wanted to really motivate why this matters with the following example.
+Satya mentioned earlier, the partnership that Microsoft has formed with Khan Academy.
+Khan Academy's mission is really interesting and important.
+They are trying to ensure that every learner on the planet, no matter where they are, has access to high quality individualized instruction.
+One of the things that we are exploring together with Khan Academy is the possibility of achieving that goal of ubiquity of these personalized learning agents by using something like Phi-3, where you can imagine training a Phi-3 model that's very good at something like math instruction.
+This is an actual interaction with Phi-3-medium that has been fine-tuned to work particularly well for math tutoring.
+The challenge with doing something like this is that you have to not just have the model give the student an answer, but you want it to lead them towards discovering the answer themselves.
+A tutor is very different from an answer agent.
+It's just exciting to think about how many tools that organizations like Khan Academy have to solve these really important missions that they have in the world.
+With that, I'd love to bring Sal Khan from Khan Academy onto the stage.
+(applause) Hey, Sal.
+Thank you so much for being here with us today.
+We have been chatting about your mission, I think, for quite a while.
+One of the interesting things that happened when ChatGPT burst onto the scene a few years ago is that there was this reaction from a bunch of educators.
+I think it was actually a reasonable reaction where we don't understand this.
+We don't want our students using it.
+They're going to do things that we would prefer that they didn't do it.
+You, on the other hand, looked at this and said, this is amazing and leaned all the way in.
+Can you explain a little bit about what drove your first reaction to this new technology?
+Sal Khan: Some of you all know how Khan Academy got started.
+If you go almost 20 years ago, it started with me tutoring a cousin.
+I was a hedge fund analyst at the time.
+I tutor one cousin, word spreads in my family, free tutoring is going on.
+Before I know it, I'm tutoring 10, 15 cousins, and I start writing tools for them.
+Software, I started making videos.
+That's what a lot of people know about Khan Academy.
+If you think about that journey from then until now, even right before we started really working on generative AI, everything we've been doing is, how could you scale that type of personalization that I was originally doing with my cousin Nadia.
+We were approximating it with software and videos and teacher tools.
+But to some degree, we're going to asymptote on how far you could get with pre generative AI tools.
+(onscreen URL: aka.ms/KhanAcademy) 
+Then when we saw it, it was really GPT-4 that opened our mind.
+Greg and Sam from OpenAI showed it to us end of summer 2022.
+We realized there's things that had to be worked out, but it could get that much closer to emulating what a real tutor would do.
+It was obvious, it could also be used as a cheating tool, and you have to worry about safety and privacy, especially with under 18 users.
+But I told the team, let's turn those into features.
+Let's put the guard rails on it because this could get us that much closer to our mission which is free world class education.
+Kevin Scott: I think one of the other things that you all have done, and this is a really important thing to internalize about these models and systems is, the model isn't a product, and the systems aren't silver bullets.
+You still actually have to understand who your customer is, what problem you're trying to solve, and how to go deal with a whole bunch of gnarly things on top of this incredibly interesting and powerful tool so you can do something useful.
+You want to talk a little bit about what you had to do there?
+Sal Khan: I have to admit, and maybe everyone--a lot of people in this room or in the world right now are experiencing this.
+Every now and then you see some of these demos and you're, does my application even have relevance anymore?
+This thing is going to be able to do everything.
+But then when you sit down and you really think about how a school system, a teacher, students going to use it and you're going to what are the guardrails?
+What are the privacy?
+How do you make sure that it really does the tutoring interactions appropriately?
+It's aligned to standards.
+You realize that there's a lot to do at the application layer.
+Now, I think we're all discovering together this new world of developing applications on top of large language models.
+It's not deterministic in a traditional way.
+You have to have evals, you have to constantly test it.
+But we're realizing that there's just so much to do.
+It's a very exciting time.
+Kevin Scott: One of the things that I'm especially excited about is this mission that you all have for ubiquity.
+The partnership that we're doing with you all is going to enable you to get every teacher in the United States hands on Khanmigo and your tools.
+Just a personal anecdote for me is, my daughter is in the ninth grade.
+She's taking biochemistry and just in love with science in general.
+She on her own, without any prompting from Dad, figured out how to use the free version of ChatGPT to take a bunch of biochem papers that were way more complicated than a 15 year-old by rights has to understand.
+Dump them into ChatGPT and then just ask a million questions about it.
+Her learning acceleration because she's figured out how to use this tool is extraordinary.
+I just want every kid in the world to have the same experience that my daughter has.
+Sal Khan: Absolutely.
+We realize at Khan Academy there is a subset of students that if you give them the tool and it sounds like you're lucky enough to have a daughter like that, they will run with it.
+But what you really need in most cases, is you need caring adults, primarily teachers in the room, motivating students, driving that usage.
+What we're really excited about this partnership, this is a big deal I want to make sure, we are using state of the art models that use real compute.
+It has real cost associated with it.
+When we launched Khanmigo, which is still out there, and it's a tutor for students, it's a teaching assistant for teachers.
+But what we're launching today as part of this partnership is these state of the art teacher tools, we're going to be able to give free to every teacher in the United States so that they can get the productivity improvements.
+(applause) 
+Kevin Scott: Big.
+Sal Khan: Big deal.
+I actually think teaching will be the first mainstream profession to really benefit from generative AI, lesson planning, progress reports, grading papers, etc.
+I think if we can win teachers hearts and minds, then it gives us that much a better chance of also being able to reach students.
+Kevin Scott: One last thing before we go, I know that you have just written a book, and having written a book myself it's a lot of work.
+Everybody should pay attention to these fantastic endorsements the book has gotten and, go read a copy of it.
+It's like a fascinating work, not just about education and your mission, but I think also, it has a bunch of really interesting lessons about how you can ambitiously use AI to solve hard problems.
+But why did you choose to write a book now?
+Sal Khan: This is the second book that I wrote.
+The first book I wrote back in 2011.
+I remember when the publisher had reached out to me then, I was like why would I write a book?
+I could just put it all on YouTube and share it with the world.
+But there's something about writing a book that lets you frame the problem.
+I felt that 10 years ago or 12 years ago when Khan Academy first came on the scene and I think this moment, we all feel even a little bit more overwhelmed.
+You mentioned these inflection points, this exponential growth.
+We're all feeling like things are changing every week.
+I wanted to take the time for myself, understand where we are and where we're going and hopefully, a reasonably timeless way that's not going to be dependent on whatever the frontier model of the day is.
+I think, especially anyone who cares about education, cares about work, cares about what skills their kids should learn to keep up or how we can all be more productive, what the future of admissions and recruiting is going to look like, hopefully, this will be useful for them, too.
+Kevin Scott: Well, I am incredibly grateful for the partnership that we have, and more importantly for the work that you're doing in the world.
+Thank you so much for being with us today.
+Sal Khan: Thank you so much, Kevin.
+Thank you.
+(applause) 
+Kevin Scott: Another really incredibly impactful area where these new AI tools and platforms are going to have an enormous impact is healthcare.
+So I just wanted to share another personal anecdote with you all.
+I grew up in rural Central Virginia, and my mom and brother and most of my family still live in the place where I grew up.
+My mom is a 74 year-old Southern woman, and, has been suffering from a thyroid condition for 26 years, which entirely under control.
+Like, she's been taking medication for it.
+And just last fall, she had some change in her system, where all of a sudden, her medication wasn't working as well as it used to, which resulted in her spending a bunch of time in the hospital trying to figure out what was going on.
+The healthcare system in the part of the world where my mom lives is super overburdened.
+It's not a place where tons of people are moving for economic opportunity, it's one of those places where people tend to move away from to seek economic opportunity, which has impacts on everything that is happening in that part of the world.
+As I was trying to help my mom navigate this situation, I was looking at how could AI have helped relieve the suffering that she was experiencing.
+And if doctors, everywhere, had access to these tools a lot of what she went through could have been immediately alleviated.
+Like, if you just take her symptoms that she was presenting and put it into GPT-4, along with her chart, it would immediately say go get this test, which is going to help find the root cause.
+Then the results of the test could be input into the same session, which would then give a set of recommendations to doctors about course of therapy.
+If that had happened in her case, what was six visits to the hospital, could have been compressed to one, and I think about this a lot because I worry even whether or not my mom would have pulled out of a health spiral that she was in if she hadn't had me for a son intervening on her behalf, and I worry about all of the people in the world who don't have someone to intervene on their behalf who are interacting with one of these resources that is overburdened.
+I just want us all to think about as we're imagining what the set of possibilities are for what we go do with AI.
+Like, things like what Sal is doing with Khan Academy, and some of the amazing potential that we have to reduce suffering in the world and to help make things like high quality healthcare more equitable and accessible, it's just super inspiring to think about.
+So the last thing that I want to chat about before we get to our conversation with Sam Altman is how we at Microsoft have been thinking about building applications on top of this incredible platform that is emerging right now.
+The challenge, I think, for us, and I think it's the same challenge that all of you face is that you really want to focus on things that have made the transition from impossible to merely difficult.
+That's where all the interesting stuff is.
+If you look at the history of platform revolutions, that's where all the interesting companies emerge from.
+It's where all the innovation happens, it's where all of the value gets unlocked.
+In the case of technology platforms that are exponentially progressing, it's like the only reasonable place to go aim, because if you're aiming somewhere different, like the platform is becoming so much more capable and so much cheaper over time, that everything that you have in your imagination that's too expensive to do right now or too fragile is going to become cheap and robust before you can even blink your eye.
+Really, the thing more than anything else that I would say to all of you to take away from what I'm saying here today is really focus on those phase transitions.
+While you all have been out there grinding away, building really extraordinary things over the past year with all of these AI tools that are coming, we've been hard at work trying to make forward progress on our AI platform.
+We talked a lot about how we're optimizing the current frontier, like making things cheaper and making them more powerful and complete.
+But we've also been hard at work, building new supercomputing infrastructure and working with our partners at OpenAI to push that frontier forward.
+We showed this slide at the beginning there's this really beautiful relationship right now between the exponential progression of compute that we're applying to building the platform, to the capability and power of the platform that we get.
+I just wanted to, without mentioning numbers, which is hard to do to give you all an idea of the scaling of these systems.
+In 2020, we built our first AI supercomputer for OpenAI.
+It's the supercomputing environment that trained GPT-3, we're going to just choose marine wildlife as our scale marker..
+You can think of that system about as big as a shark.
+The next system that we built scale-wise is about as big as an orca.
+That is the system that we delivered in 2022 that trained GPT-4.
+The system that we have just deployed is scale wise about as big as a whale relative to the shark size supercomputer and this orca size supercomputer.
+It turns out, you can build a whole hell of a lot of AI with a whale-size supercomputer.
+One of the things that I just want everybody, to really be thinking clearly about, and this is going to be our segue to talking with Sam is the next sample is coming.
+This whale-size supercomputer is hard at work right now building the next set of capabilities that we're going to put into your hands so that you all can do the next round of amazing things with it.
+With that, I'd like to bring Sam Altman to the stage.
+(applause) 
+Kevin Scott: Good to see you.
+Sam Altman: You too.
+Kevin Scott: You are one of the busiest people on the planet.
+Sam Altman: Wild week.
+Kevin Scott: Yeah, it's a wild week.
+It's a wild year, man.
+But so I really appreciate you taking time out to chat with us today.
+I guess what I really wanted to start our conversation about and like I asked you this question last week is there's just been an extraordinary amount of change over the past year and a half year.
+What has been the thing that has surprised you most, particularly relevant to an audience of developers?
+Sam Altman: I'm delighted to be here obviously great to see you, but developers have been such a core part of what's been happening this last year and a half.
+There's millions of people building on the platform.
+What people are doing is totally amazing and the speed of adoption and talent and figuring out what to build with all of this over what has really not been very long like when we put GPT-3 out in the API, some people thought it was cool, but it was narrow when that happened and seeing what people have done with GPT-4 and seeing now what's happening with GPT-4o, even though it's new and hasn't been out that long, is quite remarkable.
+I've never seen a technology get adopted so quickly in such a meaningful way that what people are building, how people are finding out how to do things that we never even thought of possible, which is why it's always great to have an API.
+That's been very cool to see.
+Kevin Scott: I think, what you just said is, like, one of the most important points to me.
+Like, there's a version of AI that could have existed, that is, like a bunch of smart people, like building things at extraordinary scale, and then just building it into a bunch of products where everybody gets to passively use them.
+The really brilliant thing that you all have done is, like, taken the exact same set of things and decided to make it available to any developer who's able to sign up for an API key.
+Sam Altman: We try to be really thoughtful about what makes a good API for this.
+There's going to be all kinds of ways people can use this.
+But the more this can just be a layer that gets built into every product, every service, the better, and we've tried to make it such that if you want to add intelligence to whatever you're doing, any product, any service, we make that very easy.
+Kevin Scott: Again, I think the progress has been stunning.
+I think the setup for, like, introducing you onto the stage here was I saw that big blue whale.
+Like you're making good use of the whale size computer right now.
+Without getting too specific, which we can't be, obviously, what are the category of things that people should be expecting over the next k months?
+Sam Altman: The most important thing and this sounds like the most boring, obvious trite thing I can say, but I think it's actually much deeper than it sounds.
+The most important thing is that the models are just going to get smarter, generally across the board.
+There'll be a lot of other things too, which we can talk about.
+But if you think about what happened from GPT-3 to 3.5 to 4, it just got smarter, and you could use it for all these things.
+It got a little more robust.
+It got much safer, both because the model got smarter and we put much more work into building the safety tools around it.
+It got more useful.
+But the underlying capability, this amazing emergent property of like we actually are seeming to increase the general capability of the model across the board, that's going to keep happening.
+The jump that we have seen in the utility that a model can deliver with each of those half step jumps and smartness, it's quite significant each time.
+As we think about the next model and the next one, and the incredible things that developers are going to build with that, I think that's the most important thing to keep in mind.
+Also, speed and cost really matter to us, so with GPT-4o, we were able to bring the price down by half and double the speed.
+New modalities really matter.
+Voice mode has been actually a genuine surprise for me and how much I like the new voice mode, and when people start integrating that, I think that'll matter.
+But it's the overall intelligence that'll be coming that I think matters the most.
+Kevin Scott: You, for a while now have been one of the most successful startup investors in the world.
+Like, now you are one of the most successful CEOs of one of the most important companies in the world, it is like, you've got a roomful of developers here.
+I think there are 5,000 people in the room, and there are about 200,000 people online right now.
+What's your advice to them as like they think about how to spend their precious time given what's happening in the world.
+Like, what's your advice?
+Sam Altman: Two things.
+Number 1.
+This is probably the most exciting time to be doing building a product, doing a startup, whatever it is that we have seen at least since the mobile boom and probably, I would say, since the Internet, and maybe even bigger than that.
+We don't know yet.
+But the big opportunities, the ability to sort of build something new and really change the landscape, that comes at the platform shift times.
+We haven't had a platform shift in a while and this looks like it's really truly a platform shift.
+My biggest piece of advice is like, this is a special time and take advantage of it.
+This is not the time to delay what you were planning to do or wait for the next thing.
+This is a special moment and a few years where a lot of stuff is going to happen, and a lot of great new things are going to get going.
+The second thing also about platform shifts is when the mobile phone revolution started or really got going 2008, 2009, you would see people say, we're a mobile company, we have a mobile app.
+Then only a few years later, no one said they were a mobile company because it was like table stakes.
+An amazing new technology, which I would bias, but we'll put AI in that category.
+It doesn't get you out of the hard work of building a great product or a great company or a great service.
+You still have to do it.
+AI alone is a new enabler but it does not automatically break the rules of business.
+You can use this as a new thing to do, but you still have to figure out how you're going to build enduring value and whatever you're doing, and it's easy to lose sight of that and the excitement of the gold rush.
+Kevin Scott: One last thing before we let you go.
+You and I and, like, members of your team and members of the Microsoft team have been doing really an extraordinary volume of work over the past year and a half, two years, thinking about safe deployment of an awful lot of AI capability, like everything from APIs and developer tools to end products.
+I think we have accumulated a really interesting volume of experience, like experience that's sort of hard to get if you're not doing deployments at this scale.
+I think you just mentioned something that's, like, really, really interesting, part of the interesting and surprising progression of capabilities of these models means that they're more useful in helping to make AI system safer.
+I don't know whether you had some thoughts you wanted to share there as well.
+Sam Altman: When we first developed this technology, we spent a lot of time talking about how we've made this thing.
+It's cool.
+Are we ever going to be able to get it to an acceptable level of robustness and safety.
+Now we take that for granted with GPT-4.
+If you use it, it's far from perfect.
+We have more work to do, but it is generally considered robust enough and safe enough for a wide variety of uses, and that took an enormous amount of work across both teams, and fundamental research, when we started this, we were like, we've got this thing, we've got this language model.
+It looks like kind of impressive and kind of not.
+Even then, how are we going to get it aligned and do it?
+What is it going to take to be able to deploy it?
+The number of different teams we've had to build up to go from research and creation of the model to safety systems to figuring out policy to how we do the monitoring, that's a huge amount of work, but it's necessary to be able to deploy these and use them like when you take a medicine, you want to know it's going to be safe.
+When you use an AI model, you want to know it's going to be robust and behave the way you want and have been super proud of the work the teams have done together.
+I think it's amazing how fast this much work has happened and that we can all now use this and say oh yeah, it basically works.
+As the models get more powerful, there will be many new things we have to figure out as we move towards AGI, the level of complexity, and I think the new research that it'll take will increase.
+I'm sure we'll do that together.
+But we view this as a gate on being able to put these things out in the world, which we really want to do.
+Kevin Scott: It's definitely table stakes.
+Thank you so much for being with us here today.
+Like, I really appreciate your time.
+It's awesome to hear from you.
+Sam Altman: Awesome.
+(applause) 
+Kevin Scott: I think this is all that's separating you all from the rest of your Build and probably lunch.
+My very last thing for you all is the following call to action.
+Microsoft and our partners like OpenAI are spending an extraordinary amount of energy and investing like capital at an unprecedented scale, trying to make sure that we are building a genuinely valuable platform.
+But, like, all we're doing is building the platform.
+I don't even think that that's the most important part of the AI revolution that's happening right now.
+It's you who are doing the work.
+Like, you're the ones who are making all of these things matter.
+Like we could build platforms all day all night, and if you all didn't have the great ideas, like you didn't understand the consequential impact that you wanted to have on the world, it would all be for nothing.
+I'm incredibly grateful for all of the things that you all have done on the platform over the past year, and I am incredibly excited to see what you all are going to go do in the year ahead.
+Thank you all so much.
+(applause) 
+END
