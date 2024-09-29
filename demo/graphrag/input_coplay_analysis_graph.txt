@@ -1,0 +1,107 @@
+
+
+RoleLLM: Benchmarking, Eliciting, and Enhancing Role-Playing Abilities of Large Language Models
+
+- https://arxiv.org/abs/2310.00746
+
+>  目标：角色扮演旨在使 LLM 能够或定制 LLM 来模拟具有不同属性和会话风格的各种角色或人物角色
+
+​	减少闭源LLM的限制，包括API成本高、无法进行微调和上下文窗口大小有限
+
+​	开源LLM角色扮演能力，构建第一个角色扮演基准
+
+> 测试基准：在我们的实验中，我们使用三个基于Rouge-L的指标（Lin，2004）来评估说话风格模仿、回答准确性和特定角色知识捕获的模型。 
+
+```
+基准范围：
+（1）对话工程比即时工程更受RoleGPT评估者的青睐；
+（2）基于 RoleBench基准的角色评分
+（3）在角色描述和流行语中引入RoleLLaMA 泛化能力，允许用户无缝定制新角色；
+（4）基于系统指令角色定制推理；
+（5）基于 RoleBench基准的few-shot 对话工程中的消融实验，强调了对话模式输入格式化和检索增强
+
+
+```
+
+
+
+
+
+>  基准指标1：事实信息抽取
+
+
+
+​	3.3 Context-Instruct: Context-based Instruction Generation
+
+To enhance the density of role-specific knowledge within the synthetic instruction dataset, we introduce Context-Instruct
+for long-text knowledge extraction and instruction data generation. The role-specific instruction data generation
+comprises three steps:  
+
+​	1）分割角色档案；（2） 生成问题-置信度-答案三元组训练集；（3）对低质量数据进行滤波和后处理。
+
+​	详见附录C
+
+
+
+
+
+-  角色档案构建：
+
+```
+我们仔细地将角色配置文件划分为更易于管理的部分。角色简介包括
+
+ 	  
+
+​		（A）角色描述和流行语，一直存在上下文中的指令
+
+​		（b）结构化对话（见附录I）。基于对话事件脚本的片段指令
+
+
+```
+
+
+
+- 生成问题-置信度-答案三元组训练集！！！**（事实信息由模型训练而来，进一步增加了模型的使用成本，多个觉得必然存在一系列的指文档建立、指令生成、数据预处理）**
+
+```
+	为特定角色的训练数据生成数据集的过程，考虑了三个元素: 
+
+​	1 与给定部分(即上下文)相关的问题(Q) ，
+
+​	2 相应的答案(A)
+
+​	3 具有基本原理的置信评分(C)
+
+
+```
+
+
+
+- 数据过滤和特定数据处理
+
+​	
+
+
+
+
+
+> 基准指标2 RoCIT：角色指令增强数据
+
+​		有两种类型的增强数据: 一种用于通用域指令，由 RoleGPT 生成，另一种用于特定于角色的指令
+
+​		我们采用角色条件微调，定制角色的特定策略，其中包括系统指令(参考文献3.4)和检索增强(参考文献3.2和5.3)
+
+
+
+- 系统指令定制 !!!!!**(目前特定角色指令可由模型，根据用户意图动态生成)**
+
+   ```
+   我们将系统指令与RoleGPT中的角色名称、描述、流行语和角色扮演任务指令一起准备到输入。 在推理过程中，用户可以通过系统指令轻松修改LLM的角色，与检索增强相比，最大限度地减少了上下文窗口的消耗
+   ```
+
+  
+
+
+
+
+
