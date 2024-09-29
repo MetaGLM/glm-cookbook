@@ -11,6 +11,7 @@
 
 ## 更新情况 🔥
 
++ 🔥 2024-09-26: 本CookBook更新了 [GraphRAG 教程](demo/graphrag)，欢迎查看。 
 + 🔥 2024-07-26: 本CookBook更新了 [CogVideoX 视频生成模型调用教程](vision/cogvideox_pysdk.ipynb)，欢迎查看。 
 + 🔥 2024-07-20: 本CookBook更新了 [CharacterGLM & Emohaa 调用教程](basic/character_glm_pysdk.ipynb) 和 [glm-4v小目标识别手册](vision/glm-v_small_text_recognition.ipynb)。
 + 🔥 2024-07-13: 本CookBook更新了 [LangChain-GLM](https://github.com/MetaGLM/langchain-glm)
