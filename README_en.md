@@ -13,17 +13,24 @@ easily master the use of GLM API!
 
 ## Recent Update 🔥
 
++ 🔥 2024-10-01: This CookBook has updated the [Multi-Tool Call Tutorial](basic/glm_multi_functions_call.ipynb), and
+  cleared and updated the dependencies in `requirments.txt`. Welcome to check it out.
 + 🔥 2024-09-26: This CookBook updates the [GraphRAG tutorial](demo/graphrag), welcome to check it out.
-+ 🔥 2024-07-26: This CookBook updates the [CogVideoX video generation model call tutorial](vision/cogvideox_pysdk.ipynb), welcome to check it out.
-+ 🔥 2024-07-20: This CookBook updates the [CharacterGLM & Emohaa call tutorial](basic/character_glm_pysdk.ipynb) and [glm-4v small object recognition manual](vision/glm-v_small_text_recognition.ipynb).
-+ 🔥 2024-07-13: This CookBook updates the [Simple usage manual](glm_langchain_glm_framework.ipynb) of the [LangChain-GLM](https://github.com/MetaGLM/langchain-glm)
-framework.
-+ 🔥 2024-06-25: This CookBook updates the [Tutorial](basic/openai2zhipu.ipynb) for quickly switching from the OpenAI API to the GLM API model adaptation. Welcome to check it out.
++ 🔥 2024-07-26: This CookBook updates
+  the [CogVideoX video generation model call tutorial](vision/cogvideox_pysdk.ipynb), welcome to check it out.
++ 🔥 2024-07-20: This CookBook updates the [CharacterGLM & Emohaa call tutorial](basic/character_glm_pysdk.ipynb)
+  and [glm-4v small object recognition manual](vision/glm-v_small_text_recognition.ipynb).
++ 🔥 2024-07-13: This CookBook updates the [Simple usage manual](glm_langchain_glm_framework.ipynb) of
+  the [LangChain-GLM](https://github.com/MetaGLM/langchain-glm)
+  framework.
++ 🔥 2024-06-25: This CookBook updates the [Tutorial](basic/openai2zhipu.ipynb) for quickly switching from the OpenAI API
+  to the GLM API model adaptation. Welcome to check it out.
 + 🔥 2024-05-25: Batch API tutorial updated, you can view the tutorial [Here](basic/glm_batch_api.ipynb).
 + 🔥 2024-05-10: GLMs API basic call tutorial updated. Check [Here](glms/glms_api_call.md) to view the tutorial.
 + 🔥 2024-04-28: ZhipuAI Pyton SDK updated, please update the SDK to adapt to the latest tutorial.
 + 🔥 2024-04-23: GLM-4 now supports access using OpenAI SDK, greatly reducing development replacement costs!
-+ 🔥 2024-03-16: The warehouse has started to be updated [Zhipu Qingyan](glms) Basic developer teaching document, welcome to experience it!
++ 🔥 2024-03-16: The warehouse has started to be updated [Zhipu Qingyan](glms) Basic developer teaching document, welcome
+  to experience it!
 + 🔥 2024-03-06: The organization where this Repos is
   located [MetaGLM](https://github.com/MetaGLM) has updated the SDKs of 4 languages (Python, Java, C#, Node.js).
   Comments and suggestions for the project are welcome Code improvements!
