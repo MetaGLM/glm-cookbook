@@ -11,20 +11,11 @@
 
 ## 更新情况 🔥
 
-+ 🔥 2024-10-01: 本CookBook更新了 [多工具调用教程](basic/glm_multi_functions_call.ipynb)，清更新`requirments.txt`中的依赖，欢迎查看。 
-+ 🔥 2024-09-26: 本CookBook更新了 [GraphRAG 教程](demo/graphrag)，欢迎查看。 
-+ 🔥 2024-07-26: 本CookBook更新了 [CogVideoX 视频生成模型调用教程](vision/cogvideox_pysdk.ipynb)，欢迎查看。 
-+ 🔥 2024-07-20: 本CookBook更新了 [CharacterGLM & Emohaa 调用教程](basic/character_glm_pysdk.ipynb) 和 [glm-4v小目标识别手册](vision/glm-v_small_text_recognition.ipynb)。
-+ 🔥 2024-07-13: 本CookBook更新了 [LangChain-GLM](https://github.com/MetaGLM/langchain-glm)
-  框架的[简单使用手册](glm_langchain_glm_framework.ipynb)。
-+ 🔥 2024-06-25: 本CookBook更新了快速从 OpenAI API 切换成 GLM API 模型的适配 [教程](basic/openai2zhipu.ipynb), 欢迎查看。
-+ 🔥 2024-05-25: Batch API 教程更新，您可以在[这里](basic/glm_batch_api.ipynb) 查看教程。
-+ 🔥 2024-05-10: GLMs 智能体API基础调用教程更新, 您可以在 [这里](glms/glms_api_call.md) 查看教程。
-+ 🔥 2024-04-28: ZhipuAI Pyton SDK 更新，请您更新SDK以适配最新教程。
-+ 🔥 2024-04-23: GLM-4 已支持使用 OpenAI SDK 接入，大幅降低了开发替换成本！
-+ 🔥 2024-03-18: 仓库开始更新 [智谱清言](glms) 基础开发者教学文档，基础提示词文档 和 智能体文档
-  已经在 [技术文档](https://zhipu-ai.feishu.cn/wiki/SPyFwjSI7iOCoCksq2sc3Eb7nXd) 推出，欢迎体验和留言，我们将继续快速迭代！
-+ 🔥 2024-03-06: 仓库所在组织 [MetaGLM](https://github.com/MetaGLM) 更新了4门语言 (Python, Java,C#,Node.js)
++ 🔥🔥 2024-10-10: 本CookBook更新了 [视频理解教程](vision/glm-v_for_video_understanding.ipynb), 你可以直接理解一个视频，而无需拆分成多个图片。
++ 🔥 2024-10-01: 本CookBook更新了 [多工具调用教程](basic/glm_multi_functions_call.ipynb)，清更新`requirments.txt`
+  中的依赖，欢迎查看。
++ 🔥 2024-09-26: 本CookBook更新了 [GraphRAG 教程](demo/graphrag)，欢迎查看。
++ 🌱 2024-03-06: 仓库所在组织 [MetaGLM](https://github.com/MetaGLM) 更新了4门语言 (Python, Java,C#,Node.js)
   的SDK，欢迎提出意见和对项目进行PR！
 
 ## 精选文章 💫
