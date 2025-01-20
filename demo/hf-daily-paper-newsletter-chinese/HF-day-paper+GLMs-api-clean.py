@@ -3,6 +3,10 @@ import json
 from datetime import datetime, timedelta, timezone
 from openai import OpenAI
 
+# 填写你的ZhipuAI API key
+BASE_URL = os.getenv("OPENAI_API_BASE", "https://open.bigmodel.cn/api/paas/v4")
+API_KEY = os.getenv("OPENAI_API_KEY")
+
 # 获取当前UTC时间
 current_utc_time = datetime.now(timezone.utc)
 print(f"当前 UTC 日期和时间: {current_utc_time}")
@@ -40,11 +44,6 @@ else:
     user_content = f"文件 {filename} 不存在"
 
 try:
-    # 在环境变量中设置OPENAI_API_BASE为您部署的zhipuai-agent-to-openai服务地址
-    BASE_URL = os.getenv("OPENAI_API_BASE", "http://8.130.209.127:8000/v1")
-    # 在环境变量中设置OPENAI_API_KEY为第一步拼接获得的API Key或者直接填写
-    API_KEY = "51d5350a075931c7.fa2eab916c0705fd6b120434ddd98e96"
-
     client = OpenAI(
         base_url=BASE_URL,
         api_key=API_KEY
