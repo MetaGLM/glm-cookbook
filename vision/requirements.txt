@@ -1,4 +1,4 @@
 pillow>=10.2.0
-opencv-python>=4.9.0.80
-pandas>=2.2.0
-matplotlib>=3.8.2
+opencv-python>=4.11.0
+pandas>=2.2.3
+matplotlib>=3.10.0
