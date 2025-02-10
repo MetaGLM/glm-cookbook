@@ -11,7 +11,8 @@
 
 ## 更新情况 🔥
 
-+ 🔥🔥 2024-10-10: 本CookBook更新了 [视频理解教程](vision/glm-v_for_video_understanding.ipynb), 你可以直接理解一个视频，而无需拆分成多个图片。
++ 🔥🔥 2025-02-10: CogVideoX2视频生成模型推出，均可以使用本教程的代码直接替换模型运行。
++ 🔥 2024-10-10: 本CookBook更新了 [视频理解教程](vision/glm-v_for_video_understanding.ipynb), 你可以直接理解一个视频，而无需拆分成多个图片。
 + 🔥 2024-10-01: 本CookBook更新了 [多工具调用教程](basic/glm_multi_functions_call.ipynb)，清更新`requirments.txt`
   中的依赖，欢迎查看。
 + 🔥 2024-09-26: 本CookBook更新了 [GraphRAG 教程](demo/graphrag)，欢迎查看。
