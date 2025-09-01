@@ -3,8 +3,6 @@
    glm-cookbook
 </h1>
 
-[中文版本](README.md)
-
 Welcome to the GLM API Model Beginner's Warehouse in Exploration 📘。 This is an open-source GLM API introductory code
 textbook.
 
@@ -13,16 +11,9 @@ easily master the use of GLM API!
 
 ## Recent Update 🔥
 
-+ 🔥🔥 2024-10-10: This CookBook has been updated with
-  the [Video Understanding Tutorial](vision/glm-v_for_video_understanding.ipynb), allowing you to understand a video
-  directly without splitting it into multiple images.
-+ 🔥 2024-10-01: This CookBook has been updated with
-  the [Multi-Tool Invocation Tutorial](basic/glm_multi_functions_call.ipynb). Please update the dependencies
-  in `requirements.txt`. Feel free to check it out.
-+ 🔥 2024-09-26: This CookBook has been updated with the [GraphRAG Tutorial](demo/graphrag). You are welcome to explore
-  it.
-+ 🌱 2024-03-06: The organization [MetaGLM](https://github.com/MetaGLM) has updated SDKs in 4 languages (Python, Java,
-  C#, Node.js). Feel free to provide feedback and contribute to the project through PR!
++ 🔥 2025-09-01: GLM-4.5 GLM Coding Plan resource pack released. 
+Currently, GLM-4.5 has been integrated into several major coding tools, including Claude Code, Cline, Gemini CLI, Grok CLI, CodeGeeX, Kilo Code, Roo Code, and Trae, fully supporting everyday development workflows. 
+For more information, please check [here](https://bigmodel.cn/claude-code)
 
 ## Quick Start 🚀
 

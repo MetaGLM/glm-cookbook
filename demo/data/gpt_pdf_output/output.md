@@ -22,8 +22,8 @@ functions—to effectively complete complex tasks. In practical applications, it
 tasks like accessing online information via web browsing and solving math problems using Python interpreter. Over the
 course, we have open-sourced a series of models, including ChatGLM-6B (three generations), GLM-4-9B (128K, 1M),
 GLM-4V-9B, WebGLM, and CodeGeeX, attracting over 10 million downloads on Hugging face in the year 2023 alone. The open
-models can be accessed through [https://github.com/THUDM](https://github.com/THUDM)
-and [https://huggingface.co/THUDM](https://huggingface.co/THUDM).
+models can be accessed through [github](https://github.com/zai-org)
+and [https://huggingface.co/zai-org](https://huggingface.co/zai-org).
 
 ---
 
@@ -40,7 +40,7 @@ Zhen Yang, Zhengxiao Du, Zhenyu Hou, Zihan Wang.*
 Figure 1: The timeline of the GLM family of language, code, vision, and agent models. The focus of this report is
 primarily on the language models, i.e., ChatGLM. The APIs are publicly available
 at [https://bimgodel.cn](https://bimgodel.cn) and open models can be accessed
-through [https://github.com/THUDM](https://github.com/THUDM).
+through [https://github.com/zai-org](https://github.com/zai-org).
 
 # 1 Introduction
 
@@ -514,7 +514,7 @@ Hesse, and J. Schulman. Training verifiers to solve math word problems. CoRR, ab
 5. Z. Du, A. Zeng, Y. Dong, and J. Tang. Understanding emergent abilities of language models from the loss perspective,
     2024.
 
-6. T. GLM. Chatglm-6b: An open bilingual dialogue language model. <https://github.com/ THUDM/ChatGLM-6B>, 2023.
+6. T. GLM. Chatglm-6b: An open bilingual dialogue language model. <https://github.com/zai-org/ChatGLM-6B>, 2023.
 
 7. D. Hendrycks, C. Burns, S. Basart, A. Zou, M. Mazeika, D. Song, and J. Steinhardt. Measuring massive multitask
    language understanding. In *International Conference on Learning Representations*, 2021.

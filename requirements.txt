@@ -1,5 +1,5 @@
-zhipuai>=2.1.5
-pyjwt>=2.8.0
+openai>=1.102.0
+zhipuai>=2.1.5.20250825
 jupyter>=1.0.0
-sentencepiece>=0.2.0
-transformers>=4.45.1
+sentencepiece>=0.2.1
+transformers>=4.56.0

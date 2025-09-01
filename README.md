@@ -11,13 +11,9 @@
 
 ## 更新情况 🔥
 
-+ 🔥🔥 2025-02-10: CogVideoX2视频生成模型推出，均可以使用本教程的代码直接替换模型运行。
-+ 🔥 2024-10-10: 本CookBook更新了 [视频理解教程](vision/glm-v_for_video_understanding.ipynb), 你可以直接理解一个视频，而无需拆分成多个图片。
-+ 🔥 2024-10-01: 本CookBook更新了 [多工具调用教程](basic/glm_multi_functions_call.ipynb)，清更新`requirments.txt`
-  中的依赖，欢迎查看。
-+ 🔥 2024-09-26: 本CookBook更新了 [GraphRAG 教程](demo/graphrag)，欢迎查看。
-+ 🌱 2024-03-06: 仓库所在组织 [MetaGLM](https://github.com/MetaGLM) 更新了4门语言 (Python, Java,C#,Node.js)
-  的SDK，欢迎提出意见和对项目进行PR！
++ 🔥 2025-09-01: GLM-4.5 GLM Coding Plan 资源包发布。 目前，GLM-4.5 已接入包括 Claude Code、Cline、Gemini CLI、Grok
+  CLI、CodeGeeX、Kilo Code、Roo Code、Trae
+  在内的多款主流编程工具，全面支持日常开发流程。更多信息，欢迎关注 [这里](https://bigmodel.cn/claude-code)
 
 ## 精选文章 💫
 
