@@ -1,83 +1,57 @@
+
 <h1>
-  <img src="asset/glm.png" alt="glm" style="height: 1.5em; vertical-align: bottom;" />
-  glm-cookbook
+  <img src="asset/logo.svg" alt="logo" style="height: 1.5em; vertical-align: bottom;" />
+  GLM-CookBook
 </h1>
 
-[Read this in English](README_en.md)
+[阅读中文版](README.zh.md)
 
-欢迎来到 GLM API 模型入门仓库📘。这是一本开源的 GLM API 入门代码教材。
+Welcome to the GLM API Beginner’s Repository 📘. This is an open-source tutorial book of introductory code for the GLM API.
 
-在这里，你会发现丰富的 **代码示例👨‍**、**实用指南🗺**️ 以及 **资源链接🔗**，或许能帮助你轻松掌握 GLM API 的使用！
+## Updates 🔥
 
-## 更新情况 🔥
++ 🔥 GLM-4.5 is now integrated with Claude Code, see [GLM-4.5 Claude Code Integration Guide](vibecoding/glm-4.5-claude-code-integration.md).
 
-+ 🔥 2025-09-01: GLM-4.5 GLM Coding Plan 资源包发布。 目前，GLM-4.5 已接入包括 Claude Code、Cline、Gemini CLI、Grok
-  CLI、CodeGeeX、Kilo Code、Roo Code、Trae
-  在内的多款主流编程工具，全面支持日常开发流程。更多信息，欢迎关注 [这里](https://bigmodel.cn/claude-code)
+## Quick Start 🚀
 
-## 精选文章 💫
-
-以下表格展现了本教程中有精选的 demo 文章地址，开发者可以在这里寻找到一些经典的案例和教程。
-
-| 文章标题                  | 链接                                                |
-|-----------------------|---------------------------------------------------|
-| 智谱清言智能体 API 调用指南      | [查看教程](glms/glms_api_call.md)                     |
-| 智谱清言智能体调用第三方 API 使用指南 | [查看教程](glms/glms_custom_api_plugin.md)            |
-| GLM-4V 小目标识别          | [查看教程](vision/glm-v_small_text_recognition.ipynb) |
-| 多角色模拟 Agent系统         | [查看教程](demo/agent/glm_multi_role_division.ipynb)  |
-| Agent 数据集制作手册         | [查看教程](demo/generate_agent_dataset)               |
-| 信息抽取示例                | [查看教程](demo/glm_infomation_extraction.ipynb)      |
-| CSV 数据分析              | [查看教程](demo/glm_csv_data_analysis.ipynb)          |
-| OCR + GLM 实现扫描文件对话    | [查看教程](demo/ppocr_glm.ipynb)                      |
-| 梦境之旅心理体验              | [查看教程](demo/interpretationo_dreams)               |
-| hugging face 每日论文解读   | [查看教程](demo/hf-daily-paper-newsletter-chinese)    |
-
-## 快速开始 🚀
-
-1. 要开始使用GLM API，你首先需要一个 GLM API 账户和相应的 API 密钥。
-   如果你还没有账户，可以在 [这里](https://zhipuaishengchan.datasink.sensorsdata.cn/t/Q) 免费注册。
-
-2. 我的代码以 **Python, Jupyter Note** 为主，但同样的概念也可以应用于其他编程语言（不过这可能要你们自己实现咯）。
-   这些代码示例旨在帮助我（或许也能对你）如何高效地使用 GLM API 完成常见的简单任务。 推荐使用`Python 3.9 - 3.12`
-   的版本（我自己是Python 3.10）。你需要安装必须的依赖，才能更好的使用 Demo。你可以使用以下命令来安装总的依赖：
+1. Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-## 仓库文件 📂
+2. Configure your [Z.AI](https://z.ai/model-api) account, or your [openrouter](https://openrouter.ai/settings/keys) account.
 
-我已经分类好了多个文件夹，这些文件夹都有自己的内容，你可以根据自己的需求来查看！
+## Repository Structure 📂
 
-+ 🌱`basic` 最基础的内容，帮助你熟悉基本的 API 调用。
+We have categorized multiple folders, each containing their own content. You can check them out according to your needs!
 
-+ 👁️`vision` 关于视觉模型和绘图模型的调用和基本应用。
++ `basic` The most fundamental content to help you get familiar with basic API calls.
 
-+ 🔧`finetune` 或许可以来这里找找微调的内容？
++ `vision` API calls related to vision models and drawing models.
 
-+ 🎉`demo` 一些有趣的小项目，或许可以激发点灵感。
-    + 🤖`agent` 看看发布会的智能体有多厉害！
-    + 📚`data` 运行demo所需要的数据。
++ `vibecoding` Examples of using the GLM series models for code development.
 
-+ 📊`glms` 智能体 (智谱清言) 专区，即使你不会代码，也能快速上手！
++ `finetune` Fine-tuning GLM models.
 
-+ 🏠`asset` 一些相关的图片资料
++ `demo` Some fun little projects that might inspire you.
+    + `agent` See how powerful the conference demo agent is!
+    + `data` Data required to run the demos.
 
-你可以通过以下图片快速了解本仓库构成, 我将尽快同步更新 Zhipu AI SDK的最新实验和教学内容。
 
-![实现原理图](asset/plan.png)
++ `asset` Some related image materials.
 
-## 开源SDK
+You can quickly understand the structure of this repository through the image below. I will update the latest experiments and teaching content of the Zhipu AI SDK as soon as possible.
 
-GLM-4系列SDK已经开源，如果你想直接在我们的SDK上进行修改，可以按照以下地址进行需改：
+![Architecture Diagram](asset/plan.png)
+
+## SDK Open Source 🔧
+
+The Z.AI SDK is now open source. If you want to directly modify our SDK, you can do so at the following repositories:
 
 + [Python SDK](https://github.com/MetaGLM/zhipuai-sdk-python-v4)
 + [Java SDK](https://github.com/MetaGLM/zhipuai-sdk-java-v4)
 + [C# SDK](https://github.com/MetaGLM/zhipuai-sdk-csharp-v4)
 + [Node.js SDK](https://github.com/MetaGLM/zhipuai-sdk-nodejs-v4)
-+ 如果你有其他语言的SDK想贡献到官方仓库，欢迎提出PR。
 
-## 贡献指南 🤝
-
-欢迎大家贡献自己的想法和代码！如果你有任何建议或想添加自己的代码，请随时提交 Pull Request 或开 Issue 讨论。
-如果你喜欢这个仓库，欢迎给它一个 ⭐，这将对我有很大帮助！
+If you want to contribute SDKs for other languages to the official repository, feel free to submit a PR.
