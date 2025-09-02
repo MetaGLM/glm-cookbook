@@ -1,6 +1,6 @@
 # 基础教程
 
-欢迎来到基础教程，本文件夹下的内容将会帮助你快速上手 GLM API的基本使用，如果你是第一次使用 GLM API，你可以按照以下环节来学习：
+欢迎来到基础教程，本文件夹下的内容将会帮助你快速上手 GLM API 的基本使用，如果你是第一次使用 GLM API，你可以按照以下环节来学习：
 
 基础教程：
 
@@ -13,7 +13,8 @@
 7. [使用智谱AI自带的知识库工具来完成 retrieval 工作](glm_retrieval.ipynb)
 8. [使用 Batch API 为您节约更多的推理费用](glm_batch_api.ipynb)
 9. [使用超拟人大模型](character_glm_pysdk.ipynb)
-10. [使用CodeGeex 大模型辅助代码工作](codegeex.ipynb)
+10. [使用CodeGeeX 大模型辅助代码工作](codegeex.ipynb)
+11. [使用GLM-4.5 系列模型运用在 Claude Code](glm_claude_code.ipynb)
 
 应用框架：
 
