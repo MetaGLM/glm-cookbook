@@ -1,11 +1,12 @@
-import unittest
-import requests
-from datetime import datetime, timedelta, timezone
 import json
 import os
+import unittest
+from datetime import datetime, timedelta, timezone
+
+import requests
+
 
 class TestDailyPapers(unittest.TestCase):
-
     def setUp(self):
         # 获取当前日期和时间 (UTC 时间)
         self.current_date = datetime.now(timezone.utc)
@@ -17,7 +18,9 @@ class TestDailyPapers(unittest.TestCase):
         print(f"当前北京时间和时间: {self.current_date_beijing}")
 
         # 计算查询的日期(前一天)
-        self.query_date = (self.current_date_beijing - timedelta(days=1)).strftime('%Y-%m-%d')
+        self.query_date = (self.current_date_beijing - timedelta(days=1)).strftime(
+            "%Y-%m-%d"
+        )
         print(f"查询的日期: {self.query_date}")
 
         # 构建API URL
@@ -29,7 +32,7 @@ class TestDailyPapers(unittest.TestCase):
         response = requests.get(self.url)
 
         # 定义文件夹和文件名
-        folder_name = 'Paper_metadata_download'
+        folder_name = "Paper_metadata_download"
         file_name = f"{self.query_date}.json"
 
         # 创建文件夹（如果不存在）
@@ -47,31 +50,26 @@ class TestDailyPapers(unittest.TestCase):
                     print(f"在 {self.query_date} 找到数据:")
                     print(data)
                     # 写入数据到文件
-                    with open(file_path, 'w', encoding='utf-8') as f:
+                    with open(file_path, "w", encoding="utf-8") as f:
                         json.dump(data, f, ensure_ascii=False, indent=4)
                     print(f"数据已写入文件 {file_path}")
                 else:
                     print(f"在 {self.query_date} 没有找到数据")
                     # 写入1到文件
-                    with open(file_path, 'w', encoding='utf-8') as f:
+                    with open(file_path, "w", encoding="utf-8") as f:
                         json.dump(1, f)
                     print(f"1 已写入文件 {file_path}")
             else:
                 print(f"请求失败，状态码：{response.status_code}")
                 print(response.json())  # 打印出详细的错误信息
                 # 写入1到文件
-                with open(file_path, 'w', encoding='utf-8') as f:
+                with open(file_path, "w", encoding="utf-8") as f:
                     json.dump(1, f)
                 print(f"1 已写入文件 {file_path}")
         except Exception as e:
             print(f"写入文件时发生异常: {e}")
             self.fail(f"写入文件时发生异常: {e}")
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     unittest.main(exit=False)
-
-
-
-
-
-
