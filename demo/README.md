@@ -1,36 +1,20 @@
-# 综合Demo
+# Comprehensive Demo
 
-我将会在这里分享一些好玩的，实战的最小运行实例，主要使用 GLM API 系列来完成一些好玩的任务，如果你有好的想法，欢迎来提交 PR 或者
-Issue。
+I will share some fun, practical minimum working examples here, mainly using GLM API series to complete some interesting
+tasks. If you have good ideas, feel free to submit a PR or Issue.
 
-你可以按照以下环节来学习：
+You can follow these sections to learn:
 
-1. [使用 GLM-4 模型进行数据分析](glm_csv_data_analysis.ipynb)
-2. [使用 GLM-4 模拟不同的角色完成客户咨询任务](agent/glm_multi_role_division.ipynb)
-3. [使用 GLM-4 作为模型底座运行微软的 TaskWeaver Agent 框架](agent/glm_taskweaver.ipynb)
-4. [使用 GLM-4 完成心理分析活动](interpretationo_dreams%2FREADME.md)
-5. [使用 GLM-4 模型完成 搜索问答的新闻抓取任务](glm_qa_search_api.ipynb)
-6. [使用 GLM-4 模型完成 OCR 识别](ppocr_glm.ipynb)
+1. [Data analysis using GLM-4 model](glm_csv_data_analysis.ipynb)
+2. [Using GLM-4 to simulate different roles for customer consultation tasks](agent/glm_multi_role_division.ipynb)
+3. [Using GLM-4 as the model foundation to run Microsoft's TaskWeaver Agent framework](agent/glm_taskweaver.ipynb)
+4. [Using GLM-4 for psychological analysis activities](interpretationo_dreams%2FREADME.md)
+5. [Using GLM-4 model for search Q&A news scraping tasks](glm_qa_search_api.ipynb)
+6. [Using GLM-4 model for OCR recognition](ppocr_glm.ipynb)
 
-## 安装对应的依赖
+## Installing Dependencies
 
-为了能够顺利运行所有的 Notebook，你需要安装必须的依赖，才能更好的使用 Demo。你可以使用以下命令来安装总的依赖：
-
-```bash
-pip install -r requirements.txt
-```
-
-
-## 安装特有项目的依赖
-
-为了能够顺利运行PPOCR_GLM.ipynb，你需要安装必须的依赖，才能更好的使用 Demo。你可以使用以下命令来安装该Notebok的依赖：
+To run all Notebooks smoothly, you need to install the necessary dependencies to better use the Demo. You can use the
+following command to install the general dependencies:
 
 ```bash
-pip install -r requirements_ppocr_glm.txt
-```
-
-为了能够顺利运行glm_sdg_example_1.ipynb与glm_sdg_example_2.ipynb，你需要安装必须的依赖，才能更好的使用 Demo。你可以使用以下命令来安装该Notebok的依赖：
-
-```bash
-pip install -r requirements_sdg_glm.txt
-```
