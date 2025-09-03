@@ -1,11 +1,12 @@
-## 微调
+The [GLM Coding Plan](https://bigmodel.cn/claude-code) uses a Claude Code–type API interface, with a different API endpoint.
+If you need to switch to this plan, please continue with the following steps.
 
-本文件夹将提供若干个使用 Zhipu AI python sdk 微调的例子。你可以按照以下环节来学习：
+1. At the model selection location, choose `claude`, and change the `API BASE URL` to 
 
-1. [使用SDK 进行简单的Lora微调](glm_lora_finetune_pysdk.ipynb)
-2. [使用SDK 进行全参微调 (即将推出)]()
-3. [使用微调后的模型完成一个合适的任务 (即将推出)]()
+> https://open.bigmodel.cn/api/anthropic
 
-## 安装对应的依赖
+Then enter the API KEY.
 
-本仓库暂时没有对应的依赖需要安装，你可以直接运行对应的 Notebook。
+2. Verify whether you are using the GLM Coding Plan instead of regular credits.
+
+In Kode, enter `/model` to check if it shows `anthropic glm-4.5`. If it does, then it's successful.
