@@ -13,10 +13,10 @@
 7. [使用 CogVideoX 完成视频生成工作](cogvideox_pysdk.ipynb)
 8. [使用 CogVideoX 批量生产视频](cogvideox_batch_video_generation.ipynb)
 
-
 ## 安装对应的依赖
 
 为了能够顺利运行所有的 Notebook，你需要安装必须的依赖，才能更好的使用 Demo。你可以使用以下命令来安装总的依赖：
+
 ```bash
 pip install -r requirements.txt
 ```

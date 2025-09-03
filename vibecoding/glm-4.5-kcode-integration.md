@@ -34,25 +34,25 @@ Keep pressing the down arrow key `↓` until GLM appears, then press Enter to se
 shown as 0 model).
 
 ```
-╭───────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
-│                                                                                                                   │
-│  Provider Selection                                                                                               │
-│                                                                                                                   │
-│  Select your preferred AI provider for this model profile:                                                        │
-│                                                                                                                   │
-│  Choose the provider you want to use for this model profile.                                                      │
-│  This will determine which models are available to you.                                                           │
-│                                                                                                                   │
-│    MiniMax  (3 models)                                                                                            │
-│    SiliconFlow  (0 models)                                                                                        │
-│    ❯GLM (Zhipu AI)  (0 models)                                                                                    │
-│    Baidu Qianfan  (0 models)                                                                                      │
-│    Mistral  (5 models)                                                                                            │
-│                                                                                                                   │
-│                                                                                                                   │
-│  You can change this later by running /model again                                                                │
-│                                                                                                                   │
-╰───────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+╭───────────────────────────────────────────────────────────────────────────────────────╮
+│                                                                                       │
+│  Provider Selection                                                                   │
+│                                                                                       │
+│  Select your preferred AI provider for this model profile:                            │
+│                                                                                       │
+│  Choose the provider you want to use for this model profile.                          │
+│  This will determine which models are available to you.                               │
+│                                                                                       │
+│    OpenRouter  (0 models)                                                             │
+│    MiniMax  (3 models)                                                                │
+│    SiliconFlow  (0 models)                                                            │
+│    ❯GLM (Zhipu AI)  (0 models)                                                        │
+│    Baidu Qianfan  (0 models)                                                          │
+│                                                                                       │
+│                                                                                       │
+│  You can change this later by running /model again                                    │
+│                                                                                       │
+╰───────────────────────────────────────────────────────────────────────────────────────╯
 ```
 
 Next, enter the API Key.
@@ -85,7 +85,7 @@ You can now choose your preferred model settings like:
 > → Output: 8K  
 > → Context: 128K
 
-If you see the following output, you have successfully configured the OpenAI interface for GLM-4.5. 
+If you see the following output, you have successfully configured the OpenAI interface for GLM-4.5.
 Note that this is not the GLM Coding Plan method. If you are using GLM Coding Plan, please continue reading below.
 
 ```
@@ -147,7 +147,7 @@ Use `Custom Anthropic-Compatible API` and fill it as:
 
 Then enter the API KEY.
 
-2. Verify whether you are using the GLM Coding Plan instead of regular credits.
+1. Verify whether you are using the GLM Coding Plan instead of regular credits.
 
 In Kode, enter `/model` to check if it shows `anthropic glm-4.5`. If it does, then it's successful.
 

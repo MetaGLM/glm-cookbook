@@ -19,5 +19,3 @@ Basic Tutorial:
 Application Framework:
 
 1. [Using Langchain to call GLM API](glm_langchain.ipynb)
-
-I will continuously supplement new basic content to ensure updates with GLM's API updates and new features.

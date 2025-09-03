@@ -34,9 +34,8 @@ pip install -r requirements.txt
 + `finetune` 微调 GLM 模型。
 
 + `demo` 一些有趣的小项目，或许可以激发点灵感。
-    + `agent` 看看发布会的智能体有多厉害！
-    + `data` 运行demo所需要的数据。
-
+  + `agent` 看看发布会的智能体有多厉害！
+  + `data` 运行demo所需要的数据。
 
 + `asset` 一些相关的图片资料
 
@@ -54,4 +53,3 @@ Z.AI SDK已经开源，如果你想直接在我们的SDK上进行修改，可以
 + [Node.js SDK](https://github.com/MetaGLM/zhipuai-sdk-nodejs-v4)
 
 如果你有其他语言的SDK想贡献到官方仓库，欢迎提出PR。
-

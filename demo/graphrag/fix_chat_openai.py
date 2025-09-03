@@ -6,6 +6,13 @@
 from collections.abc import AsyncGenerator, Callable, Generator
 from typing import Any
 
+from graphrag.query.llm.base import BaseLLM, BaseLLMCallback
+from graphrag.query.llm.oai.base import OpenAILLMImpl
+from graphrag.query.llm.oai.typing import (
+    OPENAI_RETRY_ERROR_TYPES,
+    OpenaiApiType,
+)
+from graphrag.query.progress import StatusReporter
 from tenacity import (
     AsyncRetrying,
     RetryError,
@@ -14,14 +21,6 @@ from tenacity import (
     stop_after_attempt,
     wait_exponential_jitter,
 )
-
-from graphrag.query.llm.base import BaseLLM, BaseLLMCallback
-from graphrag.query.llm.oai.base import OpenAILLMImpl
-from graphrag.query.llm.oai.typing import (
-    OPENAI_RETRY_ERROR_TYPES,
-    OpenaiApiType,
-)
-from graphrag.query.progress import StatusReporter
 
 _MODEL_REQUIRED_MSG = "model is required"
 
@@ -233,13 +232,13 @@ class ChatOpenAI(BaseLLM, OpenAILLMImpl):
         model = self.model
         if not model:
             raise ValueError(_MODEL_REQUIRED_MSG)
-            
+
         tools = [
             {
                 "type": "web_search",
                 "web_search": {
-                    "enable": False, 
-                }
+                    "enable": False,
+                },
             }
         ]
         response = self.sync_client.chat.completions.create(  # type: ignore
@@ -276,13 +275,12 @@ class ChatOpenAI(BaseLLM, OpenAILLMImpl):
         if not model:
             raise ValueError(_MODEL_REQUIRED_MSG)
 
-
         tools = [
             {
                 "type": "web_search",
                 "web_search": {
-                    "enable": False, 
-                }
+                    "enable": False,
+                },
             }
         ]
         response = await self.async_client.chat.completions.create(  # type: ignore
@@ -327,13 +325,13 @@ class ChatOpenAI(BaseLLM, OpenAILLMImpl):
         model = self.model
         if not model:
             raise ValueError(_MODEL_REQUIRED_MSG)
-            
+
         tools = [
             {
                 "type": "web_search",
                 "web_search": {
-                    "enable": False, 
-                }
+                    "enable": False,
+                },
             }
         ]
         response = await self.async_client.chat.completions.create(  # type: ignore

@@ -1,6 +1,7 @@
-import os
 import json
+import os
 from datetime import datetime, timedelta, timezone
+
 from openai import OpenAI
 
 # 填写你的ZhipuAI API key
@@ -18,14 +19,14 @@ print(f"当前北京时间和时间: {current_beijing_time}")
 
 # 计算查询的日期(前一天)
 yesterday_beijing = current_beijing_time - timedelta(days=1)
-yesterday_str = yesterday_beijing.strftime('%Y-%m-%d')
+yesterday_str = yesterday_beijing.strftime("%Y-%m-%d")
 print(f"查询的日期: {yesterday_str}")
 
 # 文件名假设为 "YYYY-MM-DD.json"
 filename = f"{yesterday_str}.json"
 
 # 搜索文件的根目录（可根据需要修改）
-root_directory = '.'
+root_directory = "."
 
 # 搜索文件
 file_path = None
@@ -36,7 +37,7 @@ for dirpath, dirnames, filenames in os.walk(root_directory):
 
 if file_path:
     # 读取JSON文件内容
-    with open(file_path, 'r', encoding='utf-8') as file:
+    with open(file_path, "r", encoding="utf-8") as file:
         data = json.load(file)
     # 将文件内容转换为字符串
     user_content = json.dumps(data, ensure_ascii=False)
@@ -44,10 +45,7 @@ else:
     user_content = f"文件 {filename} 不存在"
 
 try:
-    client = OpenAI(
-        base_url=BASE_URL,
-        api_key=API_KEY
-    )
+    client = OpenAI(base_url=BASE_URL, api_key=API_KEY)
 
     # 调用对话补全接口
     result = client.chat.completions.create(
@@ -57,11 +55,14 @@ try:
         # 如果您想获得原生的多轮对话体验，可以传入首轮消息获得的id，来接续上下文
         # "conversation_id": "65f6c28546bae1f0fbb532de",
         messages=[
-            {"role": "system", "content": "你是一个论文结构化助手，你的任务是将user部分的其他无关内容去除，只输出每篇文章的题目的中文翻译和id"},
+            {
+                "role": "system",
+                "content": "你是一个论文结构化助手，你的任务是将user部分的其他无关内容去除，只输出每篇文章的题目的中文翻译和id",
+            },
             {"role": "user", "content": user_content},
         ],
         # 如果使用SSE流请设置为true，默认false
-        stream=False
+        stream=False,
     )
 
     # 初始化用于保存结果的列表
@@ -70,14 +71,14 @@ try:
         structured_data.append(choice.message.content)
 
     # 创建保存文件夹
-    output_folder = 'HF-day-paper+GLMs-api-clean'
+    output_folder = "HF-day-paper+GLMs-api-clean"
     os.makedirs(output_folder, exist_ok=True)
 
     # 生成新的文件名并保存到指定文件夹
     clean_filename = os.path.join(output_folder, f"{yesterday_str}_clean.json")
 
     # 将结构化数据写入新的JSON文件
-    with open(clean_filename, 'w', encoding='utf-8') as clean_file:
+    with open(clean_filename, "w", encoding="utf-8") as clean_file:
         json.dump(structured_data, clean_file, ensure_ascii=False, indent=4)
 
     print(f"结构化数据已保存到 {clean_filename}")
@@ -86,12 +87,3 @@ except ValueError as e:
     print(f"发生错误: {e}")
 except Exception as e:
     print(f"发生异常: {e}")
-
-
-
-
-
-
-
-
-

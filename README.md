@@ -20,7 +20,7 @@ Welcome to the GLM API Beginner’s Repository 📘. This is an open-source tuto
 pip install -r requirements.txt
 ```
 
-2. Configure your [Z.AI](https://z.ai/model-api) account, or your [openrouter](https://openrouter.ai/settings/keys) account.
+1. Configure your [Z.AI](https://z.ai/model-api) account, or your [openrouter](https://openrouter.ai/settings/keys) account.
 
 ## Repository Structure 📂
 
@@ -35,9 +35,8 @@ We have categorized multiple folders, each containing their own content. You can
 + `finetune` Fine-tuning GLM models.
 
 + `demo` Some fun little projects that might inspire you.
-    + `agent` See how powerful the conference demo agent is!
-    + `data` Data required to run the demos.
-
+  + `agent` See how powerful the conference demo agent is!
+  + `data` Data required to run the demos.
 
 + `asset` Some related image materials.
 

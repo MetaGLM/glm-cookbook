@@ -1,4 +1,3 @@
-
 # Copyright (c) 2024 Microsoft Corporation.
 # Licensed under the MIT License
 
@@ -7,6 +6,12 @@
 import logging
 from typing import Any
 
+from graphrag.query.llm.base import BaseLLMCallback
+from graphrag.query.llm.oai.base import OpenAILLMImpl
+from graphrag.query.llm.oai.typing import (
+    OPENAI_RETRY_ERROR_TYPES,
+    OpenaiApiType,
+)
 from tenacity import (
     AsyncRetrying,
     RetryError,
@@ -14,13 +19,6 @@ from tenacity import (
     retry_if_exception_type,
     stop_after_attempt,
     wait_exponential_jitter,
-)
-
-from graphrag.query.llm.base import BaseLLMCallback
-from graphrag.query.llm.oai.base import OpenAILLMImpl
-from graphrag.query.llm.oai.typing import (
-    OPENAI_RETRY_ERROR_TYPES,
-    OpenaiApiType,
 )
 
 log = logging.getLogger(__name__)
@@ -118,13 +116,12 @@ class OpenAI(OpenAILLMImpl):
         callbacks: list[BaseLLMCallback] | None = None,
         **kwargs: Any,
     ) -> str:
-    
         tools = [
             {
                 "type": "web_search",
                 "web_search": {
-                    "enable": False, 
-                }
+                    "enable": False,
+                },
             }
         ]
         response = self.sync_client.chat.completions.create(  # type: ignore
@@ -166,13 +163,12 @@ class OpenAI(OpenAILLMImpl):
         callbacks: list[BaseLLMCallback] | None = None,
         **kwargs: Any,
     ) -> str:
-    
         tools = [
             {
                 "type": "web_search",
                 "web_search": {
-                    "enable": False, 
-                }
+                    "enable": False,
+                },
             }
         ]
         response = await self.async_client.chat.completions.create(  # type: ignore
