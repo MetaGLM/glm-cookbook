@@ -14,7 +14,21 @@ You can follow these sections to learn:
 
 ## Installing Dependencies
 
-To run all Notebooks smoothly, you need to install the necessary dependencies to better use the Demo. You can use the
-following command to install the general dependencies:
+install the necessary dependencies to better use the Demo. 
 
 ```bash
+pip install -r requirements.txt
+```
+
+To run `ppocr_glm.ipynb` smoothly, you need to install the necessary dependencies to better use the Demo. 
+
+```shell
+pip install -r requirements_ppocr_glm.txt
+```
+
+To run `glm_sdg_example_1.ipynb` and `glm_sdg_example_2.ipynb` smoothly, 
+you need to install the necessary dependencies to better use the Demo. 
+
+```shell
+pip install -r requirements_sdg_glm.txt
+```
