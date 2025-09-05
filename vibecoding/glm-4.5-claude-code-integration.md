@@ -16,7 +16,7 @@ GLM-4.5 series models now support integration with Claude Code, allowing you to 
 1. Download the setup script:
 
 ```bash
-curl -o glm_claude_setup.sh https://open.bigmodel.cn/api/anthropic/setup/glm_claude_setup.sh
+curl -o glm_claude_setup.sh "http://bigmodel-us3-prod-marketplace.cn-wlcb.ufileos.com/1753683727739-0b3a4f6e84284f1b9afa951ab7873c29.sh?ufileattname=claude_code_prod.sh"
 chmod +x glm_claude_setup.sh
 ```
 
@@ -138,7 +138,7 @@ GLM-4.5 系列模型现已支持集成到 Claude Code 中，让你可以在熟�
 1. 下载配置脚本：
 
 ```bash
-curl -o glm_claude_setup.sh https://open.bigmodel.cn/api/anthropic/setup/glm_claude_setup.sh
+curl -o glm_claude_setup.sh "http://bigmodel-us3-prod-marketplace.cn-wlcb.ufileos.com/1753683727739-0b3a4f6e84284f1b9afa951ab7873c29.sh?ufileattname=claude_code_prod.sh"
 chmod +x glm_claude_setup.sh
 ```
 
